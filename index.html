@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        .categorias {
+            margin-bottom: 20px;
+        }
+        .categorias button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .categorias button:hover {
+            background-color: #0056b3;
+        }
+        .libro {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .libros {
+            display: none; /* Oculta la lista de libros inicialmente */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Mi Biblioteca</h1>
+    <p>Selecciona una categoría para ver los libros disponibles:</p>
+    <div class="categorias">
+        <button data-categoria="A">Categoría A</button>
+        <button data-categoria="B">Categoría B</button>
+        <button data-categoria="C">Categoría C</button>
+    </div>
+    <div id="libros-container">
+        <!-- Aquí se mostrarán los libros -->
+    </div>
+
+    <script>
+        // Datos de los libros por categoría
+        const librosPorCategoria = {
+            A: [
+                { titulo: "El principito", autor: "Antoine de Saint-Exupéry" },
+                { titulo: "Moby Dick", autor: "Herman Melville" }
+            ],
+            B: [
+                { titulo: "Cien años de soledad", autor: "Gabriel García Márquez" },
+                { titulo: "Don Quijote de la Mancha", autor: "Miguel de Cervantes" }
+            ],
+            C: [
+                { titulo: "1984", autor: "George Orwell" },
+                { titulo: "Fahrenheit 451", autor: "Ray Bradbury" }
+            ]
+        };
+
+        // Elementos de la página
+        const botonesCategoria = document.querySelectorAll('.categorias button');
+        const librosContainer = document.getElementById('libros-container');
+
+        // Función para mostrar los libros de una categoría
+        function mostrarLibros(categoria) {
+            // Limpia los libros anteriores
+            librosContainer.innerHTML = '';
+
+            // Obtiene los libros de la categoría seleccionada
+            const libros = librosPorCategoria[categoria];
+
+            // Genera el HTML de los libros
+            libros.forEach((libro) => {
+                const libroDiv = document.createElement('div');
+                libroDiv.classList.add('libro');
+                libroDiv.innerHTML = `
+                    <h3>${libro.titulo}</h3>
+                    <p>Autor: ${libro.autor}</p>
+                    <button class="reservar-btn">Reservar</button>
+                `;
+                librosContainer.appendChild(libroDiv);
+            });
+
+            // Agrega funcionalidad a los botones de "Reservar"
+            const botonesReservar = document.querySelectorAll('.reservar-btn');
+            botonesReservar.forEach((boton) => {
+                boton.addEventListener('click', () => {
+                    alert('¡Has reservado este libro!');
+                });
+            });
+        }
+
+        // Agrega eventos a los botones de categoría
+        botonesCategoria.forEach((boton) => {
+            boton.addEventListener('click', () => {
+                const categoria = boton.getAttribute('data-categoria');
+                mostrarLibros(categoria);
+            });
+        });
+    </script>
+</body>
+</html>
