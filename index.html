@@ -80,6 +80,8 @@
             padding: 10px;
             border: 1px solid #ddd; /* Borde gris claro */
             transition: none;
+
+            justify-content: flex-start; /* Asegura que todo esté alineado a la izquierda */
         }
         
         .book-cover {
@@ -89,9 +91,10 @@
         }
         
         .book-details {
-            display: flex !important;
+            display: flex;
             flex-direction: column;
-            justify-content: center;*/          
+            justify-content: center;
+            flex-grow: 1; 
         }
         
         .book-title {
@@ -108,7 +111,7 @@
         .status-box {
             display: inline-block;          /* Asegura que se ajuste al contenido */
             padding: 5px 15px;             /* Espaciado interno */
-            margin-top: 10px;              /* Margen superior */
+            /*margin-top: 10px;              Margen superior */
             font-size: 14px;               /* Tamaño del texto */
             text-align: center;            /* Centra el texto */
             border: 2px solid transparent; /* Borde inicial transparente */
@@ -116,6 +119,8 @@
             background-color: transparent; /* Fondo transparente inicial */
             color: white;                  /* Texto blanco inicial */
             cursor: default;               /* No interacción */
+
+            margin-top: auto;            /* Mantiene el recuadro al final */
         }
         
         /* Estado disponible */
