@@ -102,15 +102,13 @@
         .status-btn {
             padding: 5px 15px; /* Aseguramos que el tamaño del botón sea adecuado */
             margin-top: 10px;
-            cursor: pointer;
+            cursor: default; /* Cambié el cursor a default para que no sea una mano */
             font-size: 14px;
             text-align: center;
-            border: none;
+            border: 2px solid; /* Aseguramos que sea un recuadro */
             width: 100%;  /* Para asegurar que el botón no se distorsione */
             max-width: 150px; /* Ancho máximo, ajustable según preferencia */
-            background-color: inherit; /* Hereda el color de fondo inicial */
-            color: inherit; /* Hereda el color del texto */
-            transition: none; /* Desactivamos cualquier transición */
+            background-color: transparent; /* Fondo transparente */
         }
         
         .status-available {
@@ -121,6 +119,13 @@
         .status-unavailable {
             background-color: #f44336;
             color: white;
+        }
+
+        .status-btn:hover {
+            background-color: transparent; /* Sin cambio de color en hover */
+            color: inherit; /* El color de texto no cambia en hover */
+            border-color: inherit; /* El borde no cambia en hover */
+            cursor: default; /* Mantiene el cursor como normal */
         }
     </style>
     <script>
