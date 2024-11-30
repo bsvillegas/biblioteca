@@ -101,18 +101,18 @@
             margin-bottom: 10px;
         }
         
-        /* Estilo base para los recuadros de estado (reemplazando los botones) */
+        /* Estilo base para los botones de estado (reemplazando los botones anteriores) */
         .status-btn {
-            padding: 5px 15px;         /* Espaciado interno */
+            padding: 5px 15px;
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid;         /* Bordes visibles */
-            width: auto;               /* El ancho se ajusta al texto */
-            display: inline-block;     /* El recuadro se ajusta al texto */
-            background-color: transparent; /* Fondo transparente */
-            color: white;              /* Texto blanco */
-            cursor: default;           /* No debe cambiar el cursor */
+            border: 2px solid;
+            width: auto;
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            cursor: default;
         }
         
         /* Estilo específico para el estado de disponible (verde) */
@@ -125,11 +125,11 @@
             background-color: #f44336;
         }
 
-        /* Eliminar hover para estos recuadros (no cambia su apariencia al pasar el mouse) */
+        /* Eliminar hover para estos botones (no cambia su apariencia al pasar el mouse) */
         .status-btn:hover {
-            background-color: transparent;  /* No cambia el color de fondo */
-            color: white;                   /* El texto sigue siendo blanco */
-            border-color: inherit;          /* El borde no cambia */
+            background-color: transparent;
+            color: white;
+            border-color: inherit;
         }
     </style>
     <script>
@@ -192,7 +192,7 @@
                     <div class="book-details">
                         <div class="book-title">${book.title}</div>
                         <div class="book-author">${book.author}</div>
-                        <!-- Se reemplaza el botón por un div para los recuadros de estado -->
+                        <!-- Recuadro de estado -->
                         <div class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
                             ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
                         </div>
