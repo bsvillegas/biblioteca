@@ -117,10 +117,19 @@
             cursor: default; /* Sin interacción de clic */
         }
 
+        /* Refuerzo específico para los elementos div con esta clase */
         div.status-box {
-            all: unset; /* Reinicia todos los estilos inherentes */
-            display: inline-block; /* Asegura que el recuadro tenga el comportamiento correcto */
-        }    
+            all: unset; /* Reinicia todos los estilos predeterminados del navegador */
+            display: inline-block; /* Define cómo se comporta el recuadro */
+            padding: 5px 15px; /* Espaciado interno */
+            margin-top: 10px; /* Espaciado superior */
+            font-size: 14px; /* Tamaño de la fuente */
+            text-align: center; /* Texto centrado */
+            border: 2px solid transparent; /* Borde inicial transparente */
+            border-radius: 4px; /* Bordes redondeados */
+            background-color: transparent; /* Fondo transparente */
+            color: white; /* Color del texto */
+        }  
 
         
         .status-available {
