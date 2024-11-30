@@ -235,9 +235,11 @@
                 const author = book.querySelector('.book-author').textContent.toLowerCase();
         
                 if (title.includes(query) || author.includes(query)) {
-                    book.style.display = 'block';
+                    card.style.display = 'flex';
+                    //book.style.display = 'block';
                 } else {
-                    book.style.display = 'none';
+                    card.style.display = 'none';
+                    //book.style.display = 'none';
                 }
             });
         }
