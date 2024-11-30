@@ -80,6 +80,8 @@
             padding: 10px;
             border: 1px solid #ddd; /* Borde gris claro */
             transition: none;
+
+            align-items: center;         /* Centra verticalmente el contenido */
         }
         
         .book-cover {
@@ -91,19 +93,24 @@
         .book-details {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            height: 150px;               /* Fijamos la altura para que no se desalineen */
-            flex-grow: 1;                /* Permite que se ajuste al espacio disponible */
+            /*justify-content: center;*/
+            
+            justify-content: space-between; /* Distribuye los elementos de manera ordenada */
+            flex-grow: 1;              
         }
         
         .book-title {
             font-size: 18px;
             font-weight: bold;
+
+            margin: 0;                   /* Elimina el margen para evitar desplazamientos */
         }
         
         .book-author {
             font-size: 14px;
             margin-bottom: 10px;
+
+            margin: 0;                   /* Elimina el margen para evitar desplazamientos */
         }
         
         /* Estilos base para los recuadros de estado */
