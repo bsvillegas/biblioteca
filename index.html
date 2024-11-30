@@ -99,17 +99,18 @@
             margin-bottom: 10px;
         }
         
+        /* Estilo base para los recuadros (botones de estado) */
         .status-btn {
-            padding: 5px 15px;  /* Espaciado interno */
+            padding: 5px 15px;         /* Espaciado interno */
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid;  /* Bordes visibles */
-            width: auto;  /* El ancho ajustado al texto */
-            display: inline-block;  /* El recuadro se ajusta al texto */
-            background-color: transparent;  /* Fondo transparente */
-            color: white;  /* Texto blanco */
-            cursor: default;  /* No debe cambiar el cursor */
+            border: 2px solid;         /* Bordes visibles */
+            width: auto;               /* El ancho se ajusta al texto */
+            display: inline-block;     /* El recuadro se ajusta al texto */
+            background-color: transparent; /* Fondo transparente */
+            color: white;              /* Texto blanco */
+            cursor: default;           /* No debe cambiar el cursor */
         }
         
         .status-available {
@@ -120,11 +121,11 @@
             background-color: #f44336;
         }
 
-        /* Eliminar cualquier efecto de hover */
+        /* Eliminar hover para estos recuadros */
         .status-btn:hover {
-            background-color: transparent;  /* Sin cambios de color en hover */
-            color: white;  /* Mantiene el texto blanco */
-            border-color: inherit;  /* El borde no cambia */
+            background-color: transparent;  /* No cambia el color de fondo */
+            color: white;                   /* El texto sigue siendo blanco */
+            border-color: inherit;          /* El borde no cambia */
         }
     </style>
     <script>
