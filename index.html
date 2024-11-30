@@ -6,7 +6,7 @@
     <title>Biblioteca</title>
 
     <!-- Hoja de estilos externa -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
 
      <!-- Estilos internos -->
     <style>
@@ -75,13 +75,11 @@
         }
         /* Tarjetas de libros */
         .book-card {
-            display: flex;
+            display: flex !important;
             margin: 10px 0;
             padding: 10px;
             border: 1px solid #ddd; /* Borde gris claro */
             transition: none;
-
-            align-items: center;         /* Centra verticalmente el contenido */
         }
         
         .book-cover {
@@ -91,26 +89,19 @@
         }
         
         .book-details {
-            display: flex;
+            display: flex !important;
             flex-direction: column;
-            /*justify-content: center;*/
-            
-            justify-content: space-between; /* Distribuye los elementos de manera ordenada */
-            flex-grow: 1;              
+            justify-content: center;*/          
         }
         
         .book-title {
             font-size: 18px;
             font-weight: bold;
-
-            margin: 0;                   /* Elimina el margen para evitar desplazamientos */
         }
         
         .book-author {
             font-size: 14px;
             margin-bottom: 10px;
-
-            margin: 0;                   /* Elimina el margen para evitar desplazamientos */
         }
         
         /* Estilos base para los recuadros de estado */
