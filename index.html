@@ -108,7 +108,9 @@
             border: none;
             width: 100%;  /* Para asegurar que el botón no se distorsione */
             max-width: 150px; /* Ancho máximo, ajustable según preferencia */
-            transition: none; /* Desactivamos la transición para el hover */
+            background-color: inherit; /* Hereda el color de fondo inicial */
+            color: inherit; /* Hereda el color del texto */
+            transition: none; /* Desactivamos cualquier transición */
         }
         
         .status-available {
@@ -119,10 +121,6 @@
         .status-unavailable {
             background-color: #f44336;
             color: white;
-        }
-
-        .status-btn:hover {
-            background-color: inherit; /* Desactivamos cualquier cambio de color al hacer hover */
         }
     </style>
     <script>
