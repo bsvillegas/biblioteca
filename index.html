@@ -41,7 +41,6 @@
             background-color: #45a049;
         }
         
-        /* Estilo para las tarjetas de categoría */
         .category-card {
             display: flex;
             margin: 20px;
@@ -71,7 +70,6 @@
             margin-top: 5px;
         }
         
-        /* Estilo para las tarjetas de libros */
         .book-card {
             display: flex;
             margin: 10px 0;
@@ -101,39 +99,36 @@
             margin-bottom: 10px;
         }
         
-        /* Estilo base para los botones de estado (reemplazando los botones anteriores) */
+        /* Estilo base para los recuadros (botones de estado) */
         .status-btn {
-            padding: 5px 15px;
+            padding: 5px 15px;         /* Espaciado interno */
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid;
-            width: auto;
-            display: inline-block;
-            background-color: transparent;
-            color: white;
-            cursor: default;
+            border: 2px solid;         /* Bordes visibles */
+            width: auto;               /* El ancho se ajusta al texto */
+            display: inline-block;     /* El recuadro se ajusta al texto */
+            background-color: transparent; /* Fondo transparente */
+            color: white;              /* Texto blanco */
+            cursor: default;           /* No debe cambiar el cursor */
         }
         
-        /* Estilo específico para el estado de disponible (verde) */
         .status-available {
             background-color: #4CAF50;
         }
         
-        /* Estilo específico para el estado de no disponible (rojo) */
         .status-unavailable {
             background-color: #f44336;
         }
 
-        /* Eliminar hover para estos botones (no cambia su apariencia al pasar el mouse) */
+        /* Eliminar hover para estos recuadros */
         .status-btn:hover {
-            background-color: transparent;
-            color: white;
-            border-color: inherit;
+            background-color: transparent;  /* No cambia el color de fondo */
+            color: white;                   /* El texto sigue siendo blanco */
+            border-color: inherit;          /* El borde no cambia */
         }
     </style>
     <script>
-        // Función para mostrar las categorías
         function showCategories() {
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'block';
@@ -141,7 +136,6 @@
             document.getElementById('book-list').style.display = 'none';
         }
         
-        // Función para mostrar la sección de donación
         function showDonation() {
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'none';
@@ -149,7 +143,6 @@
             document.getElementById('book-list').style.display = 'none';
         }
         
-        // Función para volver al menú principal
         function goBackToMenu() {
             document.getElementById('main-menu').style.display = 'block';
             document.getElementById('categories').style.display = 'none';
@@ -157,7 +150,6 @@
             document.getElementById('book-list').style.display = 'none';
         }
         
-        // Función para mostrar los libros según la categoría seleccionada
         function showBooks(category) {
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'none';
@@ -192,17 +184,15 @@
                     <div class="book-details">
                         <div class="book-title">${book.title}</div>
                         <div class="book-author">${book.author}</div>
-                        <!-- Recuadro de estado -->
                         <div class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
                             ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
-                        </div>
+                        </button>
                     </div>
                 `;
                 booksContainer.appendChild(bookCard);
             });
         }
         
-        // Función para filtrar libros por disponibilidad
         function filterByAvailability(status) {
             const books = document.querySelectorAll('.book-card');
         
@@ -216,7 +206,6 @@
             });
         }
         
-        // Función para buscar libros por título o autor
         function searchBooks() {
             const query = document.getElementById('search-input').value.toLowerCase();
             const books = document.querySelectorAll('.book-card');
@@ -242,47 +231,57 @@
     <!-- Menú Principal -->
     <nav id="main-menu">
         <button onclick="showCategories()">Categorías</button>
-        <button onclick="showDonation()">Donación</button>
+        <button onclick="showDonation()">Donar</button>
     </nav>
 
-    <!-- Categorías -->
-    <div id="categories" style="display:none;">
-        <button onclick="goBackToMenu()">Volver</button>
-        <div class="category-card" onclick="showBooks('categoriaA')">
-            <div class="category-cover">Imagen A</div>
+    <!-- Sección de Categorías -->
+    <div id="categories" style="display: none;">
+        <div class="category-card">
+            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria A" class="category-cover">
             <div class="category-details">
                 <div class="category-name">Categoría A</div>
-                <div class="category-description">Descripción de la categoría A</div>
+                <p class="category-description">Descripción de la categoría A</p>
+                <button onclick="showBooks('categoriaA')">Ver Libros</button>
             </div>
         </div>
-        <div class="category-card" onclick="showBooks('categoriaB')">
-            <div class="category-cover">Imagen B</div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria B" class="category-cover">
             <div class="category-details">
                 <div class="category-name">Categoría B</div>
-                <div class="category-description">Descripción de la categoría B</div>
+                <p class="category-description">Descripción de la categoría B</p>
+                <button onclick="showBooks('categoriaB')">Ver Libros</button>
             </div>
         </div>
-        <div class="category-card" onclick="showBooks('categoriaC')">
-            <div class="category-cover">Imagen C</div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria C" class="category-cover">
             <div class="category-details">
                 <div class="category-name">Categoría C</div>
-                <div class="category-description">Descripción de la categoría C</div>
+                <p class="category-description">Descripción de la categoría C</p>
+                <button onclick="showBooks('categoriaC')">Ver Libros</button>
             </div>
         </div>
     </div>
 
-    <!-- Libros -->
-    <div id="book-list" style="display:none;">
-        <button onclick="goBackToMenu()">Volver</button>
-        <input type="text" id="search-input" placeholder="Buscar libros..." oninput="searchBooks()">
+    <!-- Sección de Donación -->
+    <div id="donation" style="display: none;">
+        <h2>Donaciones</h2>
+        <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
+        <button onclick="window.location.href='https://donaciones.com'">Donar</button>
+        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
+    </div>
+
+    <!-- Sección de Libros -->
+    <div id="book-list" style="display: none;">
+        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
+        <input type="text" id="search-input" placeholder="Buscar libro..." oninput="searchBooks()">
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
+            <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
+        </div>
+
         <div id="books-container"></div>
     </div>
 
-    <!-- Donación -->
-    <div id="donation" style="display:none;">
-        <button onclick="goBackToMenu()">Volver</button>
-        <h2>Formulario de Donación</h2>
-        <!-- Aquí agregarías el formulario de donación -->
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
