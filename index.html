@@ -92,6 +92,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            height: 150px;               /* Fijamos la altura para que no se desalineen */
+            flex-grow: 1;                /* Permite que se ajuste al espacio disponible */
         }
         
         .book-title {
@@ -123,9 +125,9 @@
             background-color: #4CAF50 !important;     /* Verde para disponible */
             border-color: #4CAF50 !important;        /* Borde verde */
             color: white !important;                  /* Texto blanco */
-            line-height: 20px;               /* Centra verticalmente el texto */
-            width: 70px;                    /* Ancho fijo */
-            height: 20px;                    /* Alto fijo */
+            width: 70px;         
+            height: 18px;  
+            line-height: 18px;  
         }
         
         /* Estado no disponible */
@@ -133,9 +135,9 @@
             background-color: #f44336 !important;     /* Rojo para no disponible */
             border-color: #f44336 !important;        /* Borde rojo */
             color: white !important;                  /* Texto blanco */
-            width: 90px;                    /* Ancho fijo */
-            height: 18px;                    /* Alto fijo */
-            line-height: 18px;               /* Centra verticalmente el texto */
+            width: 90px;                    
+            height: 18px;                    
+            line-height: 18px;   
         }
     </style>
     <script>
