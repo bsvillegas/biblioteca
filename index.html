@@ -75,35 +75,40 @@
         }
         /* Tarjetas de libros */
         .book-card {
-            display: flex;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ddd; /* Borde gris claro */
-            transition: none;
+            display: flex;                  /* Alinea los elementos en fila horizontal */
+            align-items: center;            /* Centra verticalmente los elementos */
+            margin: 10px 0;                 /* Espaciado vertical entre tarjetas */
+            padding: 10px;                  /* Espaciado interno */
+            border: 1px solid #ddd;         /* Borde gris claro */
+            flex-wrap: nowrap;              /* Impide que los elementos se muevan a otra línea */
         }
         
+        /* Imagen de la portada */
         .book-cover {
-            width: 100px;
-            height: 150px;
-            margin-right: 20px;
+            width: 100px;                   /* Ancho fijo */
+            height: 150px;                  /* Alto fijo */
+            margin-right: 20px;             /* Espaciado con los detalles */
         }
         
+        /* Detalles del libro */
         .book-details {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex-grow: 1; 
+            display: flex;                  /* Alinea los detalles internamente */
+            flex-direction: column;         /* Organiza los elementos en columna */
+            justify-content: space-between; /* Espacia los elementos uniformemente */
+            flex-grow: 1;                   /* Permite que esta sección crezca si es necesario */
         }
         
+        /* Título del libro */
         .book-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 0;
+            font-size: 18px;                /* Tamaño del texto */
+            font-weight: bold;              /* Texto en negrita */
+            margin: 0;                      /* Elimina márgenes extra */
         }
         
+        /* Autor del libro */
         .book-author {
-            font-size: 14px;
-            margin: 0;
+            font-size: 14px;                /* Tamaño del texto */
+            margin: 0;                      /* Elimina márgenes extra */
         }
         
         /* Estilos base para los recuadros de estado */
