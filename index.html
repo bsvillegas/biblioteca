@@ -53,6 +53,38 @@
             padding: 10px;
         }
 
+        .search-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            width: 70%;
+            margin-bottom: 10px;
+        }
+
+        .filter-buttons {
+            margin-top: 10px;
+        }
+
+        .filter-btn {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: background-color 0.2s;
+        }
+
+        .filter-btn:hover {
+            background-color: #45a049;
+        }
+
         .category-menu {
             text-align: center;
         }
@@ -142,13 +174,39 @@
     </style>
     <script>
         function showCategory(categoryId) {
-            // Ocultar todas las listas de libros
             const bookLists = document.querySelectorAll('.book-list');
             bookLists.forEach(list => list.style.display = 'none');
 
-            // Mostrar la categoría seleccionada
             const selectedList = document.getElementById(categoryId);
             if (selectedList) selectedList.style.display = 'block';
+        }
+
+        function searchBooks() {
+            const query = document.getElementById('searchBox').value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+
+            books.forEach(book => {
+                const title = book.querySelector('.book-title').textContent.toLowerCase();
+                const author = book.querySelector('.book-author').textContent.toLowerCase();
+                if (title.includes(query) || author.includes(query)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        function filterByAvailability(status) {
+            const books = document.querySelectorAll('.book-card');
+
+            books.forEach(book => {
+                const isAvailable = book.querySelector('.status-btn').classList.contains('status-available');
+                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
         }
     </script>
 </head>
@@ -157,17 +215,24 @@
         <h1>Mi Biblioteca</h1>
     </header>
     <nav>
-        <p>Bienvenido a nuestra biblioteca en línea, un espacio para compartir y explorar libros. Si deseas apoyar nuestro proyecto, considera hacer una donación.</p>
+        <p>Apoya nuestra biblioteca con una donación para seguir creciendo.</p>
         <a href="https://paypal.me/tudonacion" class="donation-link" target="_blank">Hacer una Donación</a>
     </nav>
     <main>
+        <div class="search-section">
+            <input type="text" id="searchBox" class="search-input" placeholder="Busca un libro por título o autor..." onkeyup="searchBooks()">
+            <div class="filter-buttons">
+                <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
+                <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
+            </div>
+        </div>
+
         <div class="category-menu">
             <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaA')">Categoría A</a>
             <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaB')">Categoría B</a>
             <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaC')">Categoría C</a>
         </div>
 
-        <!-- Categoría A -->
         <div class="book-list" id="categoriaA">
             <div class="book-card clearfix">
                 <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
@@ -179,37 +244,7 @@
             </div>
         </div>
 
-        <!-- Categoría B -->
-        <div class="book-list" id="categoriaB">
-            <div class="book-card clearfix">
-                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
-                <div class="book-details">
-                    <div class="book-title">Libro B1</div>
-                    <div class="book-author">Autor B1</div>
-                    <span class="status-btn status-unavailable">No Disponible</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Categoría C -->
-        <div class="book-list" id="categoriaC">
-            <div class="book-card clearfix">
-                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
-                <div class="book-details">
-                    <div class="book-title">Libro C1</div>
-                    <div class="book-author">Autor C1</div>
-                    <span class="status-btn status-available">Disponible</span>
-                </div>
-            </div>
-            <div class="book-card clearfix">
-                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
-                <div class="book-details">
-                    <div class="book-title">Libro C2</div>
-                    <div class="book-author">Autor C2</div>
-                    <span class="status-btn status-unavailable">No Disponible</span>
-                </div>
-            </div>
-        </div>
+        <!-- Otras categorías y libros -->
     </main>
 </body>
 </html>
