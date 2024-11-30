@@ -105,41 +105,43 @@
         
         /* Estilos base para los recuadros de estado */
         .status-box {
-            display: inline-block;        /* Asegura que el tamaño se adapte al contenido */
-            padding: 5px 15px;           /* Espaciado interno */
-            margin-top: 10px;            /* Margen superior */
-            font-size: 14px;             /* Tamaño del texto */
-            text-align: center;          /* Centra el texto */
-            border: 2px solid transparent !important; /* Borde inicial transparente */
-            border-radius: 4px;          /* Bordes redondeados */
-            background-color: transparent !important;  /* Fondo inicial transparente */
-            color: white !important;                /* Texto blanco */
-            cursor: default !important;             /* Sin interacción */
+            display: inline-block;          /* Asegura que se ajuste al contenido */
+            padding: 5px 15px;             /* Espaciado interno */
+            margin-top: 10px;              /* Margen superior */
+            font-size: 14px;               /* Tamaño del texto */
+            text-align: center;            /* Centra el texto */
+            border: 2px solid transparent; /* Borde inicial transparente */
+            border-radius: 4px;            /* Bordes redondeados */
+            background-color: transparent; /* Fondo transparente inicial */
+            color: white;                  /* Texto blanco inicial */
+            cursor: default;               /* No interacción */
         }
         
         /* Estado disponible */
         .status-available {
-            background-color: #4CAF50; /* Verde */
-            border-color: #4CAF50;    /* Borde verde */
+            background-color: #4CAF50 !important;     /* Verde para disponible */
+            border-color: #4CAF50 !important;        /* Borde verde */
+            color: white;                  /* Texto blanco */
         }
         
         /* Estado no disponible */
         .status-unavailable {
-            background-color: #f44336; /* Rojo */
-            border-color: #f44336;    /* Borde rojo */
+            background-color: #f44336 !important;     /* Rojo para no disponible */
+            border-color: #f44336 !important;        /* Borde rojo */
+            color: white;                  /* Texto blanco */
         }
         
-        /* Asegúrate de que el hover no cambie nada */
+        /* Hover para asegurarse de que no cambie */
         .status-box:hover {
-            background-color: inherit; /* Sin cambios en el fondo */
-            color: inherit;            /* Sin cambios en el texto */
-            border-color: inherit;     /* Sin cambios en el borde */
+            background-color: inherit;     /* Sin cambios en el fondo */
+            color: inherit;                /* Sin cambios en el texto */
+            border-color: inherit;         /* Sin cambios en el borde */
         }
         
-        /* Desactiva cualquier estilo por defecto */
-        .status-box:focus, 
+        /* Desactiva cualquier contorno o cambios por interacción */
+        .status-box:focus,
         .status-box:active {
-            outline: none;             /* Sin contorno */
+            outline: none;                 /* Sin contorno de foco */
         }
     </style>
     <script>
