@@ -114,22 +114,24 @@
             color: #666;
         }
 
-        .reserve-btn {
+        .status-btn {
             display: inline-block;
             margin-top: 10px;
             padding: 8px 12px;
             font-size: 14px;
             color: white;
-            background-color: #4CAF50;
             border: none;
             border-radius: 4px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.2s;
+            text-align: center;
+            cursor: default;
         }
 
-        .reserve-btn:hover {
-            background-color: #45a049;
+        .status-available {
+            background-color: #4CAF50;
+        }
+
+        .status-unavailable {
+            background-color: #ff5722;
         }
 
         .clearfix::after {
@@ -172,7 +174,7 @@
                 <div class="book-details">
                     <div class="book-title">Libro A1</div>
                     <div class="book-author">Autor A1</div>
-                    <button class="reserve-btn">Reservar</button>
+                    <span class="status-btn status-available">Disponible</span>
                 </div>
             </div>
         </div>
@@ -184,7 +186,7 @@
                 <div class="book-details">
                     <div class="book-title">Libro B1</div>
                     <div class="book-author">Autor B1</div>
-                    <button class="reserve-btn">Reservar</button>
+                    <span class="status-btn status-unavailable">No Disponible</span>
                 </div>
             </div>
         </div>
@@ -196,7 +198,7 @@
                 <div class="book-details">
                     <div class="book-title">Libro C1</div>
                     <div class="book-author">Autor C1</div>
-                    <button class="reserve-btn">Reservar</button>
+                    <span class="status-btn status-available">Disponible</span>
                 </div>
             </div>
             <div class="book-card clearfix">
@@ -204,7 +206,7 @@
                 <div class="book-details">
                     <div class="book-title">Libro C2</div>
                     <div class="book-author">Autor C2</div>
-                    <button class="reserve-btn">Reservar</button>
+                    <span class="status-btn status-unavailable">No Disponible</span>
                 </div>
             </div>
         </div>
