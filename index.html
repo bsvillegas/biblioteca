@@ -100,15 +100,16 @@
         }
         
         .status-btn {
-            padding: 5px 15px; /* Aseguramos que el tamaño del botón sea adecuado */
+            padding: 5px 15px; /* Espaciado interno */
             margin-top: 10px;
-            cursor: default; /* Cambié el cursor a default para que no sea una mano */
             font-size: 14px;
             text-align: center;
-            border: 2px solid; /* Aseguramos que sea un recuadro */
-            width: 100%;  /* Para asegurar que el botón no se distorsione */
-            max-width: 150px; /* Ancho máximo, ajustable según preferencia */
+            border: 2px solid; /* El borde visible */
+            width: auto;  /* El ancho se ajusta al texto */
+            display: inline-block; /* Para que el texto no ocupe todo el ancho */
             background-color: transparent; /* Fondo transparente */
+            color: inherit; /* Hereda el color del texto */
+            cursor: default; /* El cursor no cambiará */
         }
         
         .status-available {
@@ -121,11 +122,11 @@
             color: white;
         }
 
+        /* El hover no tiene ningún efecto */
         .status-btn:hover {
             background-color: transparent; /* Sin cambio de color en hover */
-            color: inherit; /* El color de texto no cambia en hover */
-            border-color: inherit; /* El borde no cambia en hover */
-            cursor: default; /* Mantiene el cursor como normal */
+            border-color: inherit; /* El borde no cambia */
+            color: inherit; /* El color del texto no cambia */
         }
     </style>
     <script>
