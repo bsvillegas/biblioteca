@@ -123,6 +123,8 @@
             background-color: #4CAF50 !important;     /* Verde para disponible */
             border-color: #4CAF50 !important;        /* Borde verde */
             color: white !important;                  /* Texto blanco */
+            width: 70px;                    /* Ancho fijo */
+            height: 30px;                    /* Alto fijo */
         }
         
         /* Estado no disponible */
@@ -130,6 +132,8 @@
             background-color: #f44336 !important;     /* Rojo para no disponible */
             border-color: #f44336 !important;        /* Borde rojo */
             color: white !important;                  /* Texto blanco */
+            width: 90px;                    /* Ancho fijo */
+            height: 30px;                    /* Alto fijo */
         }
     </style>
     <script>
@@ -204,11 +208,9 @@
             books.forEach(book => {
                 const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
                 if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
-                    book.style.visibility = 'visible';
-                    //book.style.display = 'block';
+                    book.style.display = 'block';
                 } else {
-                    book.style.visibility = 'hidden';
-                    //book.style.display = 'none';
+                    book.style.display = 'none';
                 }
             });
         }
