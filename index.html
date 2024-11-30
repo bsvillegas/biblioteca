@@ -204,9 +204,11 @@
             books.forEach(book => {
                 const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
                 if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
-                    book.style.display = 'block';
+                    book.style.visibility = 'visible';
+                    //book.style.display = 'block';
                 } else {
-                    book.style.display = 'none';
+                    book.style.visibility = 'hidden';
+                    //book.style.display = 'none';
                 }
             });
         }
