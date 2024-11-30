@@ -109,19 +109,21 @@
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid;         /* Bordes visibles */
+            border: 2px solid transparent;         /* Bordes visibles */
             border-radius: 4px;        /* Bordes ligeramente redondeados */
-            /*background-color: transparent; */
+            background-color: transparent; */
             color: white; /* Texto blanco */
             cursor: default; /* Sin interacción de clic */
         }
         
         .status-available {
             background-color: #4CAF50;
+            border-color: #4CAF50;    /* Asegura que el borde también sea verde */
         }
         
         .status-unavailable {
             background-color: #f44336;
+            border-color: #f44336;
         }
         /* Elimina cualquier efecto hover */
         .status-box:hover {
