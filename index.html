@@ -103,49 +103,43 @@
             margin-bottom: 10px;
         }
         
-         /* Estilos para los recuadros de estado (Disponible / No Disponible) */
+        /* Estilos base para los recuadros de estado */
         .status-box {
-            padding: 5px 15px;         /* Espaciado interno */
-            margin-top: 10px;
-            font-size: 14px;
-            text-align: center;
-            border: 2px solid transparent;         /* Bordes visibles */
-            border-radius: 4px;        /* Bordes ligeramente redondeados */
-            border-color: transparent; 
-            background-color: transparent; 
-            color: white; /* Texto blanco */
-            cursor: default; /* Sin interacción de clic */
-        }
-
-        /* Refuerzo específico para los elementos div con esta clase */
-        div.status-box {
-            all: unset; /* Reinicia todos los estilos predeterminados del navegador */
-            display: inline-block; /* Define cómo se comporta el recuadro */
-            padding: 5px 15px; /* Espaciado interno */
-            margin-top: 10px; /* Espaciado superior */
-            font-size: 14px; /* Tamaño de la fuente */
-            text-align: center; /* Texto centrado */
+            display: inline-block;        /* Asegura que el tamaño se adapte al contenido */
+            padding: 5px 15px;           /* Espaciado interno */
+            margin-top: 10px;            /* Margen superior */
+            font-size: 14px;             /* Tamaño del texto */
+            text-align: center;          /* Centra el texto */
             border: 2px solid transparent; /* Borde inicial transparente */
-            border-radius: 4px; /* Bordes redondeados */
-            background-color: transparent; /* Fondo transparente */
-            color: white; /* Color del texto */
-        }  
-
+            border-radius: 4px;          /* Bordes redondeados */
+            background-color: transparent; /* Fondo inicial transparente */
+            color: white;                /* Texto blanco */
+            cursor: default;             /* Sin interacción */
+        }
         
+        /* Estado disponible */
         .status-available {
-            background-color: #4CAF50;
-            border-color: #4CAF50;    /* Asegura que el borde también sea verde */
+            background-color: #4CAF50; /* Verde */
+            border-color: #4CAF50;    /* Borde verde */
         }
         
+        /* Estado no disponible */
         .status-unavailable {
-            background-color: #f44336;
-            border-color: #f44336;
+            background-color: #f44336; /* Rojo */
+            border-color: #f44336;    /* Borde rojo */
         }
-        /* Elimina cualquier efecto hover */
+        
+        /* Asegúrate de que el hover no cambie nada */
         .status-box:hover {
-            background-color: inherit; /* No cambia el color */
-            color: inherit;            /* El texto sigue igual */
-            border-color: inherit;     /* El borde no cambia */
+            background-color: inherit; /* Sin cambios en el fondo */
+            color: inherit;            /* Sin cambios en el texto */
+            border-color: inherit;     /* Sin cambios en el borde */
+        }
+        
+        /* Desactiva cualquier estilo por defecto */
+        .status-box:focus, 
+        .status-box:active {
+            outline: none;             /* Sin contorno */
         }
     </style>
     <script>
