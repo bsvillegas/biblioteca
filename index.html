@@ -104,13 +104,14 @@
         }
         
          /* Estilos para los recuadros de estado (Disponible / No Disponible) */
-        .status-btn {
+        .status-box {
             padding: 5px 15px;         /* Espaciado interno */
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
             border: 2px solid;         /* Bordes visibles */
-            background-color: transparent; /* Fondo transparente */
+            border-radius: 4px;        /* Bordes ligeramente redondeados */
+            /*background-color: transparent; */
             color: white; /* Texto blanco */
             cursor: default; /* Sin interacción de clic */
         }
@@ -122,12 +123,11 @@
         .status-unavailable {
             background-color: #f44336;
         }
-
-       /* Elimina cualquier efecto hover en los recuadros de estado */
-        .status-btn:hover {
-            background-color: transparent;  /* No cambia el color de fondo */
-            color: white;                   /* El texto sigue siendo blanco */
-            border-color: inherit;          /* El borde no cambia */
+        /* Elimina cualquier efecto hover */
+        .status-box:hover {
+            background-color: inherit; /* No cambia el color */
+            color: inherit;            /* El texto sigue igual */
+            border-color: inherit;     /* El borde no cambia */
         }
     </style>
     <script>
@@ -186,9 +186,9 @@
                     <div class="book-details">
                         <div class="book-title">${book.title}</div>
                         <div class="book-author">${book.author}</div>
-                        <button class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
+                        <div class="status-box ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
                             ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
-                        </button>
+                        </div>
                     </div>
                 `;
                 booksContainer.appendChild(bookCard);
@@ -199,7 +199,7 @@
             const books = document.querySelectorAll('.book-card');
         
             books.forEach(book => {
-                const isAvailable = book.querySelector('.status-btn').classList.contains('status-available');
+                const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
                 if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
                     book.style.display = 'block';
                 } else {
