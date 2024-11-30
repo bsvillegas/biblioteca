@@ -186,9 +186,9 @@
                     <div class="book-details">
                         <div class="book-title">${book.title}</div>
                         <div class="book-author">${book.author}</div>
-                        <span class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
+                        <button class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
                             ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
-                        </span>
+                        </button>
                     </div>
                 `;
                 booksContainer.appendChild(bookCard);
