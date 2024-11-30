@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,115 +7,152 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        h1 {
-            color: darkblue;
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
         }
-        .categorias {
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
             margin-bottom: 20px;
         }
-        .categorias button {
-            padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            background-color: #007bff;
+
+        .book-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .book-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #eaeaea;
+        }
+
+        .book-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .book-author {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .reserve-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 14px;
             color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
             cursor: pointer;
-            border-radius: 5px;
+            transition: background-color 0.2s;
         }
-        .categorias button:hover {
-            background-color: #0056b3;
-        }
-        .libro {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .libros {
-            display: none; /* Oculta la lista de libros inicialmente */
+
+        .reserve-btn:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenido a Mi Biblioteca</h1>
-    <p>Selecciona una categoría para ver los libros disponibles:</p>
-    <div class="categorias">
-        <button data-categoria="A">Categoría A</button>
-        <button data-categoria="B">Categoría B</button>
-        <button data-categoria="C">Categoría C</button>
-    </div>
-    <div id="libros-container">
-        <!-- Aquí se mostrarán los libros -->
-    </div>
+    <header>
+        <h1>Mi Biblioteca</h1>
+    </header>
+    <main>
+        <!-- Categoría A -->
+        <div class="category" id="categoriaA">
+            <h2>Categoría A</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+                    <div class="book-title">Libro A1</div>
+                    <div class="book-author">Autor A1</div>
+                    <button class="reserve-btn">Reservar</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+                    <div class="book-title">Libro A2</div>
+                    <div class="book-author">Autor A2</div>
+                    <button class="reserve-btn">Reservar</button>
+                </div>
+            </div>
+        </div>
 
-    <script>
-        // Datos de los libros por categoría
-        const librosPorCategoria = {
-            A: [
-                { titulo: "El principito", autor: "Antoine de Saint-Exupéry" },
-                { titulo: "Moby Dick", autor: "Herman Melville" }
-            ],
-            B: [
-                { titulo: "Cien años de soledad", autor: "Gabriel García Márquez" },
-                { titulo: "Don Quijote de la Mancha", autor: "Miguel de Cervantes" }
-            ],
-            C: [
-                { titulo: "1984", autor: "George Orwell" },
-                { titulo: "Fahrenheit 451", autor: "Ray Bradbury" },
-                { titulo: "Libro 1", autor: "Nombre y Apellido" },
-                { titulo: "Libro 2", autor: "Nombre y Apellido" },
-                { titulo: "Libro 3", autor: "Nombre y Apellido" },
-                { titulo: "Libro 4", autor: "Nombre y Apellido" },
-                { titulo: "Libro 5", autor: "Nombre y Apellido" },
-                { titulo: "Libro 6", autor: "Nombre y Apellido" },
-                { titulo: "Libro 7", autor: "Nombre y Apellido" },
-                { titulo: "Libro 8", autor: "Nombre y Apellido" },
-                { titulo: "Libro 9", autor: "Nombre y Apellido" },
-                { titulo: "Libro 10", autor: "Nombre y Apellido" }
-            ]
-        };
+        <!-- Categoría B -->
+        <div class="category" id="categoriaB">
+            <h2>Categoría B</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+                    <div class="book-title">Libro B1</div>
+                    <div class="book-author">Autor B1</div>
+                    <button class="reserve-btn">Reservar</button>
+                </div>
+            </div>
+        </div>
 
-        // Elementos de la página
-        const botonesCategoria = document.querySelectorAll('.categorias button');
-        const librosContainer = document.getElementById('libros-container');
-
-        // Función para mostrar los libros de una categoría
-        function mostrarLibros(categoria) {
-            // Limpia los libros anteriores
-            librosContainer.innerHTML = '';
-
-            // Obtiene los libros de la categoría seleccionada
-            const libros = librosPorCategoria[categoria];
-
-            // Genera el HTML de los libros
-            libros.forEach((libro) => {
-                const libroDiv = document.createElement('div');
-                libroDiv.classList.add('libro');
-                libroDiv.innerHTML = `
-                    <h3>${libro.titulo}</h3>
-                    <p>Autor: ${libro.autor}</p>
-                    <button class="reservar-btn">Reservar</button>
-                `;
-                librosContainer.appendChild(libroDiv);
-            });
-
-            // Agrega funcionalidad a los botones de "Reservar"
-            const botonesReservar = document.querySelectorAll('.reservar-btn');
-            botonesReservar.forEach((boton) => {
-                boton.addEventListener('click', () => {
-                    alert('¡Has reservado este libro!');
-                });
-            });
-        }
-
-        // Agrega eventos a los botones de categoría
-        botonesCategoria.forEach((boton) => {
-            boton.addEventListener('click', () => {
-                const categoria = boton.getAttribute('data-categoria');
-                mostrarLibros(categoria);
-            });
-        });
-    </script>
+        <!-- Categoría C -->
+        <div class="category" id="categoriaC">
+            <h2>Categoría C</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+                    <div class="book-title">Libro C1</div>
+                    <div class="book-author">Autor C1</div>
+                    <button class="reserve-btn">Reservar</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+                    <div class="book-title">Libro C2</div>
+                    <div class="book-author">Autor C2</div>
+                    <button class="reserve-btn">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
