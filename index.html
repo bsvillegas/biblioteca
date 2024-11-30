@@ -219,7 +219,7 @@
             books.forEach(book => {
                 const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
                 if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
-                    book.style.display = 'block';
+                    book.style.display = 'flex';
                 } else {
                     book.style.display = 'none';
                 }
