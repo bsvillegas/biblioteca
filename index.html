@@ -198,13 +198,16 @@
 
         function filterByAvailability(status) {
             const books = document.querySelectorAll('.book-card');
-
+        
             books.forEach(book => {
+                // Verificar si el libro está disponible
                 const isAvailable = book.querySelector('.status-btn').classList.contains('status-available');
+                
+                // Mostrar/ocultar libros según el filtro
                 if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
-                    book.style.display = 'block';
+                    book.style.display = 'block'; // Mostrar si coincide
                 } else {
-                    book.style.display = 'none';
+                    book.style.display = 'none'; // Ocultar si no coincide
                 }
             });
         }
