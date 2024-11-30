@@ -2,83 +2,77 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8"> <!-- Configura el juego de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
-    <title>Biblioteca</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
 
     <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Estilos internos -->
+     <!-- Estilos internos -->
     <style>
-        /* Estilo general de la página */
+        /* Estilo general */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
         }
-
         /* Estilo del encabezado */
         header {
-            background-color: #4CAF50; /* Fondo verde */
+            background-color: #4CAF50;
             color: white; /* Texto blanco */
             padding: 20px; /* Espaciado interno */
-            text-align: center; /* Centra el contenido del encabezado */
+            text-align: center;
         }
-
         /* Navegación principal */
         nav {
             display: flex; /* Usa un contenedor flex para alinear elementos horizontalmente */
-            justify-content: center; /* Centra los botones en el contenedor */
+            justify-content: center;
             margin: 20px 0; /* Margen arriba y abajo */
         }
-
-        /* Estilo de los botones del menú principal */
+         /* Estilo de los botones del menú principal */
         button {
-            background-color: #4CAF50; /* Fondo verde */
-            color: white; /* Texto blanco */
-            border: none; /* Sin bordes */
-            padding: 10px 20px; /* Espaciado interno */
-            margin: 0 10px; /* Margen horizontal */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
             cursor: pointer; /* Cambia el cursor al pasar el mouse */
-            font-size: 16px; /* Tamaño del texto */
+            font-size: 16px;
         }
-
-        /* Cambio de color al pasar el mouse por encima de los botones */
+         /* Cambio de color al pasar el mouse por encima de los botones */
         button:hover {
             background-color: #45a049; /* Un tono más oscuro de verde */
         }
-
-        /* Tarjetas de categorías */
+         /* Tarjetas de categorías */
         .category-card {
-            display: flex; /* Contenedor flex para alinear contenido horizontalmente */
-            margin: 20px; /* Margen alrededor */
-            border: 2px solid #4CAF50; /* Borde verde */
-            padding: 10px; /* Espaciado interno */
+            display: flex;
+            margin: 20px;
+            border: 2px solid #4CAF50;
+            padding: 10px;
         }
-
+        
         .category-cover {
-            width: 100px; /* Ancho fijo */
-            height: 100px; /* Alto fijo */
-            margin-right: 20px; /* Margen a la derecha */
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
         }
-
+        
         .category-details {
-            display: flex; /* Contenedor flex */
+            display: flex;
             flex-direction: column; /* Alinea elementos en una columna */
-            justify-content: center; /* Centra los elementos verticalmente */
+            justify-content: center;
         }
-
+        
         .category-name {
             font-weight: bold; /* Texto en negrita */
-            font-size: 18px; /* Tamaño de fuente grande */
+            font-size: 18px;
         }
-
+        
         .category-description {
             font-size: 14px; /* Tamaño de fuente más pequeño */
-            margin-top: 5px; /* Margen arriba */
+            margin-top: 5px;
         }
-
         /* Tarjetas de libros */
         .book-card {
             display: flex;
@@ -86,58 +80,150 @@
             padding: 10px;
             border: 1px solid #ddd; /* Borde gris claro */
         }
-
+        
         .book-cover {
             width: 100px;
             height: 150px;
             margin-right: 20px;
         }
-
+        
         .book-details {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-
+        
         .book-title {
             font-size: 18px;
             font-weight: bold;
         }
-
+        
         .book-author {
             font-size: 14px;
             margin-bottom: 10px;
         }
-
-        /* Estilos para los recuadros de estado (Disponible / No Disponible) */
+        
+         /* Estilos para los recuadros de estado (Disponible / No Disponible) */
         .status-btn {
-            padding: 5px 15px; /* Espaciado interno */
+            padding: 5px 15px;         /* Espaciado interno */
             margin-top: 10px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid; /* Bordes visibles */
+            border: 2px solid;         /* Bordes visibles */
             background-color: transparent; /* Fondo transparente */
             color: white; /* Texto blanco */
             cursor: default; /* Sin interacción de clic */
         }
-
-        /* Estilo para estado Disponible */
+        
         .status-available {
-            background-color: #4CAF50; /* Fondo verde */
+            background-color: #4CAF50;
         }
-
-        /* Estilo para estado No Disponible */
+        
         .status-unavailable {
-            background-color: #f44336; /* Fondo rojo */
+            background-color: #f44336;
         }
 
-        /* Elimina cualquier efecto hover en los recuadros de estado */
+       /* Elimina cualquier efecto hover en los recuadros de estado */
         .status-btn:hover {
-            background-color: transparent;
-            color: white;
-            border-color: inherit;
+            background-color: transparent;  /* No cambia el color de fondo */
+            color: white;                   /* El texto sigue siendo blanco */
+            border-color: inherit;          /* El borde no cambia */
         }
     </style>
+    <script>
+        function showCategories() {
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'block';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'none';
+        }
+        
+        function showDonation() {
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'block';
+            document.getElementById('book-list').style.display = 'none';
+        }
+        
+        function goBackToMenu() {
+            document.getElementById('main-menu').style.display = 'block';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'none';
+        }
+        
+        function showBooks(category) {
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'block';
+            
+            const booksContainer = document.getElementById('books-container');
+            booksContainer.innerHTML = '';  // Limpiar el contenedor de libros
+        
+            // Ejemplo de libros (reemplaza con tus libros reales)
+            const books = {
+                'categoriaA': [
+                    { title: 'Libro A1', author: 'Autor A1', status: 'available' },
+                    { title: 'Libro A2', author: 'Autor A2', status: 'unavailable' }
+                ],
+                'categoriaB': [
+                    { title: 'Libro B1', author: 'Autor B1', status: 'available' },
+                    { title: 'Libro B2', author: 'Autor B2', status: 'unavailable' }
+                ],
+                'categoriaC': [
+                    { title: 'Libro C1', author: 'Autor C1', status: 'unavailable' },
+                    { title: 'Libro C2', author: 'Autor C2', status: 'available' }
+                ]
+            };
+        
+            const selectedBooks = books[category];
+            selectedBooks.forEach(book => {
+                const bookCard = document.createElement('div');
+                bookCard.classList.add('book-card');
+                bookCard.innerHTML = `
+                    <img src="https://via.placeholder.com/100x150" alt="Portada de ${book.title}" class="book-cover">
+                    <div class="book-details">
+                        <div class="book-title">${book.title}</div>
+                        <div class="book-author">${book.author}</div>
+                        <div class="status-btn ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
+                            ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
+                        </button>
+                    </div>
+                `;
+                booksContainer.appendChild(bookCard);
+            });
+        }
+        
+        function filterByAvailability(status) {
+            const books = document.querySelectorAll('.book-card');
+        
+            books.forEach(book => {
+                const isAvailable = book.querySelector('.status-btn').classList.contains('status-available');
+                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+        
+        function searchBooks() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+        
+            books.forEach(book => {
+                const title = book.querySelector('.book-title').textContent.toLowerCase();
+                const author = book.querySelector('.book-author').textContent.toLowerCase();
+        
+                if (title.includes(query) || author.includes(query)) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <!-- Encabezado principal -->
@@ -147,11 +233,11 @@
 
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">
-        <button onclick="showCategories()">Categorías</button> <!-- Muestra las categorías -->
-        <button onclick="showDonation()">Donar</button> <!-- Muestra la sección de donaciones -->
+        <button onclick="showCategories()">Categorías</button>
+        <button onclick="showDonation()">Donar</button>
     </nav>
 
-    <!-- Sección de Categorías (invisible por defecto) -->
+    <!-- Sección de Categorías -->
     <div id="categories" style="display: none;">
         <!-- Cada categoría tiene su tarjeta -->
         <div class="category-card">
@@ -162,9 +248,25 @@
                 <button onclick="showBooks('categoriaA')">Ver Libros</button>
             </div>
         </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria B" class="category-cover">
+            <div class="category-details">
+                <div class="category-name">Categoría B</div>
+                <p class="category-description">Descripción de la categoría B</p>
+                <button onclick="showBooks('categoriaB')">Ver Libros</button>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria C" class="category-cover">
+            <div class="category-details">
+                <div class="category-name">Categoría C</div>
+                <p class="category-description">Descripción de la categoría C</p>
+                <button onclick="showBooks('categoriaC')">Ver Libros</button>
+            </div>
+        </div>
     </div>
 
-    <!-- Sección de donaciones (invisible por defecto) -->
+    <!-- Sección de Donación -->
     <div id="donation" style="display: none;">
         <h2>Donaciones</h2>
         <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
@@ -172,11 +274,18 @@
         <button onclick="goBackToMenu()">Volver al Menú Principal</button>
     </div>
 
-    <!-- Sección de Libros (invisible por defecto) -->
+    <!-- Sección de Libros -->
     <div id="book-list" style="display: none;">
         <button onclick="goBackToMenu()">Volver al Menú Principal</button>
-        <input type="text" id="search-input" placeholder="Buscar libro..." oninput="searchBooks()"> <!-- Barra de búsqueda -->
-        <div id="books-container"></div> <!-- Aquí se cargan las tarjetas de libros -->
+        <input type="text" id="search-input" placeholder="Buscar libro..." oninput="searchBooks()">
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
+            <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
+        </div>
+
+        <div id="books-container"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
