@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Biblioteca</title>
     <style>
+        /* Estilo general */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,69 +20,103 @@
             color: white;
         }
 
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        nav .donation-link {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        nav .donation-link:hover {
+            background-color: #e64a19;
+        }
+
         main {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 10px;
         }
 
-        .category {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #333;
+        .category-menu {
             text-align: center;
-            margin-bottom: 20px;
         }
 
-        .book-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        .category-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .category-btn:hover {
+            background-color: #45a049;
+        }
+
+        .book-list {
+            display: none;
+            margin-top: 20px;
         }
 
         .book-card {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 8px;
-            width: 200px;
-            text-align: center;
+            margin-bottom: 20px;
             padding: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .book-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         .book-cover {
-            width: 100%;
-            height: 250px;
+            float: left;
+            width: 100px;
+            height: 150px;
             object-fit: cover;
             border-radius: 4px;
-            margin-bottom: 10px;
+            margin-right: 15px;
             background-color: #eaeaea;
         }
 
+        .book-details {
+            overflow: hidden;
+        }
+
         .book-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 8px;
         }
 
         .book-author {
             font-size: 14px;
             color: #666;
-            margin-bottom: 15px;
         }
 
         .reserve-btn {
             display: inline-block;
+            margin-top: 10px;
             padding: 8px 12px;
             font-size: 14px;
             color: white;
@@ -96,38 +131,57 @@
         .reserve-btn:hover {
             background-color: #45a049;
         }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
     </style>
+    <script>
+        function showCategory(categoryId) {
+            // Ocultar todas las listas de libros
+            const bookLists = document.querySelectorAll('.book-list');
+            bookLists.forEach(list => list.style.display = 'none');
+
+            // Mostrar la categoría seleccionada
+            const selectedList = document.getElementById(categoryId);
+            if (selectedList) selectedList.style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Mi Biblioteca</h1>
     </header>
+    <nav>
+        <p>Bienvenido a nuestra biblioteca en línea, un espacio para compartir y explorar libros. Si deseas apoyar nuestro proyecto, considera hacer una donación.</p>
+        <a href="https://paypal.me/tudonacion" class="donation-link" target="_blank">Hacer una Donación</a>
+    </nav>
     <main>
+        <div class="category-menu">
+            <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaA')">Categoría A</a>
+            <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaB')">Categoría B</a>
+            <a href="javascript:void(0);" class="category-btn" onclick="showCategory('categoriaC')">Categoría C</a>
+        </div>
+
         <!-- Categoría A -->
-        <div class="category" id="categoriaA">
-            <h2>Categoría A</h2>
-            <div class="book-grid">
-                <div class="book-card">
-                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+        <div class="book-list" id="categoriaA">
+            <div class="book-card clearfix">
+                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
+                <div class="book-details">
                     <div class="book-title">Libro A1</div>
                     <div class="book-author">Autor A1</div>
-                    <button class="reserve-btn">Reservar</button>
-                </div>
-                <div class="book-card">
-                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
-                    <div class="book-title">Libro A2</div>
-                    <div class="book-author">Autor A2</div>
                     <button class="reserve-btn">Reservar</button>
                 </div>
             </div>
         </div>
 
         <!-- Categoría B -->
-        <div class="category" id="categoriaB">
-            <h2>Categoría B</h2>
-            <div class="book-grid">
-                <div class="book-card">
-                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+        <div class="book-list" id="categoriaB">
+            <div class="book-card clearfix">
+                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
+                <div class="book-details">
                     <div class="book-title">Libro B1</div>
                     <div class="book-author">Autor B1</div>
                     <button class="reserve-btn">Reservar</button>
@@ -136,17 +190,18 @@
         </div>
 
         <!-- Categoría C -->
-        <div class="category" id="categoriaC">
-            <h2>Categoría C</h2>
-            <div class="book-grid">
-                <div class="book-card">
-                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+        <div class="book-list" id="categoriaC">
+            <div class="book-card clearfix">
+                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
+                <div class="book-details">
                     <div class="book-title">Libro C1</div>
                     <div class="book-author">Autor C1</div>
                     <button class="reserve-btn">Reservar</button>
                 </div>
-                <div class="book-card">
-                    <img src="https://via.placeholder.com/200x250" alt="Portada del Libro" class="book-cover">
+            </div>
+            <div class="book-card clearfix">
+                <img src="https://via.placeholder.com/100x150" alt="Portada del Libro" class="book-cover">
+                <div class="book-details">
                     <div class="book-title">Libro C2</div>
                     <div class="book-author">Autor C2</div>
                     <button class="reserve-btn">Reservar</button>
