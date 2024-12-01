@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Categoría A",
+        "description": "Libros de ciencia ficción y fantasía.",
+        "image": "https://via.placeholder.com/100x100"
+    },
+    {
+        "name": "Categoría B",
+        "description": "Libros de historia y biografías.",
+        "image": "https://via.placeholder.com/100x100"
+    },
+    {
+        "name": "Categoría C",
+        "description": "Libros de arte y cultura.",
+        "image": "https://via.placeholder.com/100x100"
+    }
+]
