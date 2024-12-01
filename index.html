@@ -225,12 +225,12 @@
         
                 const selectedBooks = books[category] || [];
                 selectedBooks.forEach(bookArray => {
-                    const [title, author, status] = bookArray;
+                    const [title, author, status, coverImage] = bookArray;
         
                     const bookCard = document.createElement('div');
                     bookCard.classList.add('book-card');
                     bookCard.innerHTML = `
-                        <img src="https://via.placeholder.com/100x150" alt="Portada de ${title}" class="book-cover">
+                        <img src="${coverImage}" alt="Portada de ${title}" class="book-cover">
                         <div class="book-details">
                             <div class="book-title">${title}</div>
                             <div class="book-author">${author}</div>
