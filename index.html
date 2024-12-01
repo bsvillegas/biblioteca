@@ -255,6 +255,40 @@
                 }
             });
         }
+
+        async function loadCategories() {
+            const categoriesContainer = document.getElementById('categories-container');
+            categoriesContainer.innerHTML = ''; // Limpiar contenedor antes de agregar contenido
+        
+            try {
+                // Cargar las categorías desde el archivo JSON
+                const response = await fetch('categories.json');
+                const categories = await response.json();
+        
+                // Crear dinámicamente las tarjetas de categorías
+                categories.forEach(category => {
+                    const categoryCard = document.createElement('div');
+                    categoryCard.classList.add('category-card');
+                    categoryCard.innerHTML = `
+                        <img src="${category.image}" alt="Portada de ${category.name}" class="category-cover">
+                        <div class="category-details">
+                            <div class="category-name">${category.name}</div>
+                            <p class="category-description">${category.description}</p>
+                            <button onclick="showBooks('${category.name.toLowerCase().replace(' ', '')}')">Ver Libros</button>
+                        </div>
+                    `;
+                    categoriesContainer.appendChild(categoryCard);
+                });
+            } catch (error) {
+                console.error('Error al cargar las categorías:', error);
+            }
+        }
+        
+        // Llama a esta función cuando se muestren las categorías
+        document.addEventListener('DOMContentLoaded', () => {
+            loadCategories();
+        });
+        
     </script>
 </head>
 <body>
@@ -271,31 +305,8 @@
 
     <!-- Sección de Categorías -->
     <div id="categories" style="display: none;">
-        <!-- Cada categoría tiene su tarjeta -->
-        <div class="category-card">
-            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria A" class="category-cover">
-            <div class="category-details">
-                <div class="category-name">Categoría A</div>
-                <p class="category-description">Descripción de la categoría A</p>
-                <button onclick="showBooks('categoriaA')">Ver Libros</button>
-            </div>
-        </div>
-        <div class="category-card">
-            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria B" class="category-cover">
-            <div class="category-details">
-                <div class="category-name">Categoría B</div>
-                <p class="category-description">Descripción de la categoría B</p>
-                <button onclick="showBooks('categoriaB')">Ver Libros</button>
-            </div>
-        </div>
-        <div class="category-card">
-            <img src="https://via.placeholder.com/100x100" alt="Portada Categoria C" class="category-cover">
-            <div class="category-details">
-                <div class="category-name">Categoría C</div>
-                <p class="category-description">Descripción de la categoría C</p>
-                <button onclick="showBooks('categoriaC')">Ver Libros</button>
-            </div>
-        </div>
+        <h2>Categorías</h2>
+        <div id="categories-container"></div>
     </div>
 
     <!-- Sección de Donación -->
