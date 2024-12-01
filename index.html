@@ -50,24 +50,28 @@
         .filter-btn {
             background-color: #6c757d; /* Gris */
             color: white; /* Texto blanco */
-            padding: 10px 20px; /* Ajusta el espaciado interno */
+            padding: 6px 10px; /* Ajusta el espaciado interno */
             font-size: 12px; /* Tamaño de fuente menor */
             border: none;
-            border-radius: 5px; /* Bordes redondeados */
+            border-radius: 20px; /* Bordes redondeados */
             margin: 10px; /* Espaciado alrededor */
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Animaciones suaves */
-            /* Sombra interna para el efecto 3D */
-            box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3), 1px 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+            transition: all 0.3s ease; /* Transición suave */
         }
         
         .filter-btn:hover {
-            background-color: #5a6268; /* Gris más oscuro al pasar el mouse */
-            transform: scale(1.05); /* Agranda un poco el botón */
-            /* Aumentar la sombra interna y externa al hacer hover */
-            box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.2);
+            background-color: #bfbfbf; /* Gris más oscuro */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+            transform: scale(1.05); /* Efecto de agrandamiento */
         }
 
+        /* Efecto al presionar */
+        .filter-button:active {
+            background-color: #a9a9a9; /* Gris aún más oscuro */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Menos sombra */
+            transform: scale(0.98); /* Ligeramente más pequeño */
+        }
         
          /* Tarjetas de categorías */
         .category-card {
