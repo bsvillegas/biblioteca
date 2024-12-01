@@ -1,86 +1,556 @@
 {
         "espiritualidaddesantos": [
-        [
-            "Santos en la Misericordia",
-            "Pontificio consejo para la promoción de la nueva evangelización ",
-            "available"
+            [
+                "Santos en la Misericordia",
+                "Pontificio consejo para la promoción de la nueva evangelización ",
+                "available"
+            ],
+            [
+                "Tratado del amor de Dios",
+                "San francisco de Sales",
+                "available"
+            ],
+            [
+                "El amor de la Sabiduria Eterna",
+                "San Luis Maria Grignion de Montfort",
+                "available"
+            ],
+            [
+                "El Secreto Admirable del Santísimo Rosario",
+                "San Luis Maria Grignion de Montfort",
+                "available"
+            ],
+            [
+                "El amor de la Sabiduria Eterna",
+                "San Luis Maria Grignion de Montfort",
+                "available"
+            ],
+            [
+                "Obras completas ",
+                "San Juan de la Cruz",
+                "available"
+            ],
+            [
+                "Jesus en la Eucaristia",
+                "San Alfonso Maria Ligorio",
+                "available"
+            ],
+            [
+                "Obras de Santa Catalina de Siena",
+                "José Salvador y Conde ",
+                "available"
+            ],
+            [
+                "Colaciones II",
+                "Juan Casiano",
+                "available"
+            ],
+            [
+                "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
+                " Fray Contardo Miglioranza",
+                "available"
+            ],
+            [
+                "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
+                " Fray Contardo Miglioranza",
+                "available"
+            ],
+            [
+                "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
+                " Fray Contardo Miglioranza",
+                "available"
+            ],
+            [
+                "Mensajes de San Antonio para el hombre de hoy",
+                "Fray Piero Scapin",
+                "available"
+            ],
+            [
+                "La Pasión ",
+                "Mons. René Fernandez Apaza",
+                "available"
+            ],
+            [
+                "Llenos del espiritu Santo, anunciaban la palabra",
+                "Departamento de Pastoral Biblica",
+                "available"
+            ],
+            [
+                "Florecillas de San Francisco",
+                "Fray Contardo Miglioranza",
+                "available"
+            ],
+            [
+                "La fe según San Juan de la Cruz",
+                "Karol Wojtyla",
+                "available"
+            ],
+            [
+                "Sabiduría de un pobre",
+                "Eloy Leclerc",
+                "available"
+            ],
+            [
+                "Mensaje del amor misericordioso a las pequeñas almas",
+                "Margarita",
+                "available"
+            ],
+            [
+                "Los dones del Espiritu Santo en Santa Teresa de Lisieux",
+                "M. Philipon",
+                "available"
+            ],
+            [
+                "La vocación religiosa",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "El amor del alma",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Introduccion a la vida devota",
+                "San francisco de Sales",
+                "available"
+            ],
+            [
+                "La vida espiritual",
+                "Servais Pinckaers",
+                "available"
+            ],
+            [
+                "Práctica de amor a Jesucristo",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Práctica de amor a Jesucristo",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Es Cristo que pasa",
+                "San José María de Escrivá de Balaguer",
+                "available"
+            ],
+            [
+                "Retiro espiritual",
+                "Beato Claudio de la Colombiare",
+                "available"
+            ],
+            [
+                "Tú me das el amor",
+                "Madre Teresa de Calcuta",
+                "available"
+            ],
+            [
+                "Mi vocación es el amor",
+                "Jean Lafrance",
+                "available"
+            ],
+            [
+                "Preparacion para la muerte",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Tratado de la oración y los grados de perfección ",
+                "San Lorenzo Justiniano",
+                "available"
+            ],
+            [
+                "Las moradas",
+                "Santa Teresa de Jesús",
+                "available"
+            ],
+            [
+                "Meditaciones sobre la Pasión de Jesucristo",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Meditaciones sobre la Pasión de Jesucristo",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Los cinco minutos de Santa Teresita",
+                "Nestor Saporiti",
+                "available"
+            ],
+            [
+                "Oración mental según Santa Teresa",
+                "Carmelita dezcalzo ",
+                "available"
+            ],
+            [
+                "Oración mental según Santa Teresa",
+                "Carmelita dezcalzo ",
+                "available"
+            ],
+            [
+                "Los cinco minutos de la Madre Teresa",
+                "Padre Angelo Scolozzi",
+                "available"
+            ],
+            [
+                " Obras completas de Santa Teresita del Niño Jesús",
+                "Fr. Emeterio Setien",
+                "available"
+            ],
+            [
+                "La unión con Dios según San Juan de la Cruz",
+                "Padre Gabriel de Sta. M. Mag.",
+                "available"
+            ],
+            [
+                "El camino de la perfección",
+                "Santa Teresa de Jesús",
+                "available"
+            ],
+            [
+                "El gran medio de la oración",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Florecillas de San Francisco Solano",
+                "Cayetano Bruno",
+                "available"
+            ],
+            [
+                "Perlas de Juan XXIII",
+                "Papa Juan XXIII",
+                "available"
+            ],
+            [
+                "Perlas del Padre Pío",
+                "Citas del Padre Pío",
+                "available"
+            ],
+            [
+                "Don Bosco te habla - Pensamientos de Don Bosco",
+                "Don Bosco",
+                "available"
+            ],
+            [
+                "El Carisma Doctoral de San Luis María Grignion de Montfort",
+                "P. Eduardo Viñas",
+                "available"
+            ],
+            [
+                "Padre Pío Santo",
+                "-",
+                "available"
+            ],
+            [
+                "Hermano San Rafael - Obras Completas",
+                "San Rafael",
+                "available"
+            ],
+            [
+                "El carisma doctoral de San Luis Maria Grignion de Montfort",
+                "P. Eduardo Viñas",
+                "available"
+            ],
+            [
+                "La Divina Liturgia",
+                "San Juan Crisostomo",
+                "available"
+            ],
+            [
+                "Las Glorias de María",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "OBRAS DE SAN LUIS MARÍA GRIGNION DE MONTFORT",
+                "San Luis Maria Grignion de Montfort",
+                "available"
+            ],
+            [
+                "TRATADO DEL AMOR DE DIOS",
+                "San francisco de Sales",
+                "available"
+            ],
+            [
+                "Obras de San Ambrosio I",
+                "San Ambrosio",
+                "available"
+            ],
+            [
+                "OBRAS DE SAN AGUSTIN XX",
+                "SAN AGUSTIN",
+                "available"
+            ],
+            [
+                "OBRAS DE SAN AGUSTIN XXI",
+                "SAN AGUSTIN",
+                "available"
+            ],
+            [
+                "OBRAS DE SAN AGUSTIN XXII",
+                "SAN AGUSTIN",
+                "available"
+            ],
+            [
+                "El trato familiar con Dios",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Conformidad con la Voluntad de Dios",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "La vida de las Almas o el Amor Divino",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Consejos y Recuerdos",
+                "Teresita del Niño Jesús",
+                "available"
+            ],
+            [
+                "Pensamientos",
+                "Santa Magdalena Sofía Barat - Santa Rosa Filipina Duchesne",
+                "available"
+            ],
+            [
+                "Máximas de Santa Margarita María de Alacoque",
+                "Santa Margarita María de Alacoque",
+                "available"
+            ],
+            [
+                "Padre Pío de Pietrelcina, italia - Consejos Exhortaciones",
+                "",
+                "available"
+            ],
+            [
+                "Ejercicios, directorio y documentos de San Ignacio",
+                "José Calveras",
+                "available"
+            ],
+            [
+                "Poesías de Santa Teresa",
+                "Santa Teresa de Avila",
+                "available"
+            ],
+            [
+                "Lamentos del Pecador en el infierno",
+                "San Antonio María Claret",
+                "available"
+            ],
+            [
+                "El Amor de la Sabiduría Eterna",
+                "San Luis  María Grignon de Montfort",
+                "available"
+            ],
+            [
+                "Máximas de Don Bosco",
+                "San Juan Bosco",
+                "available"
+            ],
+            [
+                "El Secreto del Santisimo Rosario",
+                "San Luis  María Grignon de Montfort",
+                "available"
+            ],
+            [
+                "La Providencia",
+                "San Juan Crisostomo",
+                "available"
+            ],
+            [
+                "Ejercicios Espirituales",
+                "San Ignacio de Loyola",
+                "available"
+            ],
+            [
+                "Regla primitiva de la Sabiduría",
+                "San Luis María Grignon de Montfort",
+                "available"
+            ],
+            [
+                "El Valor de la Misa y la Sagrada Comunión",
+                "Beato Columba Marmion",
+                "available"
+            ],
+            [
+                "Los diez Mandamientos",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "Los Sagrados Corazones de Jesús y de María",
+                "San Juan Eudes",
+                "available"
+            ],
+            [
+                "En presencia de Dios - Isabel de la Trinidad",
+                "M. M. Philipon",
+                "available"
+            ],
+            [
+                "Carta Circular a los Amigos de la Cruz - La oración Abrasada",
+                "San Luis María Grignion de Montfort",
+                "available"
+            ],
+            [
+                "Comentario al Padrenuestro",
+                "Santa Teresa de Ávila",
+                "available"
+            ],
+            [
+                "Mensaje de Teresa de Jesús al hombre de hoy",
+                "Fraternidad sacerdotal San Juan de Avila",
+                "available"
+            ],
+            [
+                "Mi Vocación: El Amor (Carta a su hermana María del Sagrado Corazón)",
+                "Santa Teresita del Niño Jesús",
+                "available"
+            ],
+            [
+                "Don Bosco nos Escribe…",
+                "Carlo María Martini / Don Bosco",
+                "available"
+            ],
+            [
+                "Santa María Margarita de Alacoque \"Su Carisma  y Promesas\"",
+                "Jesús Solano S.J.",
+                "available"
+            ],
+            [
+                "EL Misterio de la Nochebuena",
+                "Edith Stein",
+                "available"
+            ],
+            [
+                "Orar con el Cura de Ars",
+                "José Pedro Manglano Castellary",
+                "available"
+            ],
+            [
+                "Un fuego que enciende otros fuegos - Paginas escogidas de San Alberto Hurtado",
+                "San Alberto Hurtado",
+                "available"
+            ],
+            [
+                "La herencia Teresiana",
+                "Efrén j. m. Montalva",
+                "available"
+            ],
+            [
+                "Cartas",
+                "P. Francisco Palau O.C.D.",
+                "available"
+            ],
+            [
+                "Los cinco minutos de San Francisco",
+                "Textos seleccionados por Murray Bodo, ofm",
+                "available"
+            ],
+            [
+                "Experiencia de Dios Amor - EL libro de Santa Angela de Foligno",
+                "Contardo Miglioranza // Santa Angela de Foligno",
+                "available"
+            ],
+            [
+                "PAGINAS PERIODISTICAS EN TORNO A LA ESCUELA DE LA VIRTUD",
+                "FRANCISCO PALAU QUER",
+                "available"
+            ],
+            [
+                "CATECISMO DE LAS VIRTUDES",
+                "FRANCISCO PALAU QUER",
+                "available"
+            ],
+            [
+                "LAS VIRTUDES DE SAN JOSE",
+                "San francisco de Sales",
+                "available"
+            ],
+            [
+                "LOS MORALES III",
+                "SAN GREGORIO MAGNO",
+                "available"
+            ],
+            [
+                "LOS MORALES II",
+                "SAN GREGORIO MAGNO",
+                "available"
+            ],
+            [
+                "LOS MORALES I",
+                "SAN GREGORIO MAGNO",
+                "available"
+            ],
+            [
+                "La paz del corazón - 30 días con un Gran Maestro Espiritual",
+                "San Francisco de Asís",
+                "available"
+            ],
+            [
+                "Abandónate en Dios - 30 días con un Gran Maestro Espiritual",
+                "Santa Teresa de Lisieux",
+                "available"
+            ],
+            [
+                "Libera tu corazón - 30 días con un Gran Maestro Espiritual",
+                "San Francisco de Sales",
+                "available"
+            ],
+            [
+                "TRATADO DE LAS VIRGENES",
+                "SAN AMBROSIO",
+                "available"
+            ],
+            [
+                "El Tesoro escondido de la Santa Misa",
+                "San Leonardo de Porto-Mauricio",
+                "available"
+            ],
+            [
+                "El camino del amor y de la Infancia Espiritual",
+                "Santa Teresita del Niño Jesús",
+                "available"
+            ],
+            [
+                "SOLO DIOS BASTA - Claves de la espiritualiad teresiana",
+                "Maximiliano Herraiz García",
+                "available"
+            ],
+            [
+                "Una sola cosa es necesaria",
+                "San Alfonso María de Ligorio",
+                "available"
+            ],
+            [
+                "En la escuela espiritual del Padre Pio de Pietrelcina",
+                "Melchor de Pobladura OFMCAP",
+                "available"
+            ],
+            [
+                "La Confesión según el pensamiento de Don Bosco y de sus Sucesores",
+                "Instituto \"Clemente J. Villada y Cabrera",
+                "available"
+            ],
+            [
+                "Obras Selectas",
+                "San Claudio de la Colombiere",
+                "available"
+            ],
+            [
+                "Consagracion a Jesucristo, la sabiduría encarnada por medio de Maria Inmaculada",
+                "San Luis Maria Grignon de Montfort",
+                "available"
+            ]
         ],
-        [
-            "Tratado del amor de Dios",
-            "San francisco de Sales",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "unavailable"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El Secreto Admirable del Santísimo Rosario",
-            "San Luis Maria Grignion de Montfort",
-            "available"
-        ],
-        [
-            "El Secreto Admirable del Santísimo Rosario",
-            "San Luis Maria Grignion de Montfort",
-            "unavailable"
-        ],
-        [
-            "El amor de la Sabiduria Eterna",
-            "San Luis Maria Grignion de Montfort",
-            "unavailable"
-        ],
-        [
-            "Obras completas ",
-            "San Juan de la Cruz",
-            "unavailable"
-        ],
-        [
-            "Jesus en la Eucaristia",
-            "San Alfonso Maria Ligorio",
-            "unavailable"
-        ],
-        [
-            "Obras de Santa Catalina de Siena",
-            "José Salvador y Conde ",
-            "available"
-        ],
-        [
-            "Colaciones II",
-            "Juan Casiano",
-            "available"
-        ]
-    ],
     "categoriab": [
         ["Libro B1", "Autor B1", "available"],
         ["Libro B2", "Autor B2", "unavailable"]
