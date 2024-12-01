@@ -196,7 +196,17 @@
         }
 
         async function showBooks(category) {
+            // Generar un parámetro único basado en el tiempo actual
+            const version = new Date().getTime();
             
+            // Usar el parámetro de versión al hacer el fetch
+            fetch(`books.json?v=${version}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);  // Procesa los datos como lo harías normalmente
+                    // Aquí puedes agregar tu lógica para mostrar los libros en la página
+                })
+                .catch(error => console.error('Error al cargar los libros:', error));
 
 
             
