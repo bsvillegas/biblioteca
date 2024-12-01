@@ -269,6 +269,8 @@
                 categories.forEach(category => {
                     const categoryCard = document.createElement('div');
                     categoryCard.classList.add('category-card');
+                    const normalizedCategory = normalizeCategoryName(category.name);
+                    
                     categoryCard.innerHTML = `
                         <img src="${category.image}" alt="Portada de ${category.name}" class="category-cover">
                         <div class="category-details">
@@ -288,6 +290,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             loadCategories();
         });
+
+        function normalizeCategoryName(name) {
+            return name.toLowerCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, '');
+        }
         
     </script>
 </head>
