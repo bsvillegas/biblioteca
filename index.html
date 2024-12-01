@@ -195,6 +195,10 @@
         }
 
         async function showBooks(category) {
+            
+
+
+            
             // Ocultar otras secciones y mostrar la lista de libros
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'none';
@@ -250,6 +254,20 @@
         }
 
         async function loadCategories() {
+        // EVITAR CACHE
+        // Generar un parámetro único basado en la fecha y hora actual
+        const version = new Date().getTime();  // Este valor será único cada vez que se cargue la página
+        
+        // Usar el parámetro de versión en la URL de categories.json
+        fetch(`categories.json?v=${version}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);  // Procesas los datos de categorías
+            })
+            .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+
+            
             const categoriesContainer = document.getElementById('categories-container');
             categoriesContainer.innerHTML = ''; // Limpiar contenedor
         
