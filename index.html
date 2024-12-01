@@ -195,17 +195,13 @@
             booksContainer.innerHTML = ''; // Limpiar contenedor
         
             try {
-                // Cargar los datos desde el archivo JSON
                 const response = await fetch('books.json');
                 const books = await response.json();
         
-                // Obtener los libros de la categoría seleccionada
                 const selectedBooks = books[category] || [];
                 selectedBooks.forEach(bookArray => {
-                    // Desestructurar los valores del arreglo
                     const [title, author, status] = bookArray;
         
-                    // Crear la tarjeta del libro
                     const bookCard = document.createElement('div');
                     bookCard.classList.add('book-card');
                     bookCard.innerHTML = `
@@ -223,19 +219,6 @@
             } catch (error) {
                 console.error('Error al cargar los libros:', error);
             }
-        }
-        
-        function filterByAvailability(status) {
-            const books = document.querySelectorAll('.book-card');
-        
-            books.forEach(book => {
-                const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
-                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
-                    book.style.display = 'flex';
-                } else {
-                    book.style.display = 'none';
-                }
-            });
         }
         
         function searchBooks() {
