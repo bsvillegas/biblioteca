@@ -1,6 +1,6 @@
 {
 
-            "espiritualidaddesantos": [
+    "espiritualidaddesantos": [
                 [
                     "Santos en la Misericordia",
                     "Pontificio consejo para la promoción de la nueva evangelización ",
@@ -320,13 +320,13 @@
                     "https://via.placeholder.com/100x150"
                 ],
                 [
-                    "OBRAS DE SAN LUIS MARÍA GRIGNION DE MONTFORT",
+                    "Obras de San Luis María Grignion de Montfort",
                     "San Luis Maria Grignion de Montfort",
                     "available",
                     "https://via.placeholder.com/100x150"
                 ],
                 [
-                    "TRATADO DEL AMOR DE DIOS",
+                    "Tratado del amor de Dios",
                     "San francisco de Sales",
                     "available",
                     "https://via.placeholder.com/100x150"
@@ -338,19 +338,19 @@
                     "https://via.placeholder.com/100x150"
                 ],
                 [
-                    "OBRAS DE SAN AGUSTIN XX",
+                    "Obras de San Agustín XX",
                     "San Agustín",
                     "available",
                     "https://via.placeholder.com/100x150"
                 ],
                 [
-                    "OBRAS DE SAN AGUSTIN XXI",
+                    "Obras de San Agustín XXI",
                     "San Agustín",
                     "available",
                     "https://via.placeholder.com/100x150"
                 ],
                 [
-                    "OBRAS DE SAN AGUSTIN XXII",
+                    "Obras de San Agustín XXII",
                     "San Agustín",
                     "available",
                     "https://via.placeholder.com/100x150"
@@ -661,7 +661,7 @@
                     "available",
                     "https://via.placeholder.com/100x150"
                 ]
-            ],
+],
 
     "categoriab": [
         ["Libro B1", "Autor B1", "available", "https://via.placeholder.com/100x150"],
