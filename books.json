@@ -1,5 +1,5 @@
 {
-        "Categoría A": [
+        "categoriaa": [
         [
             "Santos en la Misericordia",
             "Pontificio consejo para la promoción de la nueva evangelización ",
@@ -81,11 +81,11 @@
             "available"
         ]
     ],
-    "Categoría B": [
+    "categoriab": [
         ["Libro B1", "Autor B1", "available"],
         ["Libro B2", "Autor B2", "unavailable"]
     ],
-    "Categoría C": [
+    "categoriac": [
         ["Libro C1", "Autor C1", "unavailable"],
         ["Libro C2", "Autor C2", "available"]
     ]
