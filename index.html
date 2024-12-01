@@ -171,20 +171,6 @@
         }
     </style>
     <script>
-        fetch('books.json', { cache: 'no-store' }) // Forzar la omisión del caché
-            .then(response => response.json())
-            .then(data => {
-                console.log(data); // Procesar los datos
-            })
-            .catch(error => console.error('Error al cargar books.json:', error));
-        
-        fetch('categories.json', { cache: 'no-store' }) // Forzar la omisión del caché
-            .then(response => response.json())
-            .then(data => {
-                console.log(data); // Procesar los datos
-            })
-            .catch(error => console.error('Error al cargar categories.json:', error));
-        
         function normalizeCategoryName(name) {
             return name.toLowerCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, '');
         }
