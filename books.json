@@ -1,0 +1,16 @@
+{
+    "categoriaA": [
+        ["Libro A1", "Autor A1", "available"],
+        ["Libro A2", "Autor A2", "available"],
+        ["Libro A3", "Autor A3", "unavailable"]
+    ],
+    "categoriaB": [
+        ["Libro B1", "Autor B1", "available"],
+        ["Libro B2", "Autor B2", "unavailable"]
+    ],
+    "categoriaC": [
+        ["Libro C1", "Autor C1", "unavailable"],
+        ["Libro C2", "Autor C2", "available"]
+    ]
+}
+
