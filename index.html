@@ -207,7 +207,7 @@
             booksContainer.innerHTML = ''; // Limpiar contenedor
         
             try {
-                const response = await fetch('books.json');
+                const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
         
                 const selectedBooks = books[category] || [];
@@ -256,7 +256,7 @@
             categoriesContainer.innerHTML = ''; // Limpiar contenedor
         
             try {
-                const response = await fetch('categories.json');
+                const response = await fetch('categories.json', { cache: 'no-store' });
                 const categories = await response.json();
         
                 categories.forEach(category => {
