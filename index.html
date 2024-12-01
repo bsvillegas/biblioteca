@@ -246,25 +246,23 @@
 
         async function loadCategories() {
             const categoriesContainer = document.getElementById('categories-container');
-            categoriesContainer.innerHTML = ''; // Limpiar contenedor antes de agregar contenido
+            categoriesContainer.innerHTML = ''; // Limpiar contenedor
         
             try {
-                // Cargar las categorías desde el archivo JSON
                 const response = await fetch('categories.json');
                 const categories = await response.json();
         
-                // Crear dinámicamente las tarjetas de categorías
                 categories.forEach(category => {
+                    const normalizedCategory = normalizeCategoryName(category.name);
+        
                     const categoryCard = document.createElement('div');
                     categoryCard.classList.add('category-card');
-                    const normalizedCategory = normalizeCategoryName(category.name);
-                    
                     categoryCard.innerHTML = `
                         <img src="${category.image}" alt="Portada de ${category.name}" class="category-cover">
                         <div class="category-details">
                             <div class="category-name">${category.name}</div>
                             <p class="category-description">${category.description}</p>
-                            <button onclick="showBooks('${category.name.toLowerCase().replace(' ', '')}')">Ver Libros</button>
+                            <button onclick="showBooks('${normalizedCategory}')">Ver Libros</button>
                         </div>
                     `;
                     categoriesContainer.appendChild(categoryCard);
@@ -273,6 +271,7 @@
                 console.error('Error al cargar las categorías:', error);
             }
         }
+
         
         // Llama a esta función cuando se muestren las categorías
         document.addEventListener('DOMContentLoaded', () => {
