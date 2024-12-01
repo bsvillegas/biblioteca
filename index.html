@@ -273,11 +273,23 @@
             }
         }
 
-        
         // Llama a esta función cuando se muestren las categorías
         document.addEventListener('DOMContentLoaded', () => {
             loadCategories();
         });
+
+        function filterByAvailability(status) {
+            const books = document.querySelectorAll('.book-card');
+        
+            books.forEach(book => {
+                const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
+                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
         
     </script>
 </head>
