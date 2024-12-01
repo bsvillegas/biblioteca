@@ -664,12 +664,12 @@
             ],
 
     "categoriab": [
-        ["Libro B1", "Autor B1", "available"],
-        ["Libro B2", "Autor B2", "unavailable"]
+        ["Libro B1", "Autor B1", "available", "https://via.placeholder.com/100x150"],
+        ["Libro B2", "Autor B2", "unavailable", "https://via.placeholder.com/100x150"]
     ],
     "categoriac": [
-        ["Libro C1", "Autor C1", "unavailable"],
-        ["Libro C2", "Autor C2", "available"]
+        ["Libro C1", "Autor C1", "unavailable", "https://via.placeholder.com/100x150"],
+        ["Libro C2", "Autor C2", "available", "https://via.placeholder.com/100x150"]
     ]
 }
 
