@@ -1,8 +1,85 @@
 {
-    "categoriaA": [
-        ["Libro A1", "Autor A1", "available"],
-        ["Libro A2", "Autor A2", "available"],
-        ["Libro A3", "Autor A3", "unavailable"]
+        "categoriaA": [
+        [
+            "Santos en la Misericordia",
+            "Pontificio consejo para la promoción de la nueva evangelización ",
+            "available"
+        ],
+        [
+            "Tratado del amor de Dios",
+            "San francisco de Sales",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "unavailable"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El Secreto Admirable del Santísimo Rosario",
+            "San Luis Maria Grignion de Montfort",
+            "available"
+        ],
+        [
+            "El Secreto Admirable del Santísimo Rosario",
+            "San Luis Maria Grignion de Montfort",
+            "unavailable"
+        ],
+        [
+            "El amor de la Sabiduria Eterna",
+            "San Luis Maria Grignion de Montfort",
+            "unavailable"
+        ],
+        [
+            "Obras completas ",
+            "San Juan de la Cruz",
+            "unavailable"
+        ],
+        [
+            "Jesus en la Eucaristia",
+            "San Alfonso Maria Ligorio",
+            "unavailable"
+        ],
+        [
+            "Obras de Santa Catalina de Siena",
+            "José Salvador y Conde ",
+            "available"
+        ],
+        [
+            "Colaciones II",
+            "Juan Casiano",
+            "available"
+        ]
     ],
     "categoriaB": [
         ["Libro B1", "Autor B1", "available"],
