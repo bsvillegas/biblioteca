@@ -183,53 +183,46 @@
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'none';
         }
-        
-        function showBooks(category) {
+
+        async function showBooks(category) {
+            // Ocultar otras secciones y mostrar la lista de libros
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
-            
+        
             const booksContainer = document.getElementById('books-container');
-            booksContainer.innerHTML = '';  // Limpiar el contenedor de libros
+            booksContainer.innerHTML = ''; // Limpiar contenedor
         
-            // Ejemplo de libros (reemplaza con tus libros reales)
-            const books = {
-                'categoriaA': [
-                    { title: 'Libro A1', author: 'Autor A1', status: 'available' },
-                    { title: 'Libro A2', author: 'Autor A2', status: 'available' },
-                    { title: 'Libro A3', author: 'Autor A3', status: 'unavailable' },
-                    { title: 'Libro A4', author: 'Autor A1', status: 'unavailable' },
-                    { title: 'Libro A5', author: 'Autor A1', status: 'available' },
-                    { title: 'Libro A6', author: 'Autor A2', status: 'available' },
-                    { title: 'Libro A7', author: 'Autor A4', status: 'unavailable' }
-                ],
-                'categoriaB': [
-                    { title: 'Libro B1', author: 'Autor B1', status: 'available' },
-                    { title: 'Libro B2', author: 'Autor B2', status: 'unavailable' }
-                ],
-                'categoriaC': [
-                    { title: 'Libro C1', author: 'Autor C1', status: 'unavailable' },
-                    { title: 'Libro C2', author: 'Autor C2', status: 'available' }
-                ]
-            };
+            try {
+                // Cargar los datos desde el archivo JSON
+                const response = await fetch('books.json');
+                const books = await response.json();
         
-            const selectedBooks = books[category];
-            selectedBooks.forEach(book => {
-                const bookCard = document.createElement('div');
-                bookCard.classList.add('book-card');
-                bookCard.innerHTML = `
-                    <img src="https://via.placeholder.com/100x150" alt="Portada de ${book.title}" class="book-cover">
-                    <div class="book-details">
-                        <div class="book-title">${book.title}</div>
-                        <div class="book-author">${book.author}</div>
-                        <div class="status-box ${book.status === 'available' ? 'status-available' : 'status-unavailable'}">
-                            ${book.status === 'available' ? 'Disponible' : 'No Disponible'}
+                // Obtener los libros de la categoría seleccionada
+                const selectedBooks = books[category] || [];
+                selectedBooks.forEach(bookArray => {
+                    // Desestructurar los valores del arreglo
+                    const [title, author, status] = bookArray;
+        
+                    // Crear la tarjeta del libro
+                    const bookCard = document.createElement('div');
+                    bookCard.classList.add('book-card');
+                    bookCard.innerHTML = `
+                        <img src="https://via.placeholder.com/100x150" alt="Portada de ${title}" class="book-cover">
+                        <div class="book-details">
+                            <div class="book-title">${title}</div>
+                            <div class="book-author">${author}</div>
+                            <div class="status-box ${status === 'available' ? 'status-available' : 'status-unavailable'}">
+                                ${status === 'available' ? 'Disponible' : 'No Disponible'}
+                            </div>
                         </div>
-                    </div>
-                `;
-                booksContainer.appendChild(bookCard);
-            });
+                    `;
+                    booksContainer.appendChild(bookCard);
+                });
+            } catch (error) {
+                console.error('Error al cargar los libros:', error);
+            }
         }
         
         function filterByAvailability(status) {
