@@ -1,5 +1,6 @@
 {
-        "espiritualidaddesantos": [
+
+            "espiritualidaddesantos": [
             [
                 "Santos en la Misericordia",
                 "Pontificio consejo para la promoción de la nueva evangelización ",
@@ -47,17 +48,17 @@
             ],
             [
                 "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
-                " Fray Contardo Miglioranza",
+                "Fray Contardo Miglioranza",
                 "available"
             ],
             [
                 "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
-                " Fray Contardo Miglioranza",
+                "Fray Contardo Miglioranza",
                 "available"
             ],
             [
                 "Experiancia de Dios amor: el libro de Santa Angela de Foligno",
-                " Fray Contardo Miglioranza",
+                "Fray Contardo Miglioranza",
                 "available"
             ],
             [
@@ -282,17 +283,17 @@
             ],
             [
                 "OBRAS DE SAN AGUSTIN XX",
-                "SAN AGUSTIN",
+                "San Agustín",
                 "available"
             ],
             [
                 "OBRAS DE SAN AGUSTIN XXI",
-                "SAN AGUSTIN",
+                "San Agustín",
                 "available"
             ],
             [
                 "OBRAS DE SAN AGUSTIN XXII",
-                "SAN AGUSTIN",
+                "San Agustín",
                 "available"
             ],
             [
@@ -456,38 +457,38 @@
                 "available"
             ],
             [
-                "Experiencia de Dios Amor - EL libro de Santa Angela de Foligno",
-                "Contardo Miglioranza // Santa Angela de Foligno",
+                "Experiencia de Dios Amor - El libro de Santa Angela de Foligno",
+                "Santa Angela de Foligno (Trad. Int. y notas de Contardo Miglioranza)",
                 "available"
             ],
             [
-                "PAGINAS PERIODISTICAS EN TORNO A LA ESCUELA DE LA VIRTUD",
-                "FRANCISCO PALAU QUER",
+                "Páginas Periodísticas en torno a la escuela de la virtud",
+                "Francisco Palau Quer",
                 "available"
             ],
             [
-                "CATECISMO DE LAS VIRTUDES",
-                "FRANCISCO PALAU QUER",
+                "Catecismo de las virtudes",
+                "Francisco Palau Quer",
                 "available"
             ],
             [
-                "LAS VIRTUDES DE SAN JOSE",
+                "Las virtudes de San Jose",
                 "San francisco de Sales",
                 "available"
             ],
             [
-                "LOS MORALES III",
-                "SAN GREGORIO MAGNO",
+                "Los Morales III",
+                "San Gregorio Magno",
                 "available"
             ],
             [
-                "LOS MORALES II",
-                "SAN GREGORIO MAGNO",
+                "Los Morales II",
+                "San Gregorio Magno",
                 "available"
             ],
             [
-                "LOS MORALES I",
-                "SAN GREGORIO MAGNO",
+                "Los Morales I",
+                "San Gregorio Magno",
                 "available"
             ],
             [
@@ -506,8 +507,8 @@
                 "available"
             ],
             [
-                "TRATADO DE LAS VIRGENES",
-                "SAN AMBROSIO",
+                "Tratado de las virgenes",
+                "San Ambrosio",
                 "available"
             ],
             [
@@ -521,7 +522,7 @@
                 "available"
             ],
             [
-                "SOLO DIOS BASTA - Claves de la espiritualiad teresiana",
+                "Solo Dios basta - Claves de la espiritualiad teresiana",
                 "Maximiliano Herraiz García",
                 "available"
             ],
@@ -551,6 +552,7 @@
                 "available"
             ]
         ],
+
     "categoriab": [
         ["Libro B1", "Autor B1", "available"],
         ["Libro B2", "Autor B2", "unavailable"]
