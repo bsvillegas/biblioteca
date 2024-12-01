@@ -163,6 +163,11 @@
         }
     </style>
     <script>
+
+        function normalizeCategoryName(name) {
+            return name.toLowerCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, '');
+        }
+        
         function showCategories() {
             document.getElementById('main-menu').style.display = 'none';
             document.getElementById('categories').style.display = 'block';
@@ -273,10 +278,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             loadCategories();
         });
-
-        function normalizeCategoryName(name) {
-            return name.toLowerCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, '');
-        }
         
     </script>
 </head>
