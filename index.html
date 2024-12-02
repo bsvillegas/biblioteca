@@ -272,6 +272,19 @@
             booksContainer.innerHTML = ''; // Limpiar contenedor
         
             try {
+               // Encontrar la categoría original por su nombre normalizado
+                const originalCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
+        
+                if (originalCategory) {
+                    // Mostrar el nombre original directamente desde categories.json
+                    categoryHeader.textContent = `Categoría: ${originalCategory.name}`;
+                    categoryHeader.style.display = 'block'; // Mostrar el recuadro
+                } else {
+                    categoryHeader.textContent = 'Categoría desconocida';
+                    categoryHeader.style.display = 'block';
+                }
+
+                
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
                 
