@@ -286,7 +286,7 @@
                 const categories = await categoriesResponse.json();
         
                 // Encontrar la categoría original sin normalizar
-                const originalCategory = categories.find(cat => cat.name === category);
+                const originalCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
         
                 if (originalCategory) {
                     // Mostrar el nombre original directamente desde categories.json
