@@ -289,7 +289,7 @@
             const categories = await response.json();
         
             // Buscar la categoría correspondiente en el JSON
-            const selectedCategory = categories.find(cat => cat.normalizedName === category);
+            const selectedCategory = categories.find(cat => cat.name === category);
         
             if (selectedCategory) {
                 // Si se encuentra la categoría, mostrar el nombre correcto
