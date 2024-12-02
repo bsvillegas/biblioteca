@@ -270,26 +270,29 @@
             const booksContainer = document.getElementById('books-container');
             booksContainer.innerHTML = ''; // Limpiar contenedor
 
-            // Cargar categorías desde el archivo categories.json
-            const response = await fetch('categories.json');
-            const categories = await response.json();
+
         
-            // Buscar la categoría correspondiente en el JSON
-            const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
-        
-            if (selectedCategory) {
-                // Si se encuentra la categoría, mostrar el nombre correcto
-                const categoryHeader = document.getElementById('category-header');
-                categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
-                categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-            } else {
-                // Si no se encuentra la categoría
-                const categoryHeader = document.getElementById('category-header');
-                categoryHeader.textContent = "Categoría no encontrada"; // Mensaje de error
-                categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-            }
-        
-            try {             
+            try {    
+                // Cargar categorías desde el archivo categories.json
+                const response = await fetch('categories.json');
+                const categories = await response.json();
+            
+                // Buscar la categoría correspondiente en el JSON
+                const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
+            
+                if (selectedCategory) {
+                    // Si se encuentra la categoría, mostrar el nombre correcto
+                    const categoryHeader = document.getElementById('category-header');
+                    categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
+                    categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+                } else {
+                    // Si no se encuentra la categoría
+                    const categoryHeader = document.getElementById('category-header');
+                    categoryHeader.textContent = "Categoría no encontrada"; // Mensaje de error
+                    categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+                }
+
+                
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
                 
