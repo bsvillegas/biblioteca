@@ -274,8 +274,8 @@
         
             try {    
                 // Cargar categorías desde el archivo categories.json
-                const response = await fetch('categories.json');
-                const categories = await response.json();
+                const responseCat = await fetch('categories.json');
+                const categories = await responseCat.json();
             
                 // Buscar la categoría correspondiente en el JSON
                 const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
