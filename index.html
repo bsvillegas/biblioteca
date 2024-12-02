@@ -266,18 +266,20 @@
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
 
-            // Convierte a formato legible (primera letra en mayúscula y con espacios)
-            const formattedCategory = normalizedCategory
-                .replace(/([a-z])([A-Z])/g, '$1 $2') // Añade espacio antes de mayúsculas (por si acaso)
-                .replace(/([A-Za-z])([0-9])/g, '$1 $2') // Añade espacio antes de números
-                .replace(/([a-z])([A-Z])/g, '$1 $2')
-                .toLowerCase()
-                .replace(/(\b[a-z](?!\s))/g, char => char.toUpperCase()) // Primera letra de cada palabra mayúscula
-                .replace(/([A-Z])/g, ' $1');
+            // Busca la categoría en el array categories usando el nombre "normalizado"
+            const category = categories.find(cat => cat.normalizedName === normalizedCategory);
         
-            // Actualiza el texto en el párrafo del recuadro verde
-            document.getElementById('current-category').innerText = `Categoría: ${formattedCategory}`;
-
+            // Verifica si se encontró la categoría
+            if (category) {
+                // Usa el nombre directamente desde el archivo JSON
+                const formattedCategory = category.name;
+        
+                // Actualiza el texto en el recuadro verde
+                document.getElementById('current-category').innerText = `Categoría: ${formattedCategory}`;
+            } else {
+                // Maneja el caso en que la categoría no se encuentre
+                document.getElementById('current-category').innerText = `Categoría no encontrada`;
+            }
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
