@@ -286,11 +286,12 @@
             
                 // Buscar la categoría correspondiente en el JSON
                 const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
+                updateGlobalTitle(`Categoría: ${selectedCategory.category}`) // Cambiar el título a la categoría seleccionada
                 
-                const categoryHeader = document.getElementById('category-header');
-                categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
+                //const categoryHeader = document.getElementById('category-header');
+                //categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
                 //categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-                updateGlobalTitle("Categoría: " + categoryHeader); // Cambiar el título a la categoría seleccionada
+                
                 /*
                 if (selectedCategory) {
                     // Si se encuentra la categoría, mostrar el nombre correcto
