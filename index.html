@@ -285,8 +285,11 @@
                 const categoriesResponse = await fetch('categories.json', { cache: 'no-store' });
                 const categories = await categoriesResponse.json();
         
-                // Encontrar la categoría original sin normalizar
-                const originalCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
+              // Normalizamos el nombre de la categoría seleccionada para buscarla correctamente
+                const normalizedCategory = normalizeCategoryName(category);
+        
+                // Encontrar la categoría original en categories.json usando el nombre normalizado
+                const originalCategory = categories.find(cat => normalizeCategoryName(cat.name) === normalizedCategory);
         
                 if (originalCategory) {
                     // Mostrar el nombre original directamente desde categories.json
