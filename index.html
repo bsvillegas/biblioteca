@@ -266,20 +266,6 @@
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
 
-            // Busca la categoría en el array categories usando el nombre "normalizado"
-            const category = categories.find(cat => cat.normalizedName === normalizedCategory);
-        
-            // Verifica si se encontró la categoría
-            if (category) {
-                // Usa el nombre directamente desde el archivo JSON
-                const formattedCategory = category.name;
-        
-                // Actualiza el texto en el recuadro verde
-                document.getElementById('current-category').innerText = `Categoría: ${formattedCategory}`;
-            } else {
-                // Maneja el caso en que la categoría no se encuentre
-                document.getElementById('current-category').innerText = `Categoría no encontrada`;
-            }
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
