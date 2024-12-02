@@ -265,20 +265,6 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
-/*
-            // Actualizar el recuadro con la categoría seleccionada
-            const categoryHeader = document.getElementById('category-header');
-            // Formatear el texto de la categoría
-            const formattedCategory = category
-                .replace(/([A-Z])/g, ' $1') // Añade un espacio antes de cada mayúscula
-                .replace(/([a-z])([A-Z])/g, '$1 $2') // Divide palabras cuando cambian de minúscula a mayúscula
-                .replace(/_/g, ' ') // Reemplaza guiones bajos con espacios (si aplica)
-                .toLowerCase() // Convierte todo a minúsculas
-                .replace(/\b\w/g, char => char.toUpperCase()) // Capitaliza la primera letra de cada palabra
-                .trim(); // Elimina espacios extra al inicio o final
-            categoryHeader.textContent = `Categoría: ${formattedCategory}`;
-            //categoryHeader.textContent = `Categoría: ${category}`; // Texto dinámico con el nombre de la categoría
-            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico*/
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
