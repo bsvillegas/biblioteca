@@ -265,7 +265,7 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
-
+/*
             // Actualizar el recuadro con la categoría seleccionada
             const categoryHeader = document.getElementById('category-header');
             // Formatear el texto de la categoría
@@ -278,11 +278,30 @@
                 .trim(); // Elimina espacios extra al inicio o final
             categoryHeader.textContent = `Categoría: ${formattedCategory}`;
             //categoryHeader.textContent = `Categoría: ${category}`; // Texto dinámico con el nombre de la categoría
-            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico*/
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
             booksContainer.innerHTML = ''; // Limpiar contenedor
+
+            // Cargar categorías desde el archivo categories.json
+            const response = await fetch('categories.json');
+            const categories = await response.json();
+        
+            // Buscar la categoría correspondiente en el JSON
+            const selectedCategory = categories.find(cat => cat.normalizedName === category);
+        
+            if (selectedCategory) {
+                // Si se encuentra la categoría, mostrar el nombre correcto
+                const categoryHeader = document.getElementById('category-header');
+                categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
+                categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+            } else {
+                // Si no se encuentra la categoría
+                const categoryHeader = document.getElementById('category-header');
+                categoryHeader.textContent = "Categoría no encontrada"; // Mensaje de error
+                categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+            }
         
             try {             
                 const response = await fetch('books.json', { cache: 'no-store' });
