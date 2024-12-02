@@ -289,7 +289,7 @@
                 const normalizedCategory = normalizeCategoryName(category);
         
                 // Encontrar la categoría original en categories.json usando el nombre normalizado
-                const originalCategory = categories.find(cat => normalizeCategoryName(cat.name) === normalizedCategory);
+                const originalCategory = categories.find(cat => normalizeCategoryName(categories.name) === category.name);
         
                 if (originalCategory) {
                     // Mostrar el nombre original directamente desde categories.json
