@@ -229,7 +229,7 @@
             font-size: 20px; /* Tamaño de fuente */
             font-weight: bold; /* Texto en negrita */
             margin: 0px; /* Espaciado inferior */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
         }
         
     </style>
@@ -265,7 +265,13 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
-        
+
+            // Actualizar el recuadro con la categoría seleccionada
+            const categoryHeader = document.getElementById('category-header');
+            categoryHeader.textContent = `Categoría: ${category}`; // Texto dinámico con el nombre de la categoría
+            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+
+            // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
             booksContainer.innerHTML = ''; // Limpiar contenedor
         
@@ -396,7 +402,9 @@
             <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
             <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
         </div>
-
+        <!-- Recuadro dinámico para mostrar la categoría seleccionada -->
+        <h2 class="category-title" id="category-header" style="display: none;"></h2>
+        <!-- Contenedor de los libros -->
         <div id="books-container"></div>
     </div>
 
