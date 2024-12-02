@@ -279,7 +279,11 @@
             
                 // Buscar la categoría correspondiente en el JSON
                 const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
-            
+                
+                const categoryHeader = document.getElementById('category-header');
+                categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
+                categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
+                /*
                 if (selectedCategory) {
                     // Si se encuentra la categoría, mostrar el nombre correcto
                     const categoryHeader = document.getElementById('category-header');
@@ -290,7 +294,7 @@
                     const categoryHeader = document.getElementById('category-header');
                     categoryHeader.textContent = "Categoría no encontrada"; // Mensaje de error
                     categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-                }
+                }*/
 
                 
                 const response = await fetch('books.json', { cache: 'no-store' });
