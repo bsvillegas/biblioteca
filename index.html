@@ -218,8 +218,6 @@
 
         /* Recuadro Categorias */
         .category-title {
-            display: flex;
-            justify-content: space-between; /* Esto separa el texto de la izquierda y el contenido de la derecha */
             background: linear-gradient(to bottom, #692d2d, #3f2222);
             color: white; /* Texto en blanco */
             padding: 10px 15px; /* Espaciado interno */
@@ -230,23 +228,6 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
         }
 
-        /* Contenedor para el texto y el botón a la derecha */
-        .right-content {
-            display: flex;               /* Usa flexbox para alinear el texto y el botón */
-            align-items: center;         /* Centra el texto y el botón verticalmente */
-            gap: 10px;                   /* Espacio entre el texto y el botón */
-        }
-        
-        .back-button {
-            background-color: #fff;       /* Fondo blanco */
-            color: #4CAF50;               /* Texto verde */
-            border: 2px solid #4CAF50;    /* Borde verde */
-            padding: 5px 10px;            /* Espaciado interno del botón */
-            border-radius: 5px;           /* Bordes redondeados */
-            cursor: pointer;              /* Cambia el cursor al pasar el mouse */
-            transition: all 0.3s ease;    /* Transición suave para hover */
-        }
-        
         #donation p {
             margin: 10px;
         }
@@ -284,12 +265,6 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'none';
-
-            // Mostrar el botón solo en las secciones que no sean el menú principal
-            const backButtons = document.querySelectorAll('.back-button');
-            backButtons.forEach(button => {
-                button.style.display = 'none'; // Ocultar en el menú principal
-            });
         }
 
         async function showBooks(category) {          
@@ -409,13 +384,7 @@
     </header>
 
     <!-- Recuadro global para el título dinámico -->
-    <h2 class="category-title" id="global-title">
-        <span id="dynamic-text">Menú Principal</span> <!-- Texto dinámico que cambia -->
-        <div class="right-content">
-            <span id="back-text">Volver al Menú Principal</span> <!-- Texto fijo -->
-            <button class="back-button" onclick="goBackToMenu()">↩</button> <!-- Botón -->
-        </div>
-    </h2>
+    <h2 class="category-title" id="global-title">Menú Principal</h2>
     
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">
@@ -430,20 +399,14 @@
 
     <!-- Sección de Donación -->
     <div id="donation" style="display: none;">
-        <div class="right-content">
-            <span id="back-text">Volver al Menú Principal</span> <!-- Texto fijo -->
-            <button class="back-button" onclick="goBackToMenu()">↩</button> <!-- Botón -->
-        </div>
+        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
         <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
         <button onclick="window.location.href='https://donaciones.com'">Donar</button>
     </div>
 
     <!-- Sección de Libros -->
     <div id="book-list" style="display: none;"> 
-        <div class="right-content">
-            <span id="back-text">Volver al Menú Principal</span> <!-- Texto fijo -->
-            <button class="back-button" onclick="goBackToMenu()">↩</button> <!-- Botón -->
-        </div>
+        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
         <input type="text" id="search-input" placeholder="Buscar libro por título o autor..." oninput="searchBooks()">
         <div class="filter-buttons">
             <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
