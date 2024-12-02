@@ -65,6 +65,34 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
             transform: scale(1.05); /* Efecto de agrandamiento */
         }
+
+        /* Botón personalizado (Usado en Ver Libros)*/
+        .custom-button {
+          background: linear-gradient(to bottom, #4CAF50, #388E3C); /* Degradado verde */
+          color: white; /* Texto blanco */
+          border: none; /* Sin borde */
+          border-radius: 20px; /* Bordes redondeados */
+          padding: 10px 20px; /* Espaciado interno */
+          font-size: 14px; /* Tamaño de la fuente */
+          font-weight: bold; /* Texto en negrita */
+          cursor: pointer; /* Cursor en forma de mano */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+          transition: all 0.3s ease; /* Transición para efectos */
+        }
+        
+        /* Hover: efecto al pasar el mouse */
+        .custom-button:hover {
+          background: linear-gradient(to bottom, #66BB6A, #2E7D32); /* Degradado más claro */
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+          transform: translateY(-2px); /* Botón se eleva */
+        }
+        
+        /* Active: efecto al hacer clic */
+        .custom-button:active {
+          background: linear-gradient(to bottom, #388E3C, #1B5E20); /* Degradado más oscuro */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+          transform: translateY(2px); /* Botón se hunde */
+        }
         
          /* Tarjetas de categorías */
         .category-card {
@@ -289,7 +317,7 @@
                         <div class="category-details">
                             <div class="category-name">${category.name}</div>
                             <p class="category-description">${category.description}</p>
-                            <button onclick="showBooks('${normalizedCategory}')">Ver Libros</button>
+                            <button class="custom-button" onclick="showBooks('${normalizedCategory}')">Ver Libros</button>
                         </div>
                     `;
                     categoriesContainer.appendChild(categoryCard);
