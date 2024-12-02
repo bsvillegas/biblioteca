@@ -218,6 +218,8 @@
 
         /* Recuadro Categorias */
         .category-title {
+            display: flex;
+            justify-content: space-between; /* Esto separa el texto de la izquierda y el contenido de la derecha */
             background: linear-gradient(to bottom, #692d2d, #3f2222);
             color: white; /* Texto en blanco */
             padding: 10px 15px; /* Espaciado interno */
@@ -228,11 +230,14 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
         }
 
-        #donation p {
-            margin: 10px;
+        /* Contenedor para el texto y el botón a la derecha */
+        .right-content {
+            display: flex;               /* Usa flexbox para alinear el texto y el botón */
+            align-items: center;         /* Centra el texto y el botón verticalmente */
+            gap: 10px;                   /* Espacio entre el texto y el botón */
         }
-
-        #back-button {
+        
+        .back-button {
             background-color: #fff;       /* Fondo blanco */
             color: #4CAF50;               /* Texto verde */
             border: 2px solid #4CAF50;    /* Borde verde */
@@ -242,6 +247,9 @@
             transition: all 0.3s ease;    /* Transición suave para hover */
         }
         
+        #donation p {
+            margin: 10px;
+        }
     </style>
     <script>
         // Funcion para modificar el texto al recuadro secundario
@@ -395,7 +403,13 @@
     </header>
 
     <!-- Recuadro global para el título dinámico -->
-    <h2 class="category-title" id="global-title">Menú Principal</h2>
+    <h2 class="category-title" id="global-title">
+        <span id="dynamic-text">Menú Principal</span> <!-- Texto dinámico que cambia -->
+        <div class="right-content">
+            <span id="back-text">Volver al Menú Principal</span> <!-- Texto fijo -->
+            <button class="back-button" onclick="goBackToMenu()">↩</button> <!-- Botón -->
+        </div>
+    </h2>
     
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">
@@ -410,14 +424,14 @@
 
     <!-- Sección de Donación -->
     <div id="donation" style="display: none;">
-        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
+        <button class="back-button" onclick="goBackToMenu()">Volver al Menú Principal</button>
         <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
-        <button id="back-button" onclick="window.location.href='https://donaciones.com'">Donar</button>
+        <button onclick="window.location.href='https://donaciones.com'">Donar</button>
     </div>
 
     <!-- Sección de Libros -->
     <div id="book-list" style="display: none;"> 
-        <button id="back-button" onclick="goBackToMenu()">Volver al Menú Principal</button>
+        <button class="back-button" onclick="goBackToMenu()">Volver al Menú Principal</button>
         <input type="text" id="search-input" placeholder="Buscar libro por título o autor..." oninput="searchBooks()">
         <div class="filter-buttons">
             <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
