@@ -231,6 +231,17 @@
         #donation p {
             margin: 10px;
         }
+
+        #back-button {
+            background-color: #fff;       /* Fondo blanco */
+            color: #4CAF50;               /* Texto verde */
+            border: 2px solid #4CAF50;    /* Borde verde */
+            padding: 5px 10px;            /* Espaciado interno del botón */
+            border-radius: 5px;           /* Bordes redondeados */
+            cursor: pointer;              /* Cambia el cursor al pasar el mouse */
+            transition: all 0.3s ease;    /* Transición suave para hover */
+        }
+        
     </style>
     <script>
         // Funcion para modificar el texto al recuadro secundario
@@ -401,12 +412,12 @@
     <div id="donation" style="display: none;">
         <button onclick="goBackToMenu()">Volver al Menú Principal</button>
         <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
-        <button onclick="window.location.href='https://donaciones.com'">Donar</button>
+        <button id="back-button" onclick="window.location.href='https://donaciones.com'">Donar</button>
     </div>
 
     <!-- Sección de Libros -->
     <div id="book-list" style="display: none;"> 
-        <button onclick="goBackToMenu()">Volver al Menú Principal</button>
+        <button id="back-button" onclick="goBackToMenu()">Volver al Menú Principal</button>
         <input type="text" id="search-input" placeholder="Buscar libro por título o autor..." oninput="searchBooks()">
         <div class="filter-buttons">
             <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
