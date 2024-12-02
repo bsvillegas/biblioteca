@@ -265,41 +265,26 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
-/*
+
             // Actualizar el recuadro con la categoría seleccionada
             const categoryHeader = document.getElementById('category-header');
-            const formattedCategory = category.replace(/([A-Z])/g, ' $1') // Espacios antes de mayúsculas
-                                  .replace(/([a-z])([A-Z])/g, '$1 $2') // Mayúsculas después de minúsculas
-                                  .replace(/([a-z])/g, char => char.toUpperCase()) // Capitaliza primeras letras
-                                  .trim(); // Quita espacios extra
+            // Formatear el texto de la categoría
+            const formattedCategory = category
+                .replace(/([A-Z])/g, ' $1') // Añade un espacio antes de cada mayúscula
+                .replace(/([a-z])([A-Z])/g, '$1 $2') // Divide palabras cuando cambian de minúscula a mayúscula
+                .replace(/_/g, ' ') // Reemplaza guiones bajos con espacios (si aplica)
+                .toLowerCase() // Convierte todo a minúsculas
+                .replace(/\b\w/g, char => char.toUpperCase()) // Capitaliza la primera letra de cada palabra
+                .trim(); // Elimina espacios extra al inicio o final
             categoryHeader.textContent = `Categoría: ${formattedCategory}`;
             //categoryHeader.textContent = `Categoría: ${category}`; // Texto dinámico con el nombre de la categoría
-            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico*/
+            categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
             booksContainer.innerHTML = ''; // Limpiar contenedor
         
-            try {     
-                // Cargar las categorías desde categories.json
-                const categoriesResponse = await fetch('categories.json', { cache: 'no-store' });
-                const categories = await categoriesResponse.json();
-        
-              // Normalizamos el nombre de la categoría seleccionada para buscarla correctamente
-                const normalizedCategory = normalizeCategoryName(category);
-        
-                // Encontrar la categoría original en categories.json usando el nombre normalizado
-                const originalCategory = categories.find(cat => normalizeCategoryName(categories.name) === category.name);
-        
-                if (originalCategory) {
-                    // Mostrar el nombre original directamente desde categories.json
-                    categoryHeader.textContent = `Categoría: ${originalCategory.name}`;
-                    categoryHeader.style.display = 'block'; // Mostrar el recuadro
-                } else {
-                    categoryHeader.textContent = 'Categoría desconocida';
-                    categoryHeader.style.display = 'block';
-                }
-                
+            try {             
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
                 
