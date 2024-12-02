@@ -219,6 +219,20 @@
             border-radius: 5px; /* Esquinas redondeadas */
             box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
         }
+
+        /* Recuadro Categorias */
+        .category-title {
+            background-color: #388e3c; /* Verde oscuro */
+            color: white; /* Texto en blanco */
+            padding: 10px 15px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            text-align: center; /* Centra el texto */
+            font-size: 20px; /* Tamaño de fuente */
+            font-weight: bold; /* Texto en negrita */
+            margin-bottom: 20px; /* Espaciado inferior */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        }
+        
     </style>
     <script>
         function normalizeCategoryName(name) {
@@ -363,7 +377,7 @@
 
     <!-- Sección de Categorías -->
     <div id="categories" style="display: none;">
-        <h2>Categorías</h2>
+        <h2 class="category-title">Categorías</h2>
         <div id="categories-container"></div>
     </div>
 
