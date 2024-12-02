@@ -273,21 +273,6 @@
             try {
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
-
-                // Encontrar la categoría original
-                const originalCategory = categories.find(cat => normalizeCategoryName(category.name) === category);
-        
-                // Mostrar el nombre original en el recuadro
-                if (originalCategory) {
-                    categoryHeader.textContent = `Categoría: ${originalCategory.name}`; // Usamos el nombre original
-                    categoryHeader.style.display = 'block'; // Mostrar el recuadro
-                } else {
-                    categoryHeader.textContent = `Categoría desconocida`;
-                    categoryHeader.style.display = 'block';
-                }
-
-
-
                 
                 const selectedBooks = books[category] || [];
                 selectedBooks.forEach(bookArray => {
