@@ -138,7 +138,6 @@
             padding: 10px;                  /* Espaciado interno */
             border: 1px solid #ddd;         /* Borde gris claro */
             flex-wrap: nowrap;              /* Impide que los elementos se muevan a otra línea */
-
             position: relative; 
         }
         
@@ -176,10 +175,8 @@
         .status-box {
             position: absolute;
             bottom: 10px;
-            
             display: inline-block;          /* Asegura que se ajuste al contenido */
             padding: 5px 15px;             /* Espaciado interno */
-            /*margin-top: 10px;              Margen superior */
             font-size: 11px;               /* Tamaño del texto */
             text-align: center;            /* Centra el texto */
             border: 2px solid transparent; /* Borde inicial transparente */
@@ -187,7 +184,6 @@
             background-color: transparent; /* Fondo transparente inicial */
             color: white;                  /* Texto blanco inicial */
             cursor: default;               /* No interacción */
-
             margin-top: auto;            /* Mantiene el recuadro al final */
         }
         
@@ -288,24 +284,6 @@
                 const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
                 updateGlobalTitle(`Categoría: ${selectedCategory.name}`) // Cambiar el título a la categoría seleccionada
                 
-                //const categoryHeader = document.getElementById('category-header');
-                //categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
-                //categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-                
-                /*
-                if (selectedCategory) {
-                    // Si se encuentra la categoría, mostrar el nombre correcto
-                    const categoryHeader = document.getElementById('category-header');
-                    categoryHeader.textContent = `Categoría: ${selectedCategory.name}`; // Usar el nombre correcto desde JSON
-                    categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-                } else {
-                    // Si no se encuentra la categoría
-                    const categoryHeader = document.getElementById('category-header');
-                    categoryHeader.textContent = "Categoría no encontrada"; // Mensaje de error
-                    categoryHeader.style.display = 'block'; // Mostrar el recuadro dinámico
-                }*/
-
-                
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
                 
@@ -342,10 +320,8 @@
         
                 if (title.includes(query) || author.includes(query)) {
                     book.style.display = 'flex';
-                    //book.style.display = 'block';
                 } else {
                     book.style.display = 'none';
-                    //book.style.display = 'none';
                 }
             });
         }
