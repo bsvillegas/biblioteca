@@ -270,52 +270,67 @@
         }
         
         /* Botón del menú desplegable */
-        .dropbtn {
-            background-color: #4CAF50; /* Verde */
+        /* Contenedor del menú desplegable */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Botón del menú desplegable */
+        .dropdown-button {
+            background: #5b2727;
             color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-button:hover {
+            background: #4b2121;
+        }
+        
+        /* Contenido del menú desplegable */
+        .dropdown-content {
+            display: none; /* Oculto por defecto */
+            position: absolute;
+            right: 0; /* Alineado al lado derecho del botón */
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        
+        /* Estilo de los enlaces dentro del menú */
+        .dropdown-content a {
+            display: block;
+            color: #5b2727;
+            text-decoration: none;
             padding: 10px 20px;
             font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            text-align: left;
         }
         
-        /* Opciones del menú desplegable */
-        .dropdown-content {
-            display: none; /* Ocultar por defecto */
-            position: absolute;
-            background-color: #f9f9f9; /* Fondo blanco */
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            z-index: 1;
-        }
-        
-        /* Estilo de los enlaces */
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            border-radius: 5px;
-        }
-        
-        /* Efecto hover en los enlaces */
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #ddd;
         }
         
-        /* Mostrar el menú al pasar el mouse */
-        .dropdown:hover .dropdown-content {
+        /* Mostrar el menú cuando está activo */
+        .dropdown.show .dropdown-content {
             display: block;
-        }
-        
-        /* Botón del menú al pasar el mouse */
-        .dropdown:hover .dropbtn {
-            background-color: #45a049;
         }
     </style>
     <script>
+        // Abrir y cerrar el menu desplegable
+        function toggleMenu() {
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('show');
+        }
+        
         // Funcion para modificar el texto al recuadro secundario
         function updateGlobalTitle(title) {
             const dynamicText = document.getElementById('dynamic-text');
@@ -476,18 +491,16 @@
     <!-- Recuadro global para el título dinámico -->
     <h2 class="category-title">
         <span id="dynamic-text">Menú Principal</span>
-        <button class="back-button" id="back-button" onclick="goBackToMenu()" style="display: none;">↩ Volver al Menú Principal</button>
-    </h2>
-
-    <!-- Menú desplegable -->
-    <div class="dropdown">
-        <button class="dropbtn">Menú</button>
-        <div class="dropdown-content">
-            <a href="#categories" onclick="showCategories()">Categorías</a>
-            <a href="#donation" onclick="showDonation()">Donación</a>
-            <a href="#main-menu" onclick="showMainMenu()">Menú Principal</a>
+        <!-- Menú desplegable -->
+        <div class="dropdown">
+            <button class="dropdown-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="#" onclick="goBackToMenu()">Menú Principal</a>
+                <a href="#" onclick="showCategories()">Categorías</a>
+                <a href="#" onclick="showDonation()">Donar</a>
+            </div>
         </div>
-    </div>
+    </h2>
     
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
