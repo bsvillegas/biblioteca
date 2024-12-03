@@ -224,7 +224,7 @@
             background: linear-gradient(to bottom, #692d2d, #3f2222);
             color: white; /* Texto en blanco */
             padding: 10px 15px; /* Espaciado interno */
-            text-align: left; /* Centra el texto */
+            /*text-align: left; /* Centra el texto */
             font-size: 20px; /* Tamaño de fuente */
             font-weight: bold; /* Texto en negrita */
             margin: 0px; /* Espaciado inferior */
@@ -249,9 +249,9 @@
     <script>
         // Funcion para modificar el texto al recuadro secundario
         function updateGlobalTitle(title) {
-            const globalTitle = document.getElementById('global-title');
+            const dynamicText = document.getElementById('dynamic-text');
             const backButton = document.getElementById('back-button');  // Botón de regreso
-            globalTitle.textContent = title;
+            dynamicText.textContent = title;
             // Mostrar u ocultar el botón dependiendo del título
             if (title === "Menú Principal") {
                 backButton.style.display = "none"; // Ocultar en el menú principal
@@ -405,10 +405,11 @@
     </header>
 
     <!-- Recuadro global para el título dinámico -->
-    <h2 class="category-title" id="global-title">
+    <h2 class="category-title">
         <span id="dynamic-text">Menú Principal</span>
-        <button class="back-button" onclick="goBackToMenu()">↩ Volver al Menú Principal</button>
+        <button class="back-button" id="back-button" onclick="goBackToMenu()">↩ Volver al Menú Principal</button>
     </h2>
+
 
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
