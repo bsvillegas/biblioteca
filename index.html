@@ -215,6 +215,13 @@
             border: 1px solid #ccc; /* Borde para mejorar el diseño */
             border-radius: 5px; /* Esquinas redondeadas */
             box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+            transition: border 0.3s ease, box-shadow 0.3s ease; /* Suaviza los cambios */
+        }
+
+        #search-input:focus {
+            outline: none; /* Elimina el borde negro predeterminado */
+            border: 1px solid #4CAF50; /* Cambia el borde a un color personalizado */
+            box-shadow: 0px 0px 5px #4CAF50; /* Añade una sombra suave alrededor */
         }
 
         /* Recuadro Categorias */
