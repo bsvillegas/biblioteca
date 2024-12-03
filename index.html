@@ -218,6 +218,9 @@
 
         /* Recuadro Categorias */
         .category-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
             background: linear-gradient(to bottom, #692d2d, #3f2222);
             color: white; /* Texto en blanco */
             padding: 10px 15px; /* Espaciado interno */
@@ -228,6 +231,17 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
         }
 
+        .back-button {
+            background-color: #fff;       /* Fondo blanco */
+            color: #4CAF50;               /* Texto verde */
+            border: 2px solid #4CAF50;    /* Borde verde */
+            padding: 5px 10px;            /* Espaciado interno */
+            border-radius: 5px;           /* Bordes redondeados */
+            font-size: 14px;              /* Tamaño de la fuente */
+            cursor: pointer;              /* Cambiar cursor al pasar por encima */
+            transition: all 0.3s ease;    /* Animación suave para hover */
+        }
+        
         #donation p {
             margin: 10px;
         }
@@ -384,8 +398,12 @@
     </header>
 
     <!-- Recuadro global para el título dinámico -->
-    <h2 class="category-title" id="global-title">Menú Principal</h2>
-    
+    <h2 class="category-title" id="global-title">
+        <span id="dynamic-text">Menú Principal</span>
+        <button class="back-button" onclick="goBackToMenu()">↩ Volver al Menú Principal</button>
+    </h2>
+
+   <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">
         <button onclick="showCategories()">Categorías</button>
