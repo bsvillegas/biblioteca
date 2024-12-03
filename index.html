@@ -309,8 +309,8 @@
             
                 // Buscar la categoría correspondiente en el JSON
                 const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
-                updateGlobalTitle(`Categoría: ${selectedCategory.name}`) // Cambiar el título a la categoría seleccionada
-                
+                //updateGlobalTitle(`Categoría: ${selectedCategory.name}`) // Cambiar el título a la categoría seleccionada
+                updateGlobalTitle(${selectedCategory.name}) // Cambiar el título a la categoría seleccionada
                 const response = await fetch('books.json', { cache: 'no-store' });
                 const books = await response.json();
                 
