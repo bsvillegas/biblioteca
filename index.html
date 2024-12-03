@@ -260,6 +260,60 @@
         #donation p {
             margin: 10px;
         }
+
+        /* Menu desplegable */
+        /* Contenedor del menú desplegable */
+        .dropdown {
+            margin: 0 auto; /* Centrar el menú */
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Botón del menú desplegable */
+        .dropbtn {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        /* Opciones del menú desplegable */
+        .dropdown-content {
+            display: none; /* Ocultar por defecto */
+            position: absolute;
+            background-color: #f9f9f9; /* Fondo blanco */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+        
+        /* Estilo de los enlaces */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        
+        /* Efecto hover en los enlaces */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* Mostrar el menú al pasar el mouse */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Botón del menú al pasar el mouse */
+        .dropdown:hover .dropbtn {
+            background-color: #45a049;
+        }
     </style>
     <script>
         // Funcion para modificar el texto al recuadro secundario
@@ -418,14 +472,23 @@
     <header>
         <h1>Biblioteca San Francisco Solano</h1>
     </header>
-
+    
     <!-- Recuadro global para el título dinámico -->
     <h2 class="category-title">
         <span id="dynamic-text">Menú Principal</span>
         <button class="back-button" id="back-button" onclick="goBackToMenu()" style="display: none;">↩ Volver al Menú Principal</button>
     </h2>
 
-
+    <!-- Menú desplegable -->
+    <div class="dropdown">
+        <button class="dropbtn">Menú</button>
+        <div class="dropdown-content">
+            <a href="#categories" onclick="showCategories()">Categorías</a>
+            <a href="#donation" onclick="showDonation()">Donación</a>
+            <a href="#main-menu" onclick="showMainMenu()">Menú Principal</a>
+        </div>
+    </div>
+    
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">
