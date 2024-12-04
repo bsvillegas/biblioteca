@@ -483,9 +483,9 @@
         <div class="dropdown">
             <button class="dropdown-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
             <div class="dropdown-content" id="dropdown-menu">
-                <a href="#" onclick="event.preventDefault(); goBackToMenu();">Menú Principal</a>
-                <a href="#" onclick="event.preventDefault(); showCategories();">Categorías</a>
-                <a href="#" onclick="event.preventDefault(); showDonation();">Donar</a>
+                <a href="#" onclick="event.preventDefault(); goBackToMenu(); toggleMenu();">Menú Principal</a>
+                <a href="#" onclick="event.preventDefault(); showCategories(); toggleMenu();">Categorías</a>
+                <a href="#" onclick="event.preventDefault(); showDonation(); toggleMenu();">Donar</a>
             </div>
         </div>
     </h2>
