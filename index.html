@@ -328,14 +328,8 @@
         // Funcion para modificar el texto al recuadro secundario
         function updateGlobalTitle(title) {
             const dynamicText = document.getElementById('dynamic-text');
-            const backButton = document.getElementById('back-button');  // Botón de regreso
-            dynamicText.textContent = title;
-            // Mostrar u ocultar el botón dependiendo del título
-            if (title === "Menú Principal") {
-                backButton.style.display = "none"; // Ocultar en el menú principal
-            } else {
-                backButton.style.display = "inline-block"; // Mostrar en otras secciones
-            }      
+            const backButton = document.getElementById('menu-toggle');  // Botón desplegable // Botón de regreso
+
         }
         
         function normalizeCategoryName(name) {
