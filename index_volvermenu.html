@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Configura el juego de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+
+    <!-- Hoja de estilos externa --> 
+    <link rel="stylesheet" href="styles.css">  
+
+     <!-- Estilos internos --> 
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+        }
+        /* Estilo del encabezado */
+        header {
+            background-color: #5b2727;
+            color: white; /* Texto blanco */
+            padding: 20px; /* Espaciado interno */
+            text-align: center;
+        }
+        /* Navegación principal */
+        nav {
+            display: flex; /* Usa un contenedor flex para alinear elementos horizontalmente */
+            justify-content: center;
+            margin: 20px 0; /* Margen arriba y abajo */
+        }
+         /* Estilo de los botones del menú principal */
+        button {
+            background-color: #5b2727;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            margin-top: 8px;
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+            font-size: 16px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+         /* Cambio de color al pasar el mouse por encima de los botones */
+        button:hover {
+            background-color: #4b2121; /* Un tono más oscuro de verde */
+        }
+
+        .filter-btn {
+            background: linear-gradient(to bottom, #9b9b9b, #5c5c5c); /* Degradado gris claro a oscuro */
+            color: white; /* Texto blanco */
+            padding: 6px 10px; /* Ajusta el espaciado interno */
+            font-size: 12px; /* Tamaño de fuente menor */
+            border: none;
+            border-radius: 12px; /* Bordes redondeados */
+            margin: 10px; /* Espaciado alrededor */
+            margin-top: 2px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+            transition: all 0.3s ease; /* Transición suave */
+        }
+        
+        .filter-btn:hover {
+            background-color: #bfbfbf; /* Gris más oscuro */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+
+        /* Botón personalizado (Usado en Ver Libros)*/
+        .custom-button {
+          background: linear-gradient(to bottom, #692d2d, #3f2222); /* Degradado verde */
+          color: white; /* Texto blanco */
+          border: none; /* Sin borde */
+          border-radius: 20px; /* Bordes redondeados */
+          padding: 10px 20px; /* Espaciado interno */
+          font-size: 14px; /* Tamaño de la fuente */
+          font-weight: bold; /* Texto en negrita */
+          cursor: pointer; /* Cursor en forma de mano */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+          transition: all 0.3s ease; /* Transición para efectos */
+        }
+        
+        /* Hover: efecto al pasar el mouse */
+        .custom-button:hover {
+          background: linear-gradient(to bottom, #773434, #572d2d); /* Degradado más claro */
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+          transform: translateY(-2px); /* Botón se eleva */
+        }
+        
+        /* Active: efecto al hacer clic */
+        .custom-button:active {
+          background: linear-gradient(to bottom, #572626, #391f1f); /* Degradado más oscuro */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+          transform: translateY(2px); /* Botón se hunde */
+        }
+        
+         /* Tarjetas de categorías */
+        .category-card {
+            display: flex;
+            margin: 20px;
+            border: 2px solid #5b2727;
+            padding: 10px;
+            /*width: 100px;   
+            height: 100px;  */
+            object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsionarse */
+        }
+        
+        .category-cover {
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .category-details {       
+            display: flex;
+            flex-direction: column; /* Alinea elementos en una columna */
+            justify-content: flex-start;
+        }
+        
+        .category-name {
+            font-weight: bold; /* Texto en negrita */
+            font-size: 18px;
+        }
+        
+        .category-description {
+            font-size: 14px; /* Tamaño de fuente más pequeño */
+            margin-top: 5px;
+        }
+        /* Tarjetas de libros */
+        .book-card {
+            display: flex;                  /* Alinea los elementos en fila horizontal */
+            align-items: flex-start;            /* Centra verticalmente los elementos */
+            margin: 10px 0;                 /* Espaciado vertical entre tarjetas */
+            padding: 10px;                  /* Espaciado interno */
+            border: 1px solid #ddd;         /* Borde gris claro */
+            flex-wrap: nowrap;              /* Impide que los elementos se muevan a otra línea */
+            position: relative; 
+        }
+        
+        /* Imagen de la portada */
+        .book-cover {
+            width: 100px;                   /* Ancho fijo */
+            height: 150px;                  /* Alto fijo */
+            margin-right: 20px;             /* Espaciado con los detalles */
+            object-fit: fill;
+            object-position: center;
+        }
+        
+        /* Detalles del libro */
+        .book-details {
+            display: flex;                  /* Alinea los detalles internamente */
+            flex-direction: column;         /* Organiza los elementos en columna */
+            justify-content: space-between; /* Espacia los elementos uniformemente */
+            flex-grow: 1;                   /* Permite que esta sección crezca si es necesario */
+        }
+        
+        /* Título del libro */
+        .book-title {
+            font-size: 18px;                /* Tamaño del texto */
+            font-weight: bold;              /* Texto en negrita */
+            margin: 0;                      /* Elimina márgenes extra */
+        }
+        
+        /* Autor del libro */
+        .book-author {
+            font-size: 14px;                /* Tamaño del texto */
+            margin: 0;                      /* Elimina márgenes extra */
+        }
+        
+        /* Estilos base para los recuadros de estado */
+        .status-box {
+            position: absolute;
+            bottom: 10px;
+            display: inline-block;          /* Asegura que se ajuste al contenido */
+            padding: 5px 15px;             /* Espaciado interno */
+            font-size: 11px;               /* Tamaño del texto */
+            text-align: center;            /* Centra el texto */
+            border: 2px solid transparent; /* Borde inicial transparente */
+            border-radius: 4px;            /* Bordes redondeados */
+            background-color: transparent; /* Fondo transparente inicial */
+            color: white;                  /* Texto blanco inicial */
+            cursor: default;               /* No interacción */
+            margin-top: auto;            /* Mantiene el recuadro al final */
+        }
+        
+        /* Estado disponible */
+        .status-available {
+            background-color: #4CAF50 !important;     /* Verde para disponible */
+            border-color: #4CAF50 !important;        /* Borde verde */
+            color: white !important;                  /* Texto blanco */
+            width: 50px;         
+            height: 12px;  
+            line-height: 12px;  
+        }
+        
+        /* Estado no disponible */
+        .status-unavailable {
+            background-color: #f44336 !important;     /* Rojo para no disponible */
+            border-color: #f44336 !important;        /* Borde rojo */
+            color: white !important;                  /* Texto blanco */
+            width: 70px;                    
+            height: 12px;                    
+            line-height: 12px;   
+        }
+
+        #search-input {
+            width: 300px; /* Ajusta este valor según sea necesario */
+            padding: 10px; /* Añade un poco de espacio interior */
+            margin: 10px;
+            font-size: 16px; /* Tamaño del texto para que sea legible */
+            border: 1px solid #ccc; /* Borde para mejorar el diseño */
+            border-radius: 5px; /* Esquinas redondeadas */
+            box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+            transition: border 0.3s ease, box-shadow 0.3s ease; /* Suaviza los cambios */
+        }
+
+        #search-input:focus {
+            outline: none; /* Elimina el borde negro predeterminado */
+            border: 1px solid #4CAF50; /* Cambia el borde a un color personalizado */
+            box-shadow: 0px 0px 5px #4CAF50; /* Añade una sombra suave alrededor */
+        }
+
+        /* Recuadro Categorias */
+        .category-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+            background: linear-gradient(to bottom, #692d2d, #3f2222);
+            color: white; /* Texto en blanco */
+            padding: 15px; /* Espaciado interno */
+            height: 20px;
+            font-size: 20px; /* Tamaño de fuente */
+            font-weight: bold; /* Texto en negrita */
+            margin: 0px; /* Espaciado inferior */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        }
+
+        .back-button {
+            background-color: #e1e1e1;       /* Fondo blanco */
+            color: #4b2121;               /* Texto verde */
+            border: 2px solid #e3e3e3;
+            padding: 6px 10px;            /* Espaciado interno */
+            margin: 0px;
+            border-radius: 15px;           /* Bordes redondeados */
+            font-size: 14px;              /* Tamaño de la fuente */
+            font-weight: bold;
+            cursor: pointer;              /* Cambiar cursor al pasar por encima */
+            transition: all 0.3s ease;    /* Animación suave para hover */
+            box-shadow: inset 0 0 7px rgb(0 0 0 / 91%);
+        }
+
+        /* Hover: efecto al pasar el mouse */
+        .back-button:hover {
+          background-color: #ffffff;       /* Fondo blanco */
+          box-shadow: inset 0 0 7px rgb(0 0 0 / 100%);
+        }
+        
+        #donation p {
+            margin: 10px;
+        }
+    </style>
+    <script>
+        // Funcion para modificar el texto al recuadro secundario
+        function updateGlobalTitle(title) {
+            const dynamicText = document.getElementById('dynamic-text');
+            const backButton = document.getElementById('back-button');  // Botón de regreso
+            dynamicText.textContent = title;
+            // Mostrar u ocultar el botón dependiendo del título
+            if (title === "Menú Principal") {
+                backButton.style.display = "none"; // Ocultar en el menú principal
+            } else {
+                backButton.style.display = "inline-block"; // Mostrar en otras secciones
+            }      
+        }
+        
+        function normalizeCategoryName(name) {
+            return name.toLowerCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, '');
+        }
+        
+        function showCategories() {
+            updateGlobalTitle("Categorías"); // Cambiar el título
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'block';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'none';
+        }
+        
+        function showDonation() {
+            updateGlobalTitle("Donaciones"); // Cambiar el título
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'block';
+            document.getElementById('book-list').style.display = 'none';
+        }
+        
+        function goBackToMenu() {
+            updateGlobalTitle("Menú Principal"); // Cambiar el título
+            document.getElementById('main-menu').style.display = 'block';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'none';
+        }
+
+        async function showBooks(category) {          
+            // Ocultar otras secciones y mostrar la lista de libros
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'block';
+
+            // Limpiar y mostrar libros
+            const booksContainer = document.getElementById('books-container');
+            booksContainer.innerHTML = ''; // Limpiar contenedor
+        
+            try {    
+                // Cargar categorías desde el archivo categories.json
+                const responseCat = await fetch('categories.json');
+                const categories = await responseCat.json();
+            
+                // Buscar la categoría correspondiente en el JSON
+                const selectedCategory = categories.find(cat => normalizeCategoryName(cat.name) === category);
+                //updateGlobalTitle(`Categoría: ${selectedCategory.name}`) // Cambiar el título a la categoría seleccionada
+                updateGlobalTitle(`${selectedCategory.name}`) // Cambiar el título a la categoría seleccionada
+                const response = await fetch('books.json', { cache: 'no-store' });
+                const books = await response.json();
+                
+                const selectedBooks = books[category] || [];
+                selectedBooks.forEach(bookArray => {
+                    const [title, author, status, coverImage] = bookArray;
+        
+                    const bookCard = document.createElement('div');
+                    bookCard.classList.add('book-card');
+                    bookCard.innerHTML = `
+                        <img src="${coverImage}" alt="Portada de ${title}" class="book-cover">
+                        <div class="book-details">
+                            <div class="book-title">${title}</div>
+                            <div class="book-author">${author}</div>
+                            <div class="status-box ${status === 'available' ? 'status-available' : 'status-unavailable'}">
+                                ${status === 'available' ? 'Disponible' : 'No Disponible'}
+                            </div>
+                        </div>
+                    `;
+                    booksContainer.appendChild(bookCard);
+                });
+            } catch (error) {
+                console.error('Error al cargar los libros:', error);
+            }
+        }
+        
+        function searchBooks() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const books = document.querySelectorAll('.book-card');
+        
+            books.forEach(book => {
+                const title = book.querySelector('.book-title').textContent.toLowerCase();
+                const author = book.querySelector('.book-author').textContent.toLowerCase();
+        
+                if (title.includes(query) || author.includes(query)) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        async function loadCategories() {         
+            const categoriesContainer = document.getElementById('categories-container');
+            categoriesContainer.innerHTML = ''; // Limpiar contenedor
+        
+            try {
+                const response = await fetch('categories.json', { cache: 'no-store' });
+                const categories = await response.json();
+        
+                categories.forEach(category => {
+                    const normalizedCategory = normalizeCategoryName(category.name);
+        
+                    const categoryCard = document.createElement('div');
+                    categoryCard.classList.add('category-card');
+                    categoryCard.innerHTML = `
+                        <img src="${category.image}" alt="Portada de ${category.name}" class="category-cover">
+                        <div class="category-details">
+                            <div class="category-name">${category.name}</div>
+                            <p class="category-description">${category.description}</p>
+                            <button class="custom-button" onclick="showBooks('${normalizedCategory}')">Ver Libros</button>
+                        </div>
+                    `;
+                    categoriesContainer.appendChild(categoryCard);
+                });
+            } catch (error) {
+                console.error('Error al cargar las categorías:', error);
+            }
+        }
+
+        // Llama a esta función cuando se muestren las categorías
+        document.addEventListener('DOMContentLoaded', () => {
+            loadCategories();
+        });
+
+        function filterByAvailability(status) {
+            const books = document.querySelectorAll('.book-card');
+        
+            books.forEach(book => {
+                const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
+                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Biblioteca San Francisco Solano</h1>
+    </header>
+
+    <!-- Recuadro global para el título dinámico -->
+    <h2 class="category-title">
+        <span id="dynamic-text">Menú Principal</span>
+        <button class="back-button" id="back-button" onclick="goBackToMenu()" style="display: none;">↩ Volver al Menú Principal</button>
+    </h2>
+
+
+   <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
+    <!-- Menú principal con botones para navegar -->
+    <nav id="main-menu">
+        <button onclick="showCategories()">Categorías</button>
+        <button onclick="showDonation()">Donar</button>
+    </nav>
+
+    <!-- Sección de Categorías -->
+    <div id="categories" style="display: none;">
+        <div id="categories-container"></div>
+    </div>
+
+    <!-- Sección de Donación -->
+    <div id="donation" style="display: none;">
+        <p>Si deseas contribuir al crecimiento de nuestra biblioteca, puedes donar aquí:</p>
+        <button onclick="window.location.href='https://donaciones.com'">Donar</button>
+    </div>
+
+    <!-- Sección de Libros -->
+    <div id="book-list" style="display: none;"> 
+        <input type="text" id="search-input" placeholder="Buscar libro por título o autor..." oninput="searchBooks()">
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
+            <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
+        </div>
+        
+        <!-- Contenedor de los libros -->
+        <div id="books-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
