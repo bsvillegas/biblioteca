@@ -374,25 +374,36 @@
         @media (min-width: 768px) {
             .desktop-buttons {
                 display: flex; /* Mostramos los botones en PC */
-                gap: 10px; /* Espacio entre los botones */
+                gap: 4px; /* Espacio entre los botones */
             }
         
             /* Hacemos que los botones se alineen en una fila horizontal */
             .desktop-buttons button {
-                background-color: #5b2727;
+                background-color: transparent;
                 color: white;
-                border: none;
+                border: 2px solid #5b2727; /* Borde con el color del recuadro */
                 padding: 10px 20px;
                 font-size: 16px;
+                font-weight: bold; /* Texto en negrita */
                 cursor: pointer;
                 border-radius: 10px;
-                transition: background-color 0.3s ease;
+                transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
             }
         
             .desktop-buttons button:hover {
                 background-color: #4b2121;
             }
-        
+
+            /* Estilo para la línea vertical entre los botones */
+            .desktop-buttons button:not(:last-child) {
+                border-right: 2px solid #5b2727; /* Línea a la derecha de cada botón (excepto el último) */
+            }
+
+            /* Efecto al pasar el mouse por encima del botón */
+            .desktop-buttons button:hover {
+                background-color: #4b2121; /* Fondo más oscuro al pasar el mouse */
+            }
+            
             /* Ocultar el menú desplegable en pantallas grandes */
             .dropdown {
                 display: none;
