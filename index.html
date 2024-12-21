@@ -353,13 +353,13 @@
         }   
 
         #description {
-            padding: 10px;
-            background-color: #f5f5f5;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
         }
 
+        #description h3 {
+            color: #444;
+        }
+        
         /* Mostrar botones en PC */
         @media (min-width: 768px) {
             .desktop-buttons {
@@ -403,9 +403,7 @@
         }
         
 
-        #description h3 {
-            color: #444;
-        }
+
         
     </style>
     <script>
@@ -432,6 +430,7 @@
             document.getElementById('categories').style.display = 'block';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'none';
+            document.getElementById('about-us').style.display = 'none';
         }
         
         function showDonation() {
@@ -440,6 +439,16 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'block';
             document.getElementById('book-list').style.display = 'none';
+            document.getElementById('about-us').style.display = 'none';
+        }
+
+        function showAboutUs() 
+            updateGlobalTitle("Sobre Nosotros"); // Cambiar el título
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('categories').style.display = 'none';
+            document.getElementById('donation').style.display = 'none';
+            document.getElementById('book-list').style.display = 'none';
+            document.getElementById('about-us').style.display = 'block'; // Mostrar sección "Sobre Nosotros"
         }
         
         function goBackToMenu() {
@@ -448,6 +457,7 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'none';
+            document.getElementById('about-us').style.display = 'none';
         }
 
         async function showBooks(category) {          
@@ -456,6 +466,7 @@
             document.getElementById('categories').style.display = 'none';
             document.getElementById('donation').style.display = 'none';
             document.getElementById('book-list').style.display = 'block';
+            document.getElementById('about-us').style.display = 'none';
 
             // Limpiar y mostrar libros
             const booksContainer = document.getElementById('books-container');
@@ -574,6 +585,7 @@
             <div class="dropdown-content" id="dropdown-menu">
                 <a href="#" onclick="event.preventDefault(); goBackToMenu(); toggleMenu();">Menú Principal</a>
                 <a href="#" onclick="event.preventDefault(); showCategories(); toggleMenu();">Categorías</a>
+                <a href="#" onclick="event.preventDefault(); showAboutUs(); toggleMenu();">Sobre Nosotros</a>
                 <a href="#" onclick="event.preventDefault(); showDonation(); toggleMenu();">Donar</a>
             </div>
         </div>
@@ -582,6 +594,7 @@
         <div class="desktop-buttons">
             <button onclick="goBackToMenu()">Menú Principal</button>
             <button onclick="showCategories()">Categorías</button>
+            <button onclick="showAboutUs()">Sobre Nosotros</button>
             <button onclick="showDonation()">Donar</button>
         </div>
     </h2>
@@ -593,12 +606,7 @@
     
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
-    <nav id="main-menu">
-        <div id="description" style="margin-top: 20px;">
-            <h3>Sobre Nosotros</h3>
-            <p>La Biblioteca San Francisco Solano es un espacio dedicado a la difusión de la cultura, la lectura, y el conocimiento. Nuestro objetivo es brindar a la comunidad un lugar donde puedan explorar ideas, aprender, y crecer juntos.</p>
-        </div>
-        
+    <nav id="main-menu">   
         <!-- Google Maps -->
         <div id="map-container" style="margin-top: 20px;">
             <h3>Ubicación de la Biblioteca</h3>
@@ -617,6 +625,12 @@
     <!-- Sección de Categorías -->
     <div id="categories" style="display: none;">
         <div id="categories-container"></div>
+    </div>
+
+    <!-- Sección de Sobre Nosotros -->
+    <div id="about-us" style="display: none;">
+        <h2>Sobre Nosotros</h2>
+        <p>Información sobre nosotros...</p>
     </div>
 
     <!-- Sección de Donación -->
