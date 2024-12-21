@@ -10,14 +10,6 @@
 
      <!-- Estilos internos --> 
     <style>
-        /* Reseteo básico para mejorar compatibilidad */
-        /*
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }*/
-
         /* Estilo general */
         body {
             font-family: Arial, sans-serif;
@@ -112,8 +104,6 @@
             margin: 20px;
             border: 2px solid #5b2727;
             padding: 10px;
-            /*width: 100px;   
-            height: 100px;  */
             object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsionarse */
         }
         
@@ -294,7 +284,7 @@
             padding: 0px 12px;
             font-size: 22px;
             /*margin: 0px;*/
-            margin-left: 10px;
+            margin-right: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
             /*transition: all 0.3s ease;*/
@@ -308,8 +298,8 @@
         .dropdown-content {
             display: none; /* Oculto por defecto */
             position: absolute;
-            right: 0; /* Alineado al lado derecho del botón */
-            /*left: 0;*/
+            /*right: 0; /* Alineado al lado derecho del botón */
+            left: 0;*/
             top: 100%; /* Se posiciona justo debajo del botón */
             width: auto; /* Ancho completo del recuadro */
             background-color: #f9f9f9;
@@ -381,22 +371,25 @@
             .desktop-buttons button {
                 background-color: transparent;
                 color: white;
-                border: 2px solid #5b2727; /* Borde con el color del recuadro */
+                border: none;
                 padding: 10px 20px;
                 font-size: 16px;
                 font-weight: bold; /* Texto en negrita */
                 cursor: pointer;
                 border-radius: 10px;
+                position: relative; /* Necesario para posicionar las líneas verticales */
                 transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
             }
-        
-            .desktop-buttons button:hover {
-                background-color: #4b2121;
-            }
 
-            /* Estilo para la línea vertical entre los botones */
-            .desktop-buttons button:not(:last-child) {
-                border-right: 2px solid #5b2727; /* Línea a la derecha de cada botón (excepto el último) */
+            /* Línea vertical a la izquierda de cada botón */
+            .desktop-buttons button:not(:first-child)::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: #5b2727; /* Color de la línea vertical */
             }
 
             /* Efecto al pasar el mouse por encima del botón */
