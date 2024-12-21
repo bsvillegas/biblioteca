@@ -364,7 +364,7 @@
         @media (min-width: 768px) {
             .desktop-buttons {
                 display: flex; /* Mostramos los botones en PC */
-                gap: 4px; /* Espacio entre los botones */
+                /*gap: 4px; /* Espacio entre los botones */
             }
         
             /* Hacemos que los botones se alineen en una fila horizontal */
@@ -392,6 +392,17 @@
                 background-color: #5b2727; /* Color de la línea vertical */
             }
 
+            /* Línea vertical blanca (o más clara) a la izquierda de cada botón */
+            .desktop-buttons button:not(:first-child)::after {
+                content: "";
+                position: absolute;
+                left: 2px; /* Desplazamos la línea blanca justo al lado de la línea oscura */
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: #ffffff; /* Línea blanca */
+            }
+            
             /* Efecto al pasar el mouse por encima del botón */
             .desktop-buttons button:hover {
                 background-color: #4b2121; /* Fondo más oscuro al pasar el mouse */
