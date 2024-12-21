@@ -276,13 +276,13 @@
             background: #5b2727;
             color: white;             
             border: 2px solid #311616;
-            padding: 5px 12px;
-            /*padding: 0px 12px;*/
+            padding: 0px 12px;
             font-size: 22px;
             /*margin: 0px;*/
             margin-left: 10px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease;
+            /*transition: all 0.3s ease;*/
         }
         
         .dropdown-button:hover {
@@ -296,11 +296,15 @@
             /*right: 0; /* Alineado al lado derecho del botón */
             left: 0;
             top: 100%; /* Se posiciona justo debajo del botón */
+            width: 100%; /* Ancho completo del recuadro */
             background-color: #f9f9f9;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 10px 0;
+            z-index: 100; /* Sobre otros elementos */
+            border-radius: 0 0 5px 5px; /* Bordes redondeados solo abajo */
+            overflow: hidden; /* Recorta contenido si es necesario */
+            /*padding: 10px 0;
             z-index: 1;
-            border-radius: 10px;
+            border-radius: 10px;*/
         }
         
         /* Estilo de los enlaces dentro del menú */
@@ -308,10 +312,11 @@
             display: block;
             color: #5b2727;
             text-decoration: none;
-            width: 200px;
-            padding: 10px 20px;
+            /*width: 200px;*/
+            padding: 10px;
             font-size: 16px;
             text-align: left;
+            border-bottom: 1px solid #ddd; /* Línea separadora */
         }
         
         .dropdown-content a:hover {
