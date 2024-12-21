@@ -10,6 +10,13 @@
 
      <!-- Estilos internos --> 
     <style>
+        /* Reseteo básico para mejorar compatibilidad */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Estilo general */
         body {
             font-family: Arial, sans-serif;
@@ -24,6 +31,11 @@
             padding: 20px; /* Espaciado interno */
             text-align: center;
         }
+
+        header h1 {
+            margin-bottom: 20px;
+        }
+        
         /* Navegación principal */
         nav {
             display: flex; /* Usa un contenedor flex para alinear elementos horizontalmente */
@@ -230,13 +242,18 @@
             background: linear-gradient(to bottom, #692d2d, #3f2222);
             color: white; /* Texto en blanco */
             padding: 15px; /* Espaciado interno */
-            height: 20px;
+            /*height: 20px;*/
             font-size: 20px; /* Tamaño de fuente */
             font-weight: bold; /* Texto en negrita */
-            margin: 0px; /* Espaciado inferior */
+            /*margin: 0px; /* Espaciado inferior */
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
         }
 
+        /* Recuadro de botones para móviles */
+        .desktop-buttons {
+            display: none; /* Ocultamos los botones en dispositivos pequeños */
+        }
+        
         .back-button {
             background-color: #e1e1e1;       /* Fondo blanco */
             color: #4b2121;               /* Texto verde */
@@ -355,9 +372,46 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-#description h3 {
-    color: #444;
-}
+        /* Mostrar botones en PC */
+        @media (min-width: 768px) {
+            .desktop-buttons {
+                display: flex; /* Mostramos los botones en PC */
+                gap: 10px; /* Espacio entre los botones */
+            }
+        
+            /* Hacemos que los botones se alineen en una fila horizontal */
+            .desktop-buttons button {
+                background-color: #5b2727;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+            }
+        
+            .desktop-buttons button:hover {
+                background-color: #4b2121;
+            }
+        
+            /* Ocultar el menú desplegable en pantallas grandes */
+            .dropdown {
+                display: none;
+            }
+        }
+        
+        /* Mostrar el menú desplegable solo en pantallas pequeñas */
+        @media (max-width: 767px) {
+            .desktop-buttons {
+                display: none; /* Ocultamos los botones en pantallas pequeñas */
+            }
+        }
+        
+
+        #description h3 {
+            color: #444;
+        }
         
     </style>
     <script>
@@ -517,11 +571,10 @@
     <header>
         <h1>Biblioteca San Francisco Solano</h1>
     </header>
-    
-    <!-- Recuadro global para el título dinámico -->
+
+    <!-- Recuadro para el menú -->
     <h2 class="category-title">
-        <span id="dynamic-text">Menú Principal</span>
-        <!-- Menú desplegable -->
+        <!-- Menú desplegable (solo visible en móviles) -->
         <div class="dropdown">
             <button class="dropdown-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
             <div class="dropdown-content" id="dropdown-menu">
@@ -530,6 +583,18 @@
                 <a href="#" onclick="event.preventDefault(); showDonation(); toggleMenu();">Donar</a>
             </div>
         </div>
+        
+        <!-- Botones visibles en PC -->
+        <div class="desktop-buttons">
+            <button onclick="goBackToMenu()">Menú Principal</button>
+            <button onclick="showCategories()">Categorías</button>
+            <button onclick="showDonation()">Donar</button>
+        </div>
+    </h2>
+
+    <!-- Título dinámico debajo del recuadro -->
+    <h2 class="category-title">
+        <span id="dynamic-text">Menú Principal</span>
     </h2>
     
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
