@@ -378,7 +378,8 @@
                 cursor: pointer;
                 position: relative; /* Necesario para posicionar las líneas verticales */
                 transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
-                /*height: 20px; /* Definimos una altura explícita para que las líneas cubran todo el botón */
+                align-items: stretch; /* Asegura que los botones ocupen toda la altura del contenedor */
+                height: 100%; /* Definimos una altura explícita para que las líneas cubran todo el botón */
             }
 
             /* Línea vertical a la izquierda de cada botón */
