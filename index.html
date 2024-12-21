@@ -372,7 +372,7 @@
                 background-color: transparent;
                 color: white;
                 border: none;
-                /*padding: 10px 20px;*/
+                padding: 0px 2px;
                 font-size: 16px;
                 font-weight: bold; /* Texto en negrita */
                 cursor: pointer;
@@ -380,28 +380,6 @@
                 transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
                 align-items: stretch; /* Asegura que los botones ocupen toda la altura del contenedor */
                 height: 100%; /* Definimos una altura explícita para que las líneas cubran todo el botón */
-            }
-
-            /* Línea vertical a la izquierda de cada botón */
-            .desktop-buttons button:not(:first-child)::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                width: 2px;
-                background-color: #5b2727; /* Color de la línea vertical */
-            }
-
-            /* Línea vertical blanca (o más clara) a la izquierda de cada botón */
-            .desktop-buttons button:not(:first-child)::after {
-                content: "";
-                position: absolute;
-                left: 2px; /* Desplazamos la línea blanca justo al lado de la línea oscura */
-                top: 0;
-                bottom: 0;
-                width: 2px;
-                background-color: #ffffff; /* Línea blanca */
             }
             
             /* Efecto al pasar el mouse por encima del botón */
