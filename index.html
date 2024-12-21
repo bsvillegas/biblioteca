@@ -296,12 +296,13 @@
             /*right: 0; /* Alineado al lado derecho del botón */
             left: 0;
             top: 100%; /* Se posiciona justo debajo del botón */
-            width: 100%; /* Ancho completo del recuadro */
+            width: auto; /* Ancho completo del recuadro */
             background-color: #f9f9f9;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 100; /* Sobre otros elementos */
             border-radius: 0 0 5px 5px; /* Bordes redondeados solo abajo */
             overflow: hidden; /* Recorta contenido si es necesario */
+            white-space: nowrap; /* Evita que los textos se corten en varias líneas */
             /*padding: 10px 0;
             z-index: 1;
             border-radius: 10px;*/
@@ -313,7 +314,7 @@
             color: #5b2727;
             text-decoration: none;
             /*width: 200px;*/
-            padding: 10px;
+            padding: 10px 20px;
             font-size: 16px;
             text-align: left;
             border-bottom: 1px solid #ddd; /* Línea separadora */
