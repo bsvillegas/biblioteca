@@ -548,14 +548,19 @@
                 console.error('Error al cargar los libros:', error);
             }
         }
+
+        // Funcion para que el buscador no distinga entre mayusculas, minusculas y tildes
+        function normalizeText(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        }
         
         function searchBooks() {
-            const query = document.getElementById('search-input').value.toLowerCase();
+            const query = normalizeText(document.getElementById('search-input').value);
             const books = document.querySelectorAll('.book-card');
         
             books.forEach(book => {
-                const title = book.querySelector('.book-title').textContent.toLowerCase();
-                const author = book.querySelector('.book-author').textContent.toLowerCase();
+                const title = normalizeText(book.querySelector('.book-title').textContent);
+                const author = normalizeText(book.querySelector('.book-author').textContent);
         
                 if (title.includes(query) || author.includes(query)) {
                     book.style.display = 'flex';
