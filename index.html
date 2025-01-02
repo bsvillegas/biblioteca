@@ -446,6 +446,14 @@
                 display: none; /* Ocultamos los botones en pantallas pequeñas */
             }
         }
+
+        #recommended-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
         
     </style>
     <script>
@@ -615,7 +623,49 @@
                 }
             });
         }
-        
+
+    // Selecciona el tiempo litúrgico actual manualmente
+    const liturgicalTime = "Navidad"; // Cambiar según el tiempo litúrgico actual
+    
+    function loadRecommendedBooks() {
+        fetch('recommended-books.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('recommended-container');
+                container.innerHTML = ''; // Limpiar el contenedor
+    
+                // Obtener los libros del tiempo litúrgico seleccionado
+                const books = data[liturgicalTime] || [];
+    
+                if (books.length === 0) {
+                    container.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
+                    return;
+                }
+    
+                books.forEach(book => {
+                    // Crear una tarjeta para cada libro
+                    const bookCard = document.createElement('div');
+                    bookCard.classList.add('book-card');
+    
+                    bookCard.innerHTML = `
+                        <img src="${book.image}" alt="${book.title}">
+                        <h4>${book.title}</h4>
+                    `;
+    
+                    container.appendChild(bookCard);
+                });
+            })
+            .catch(error => console.error('Error cargando los libros recomendados:', error));
+    }
+
+    // Mostrar el tiempo litúrgico en el encabezado
+    document.addEventListener('DOMContentLoaded', () => {
+        const liturgicalTimeDisplay = document.getElementById('liturgical-time');
+        liturgicalTimeDisplay.textContent = liturgicalTime;
+    
+        // Cargar libros recomendados
+        loadRecommendedBooks();
+    });
     </script>
 </head>
 <body>
@@ -654,6 +704,12 @@
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">   
+        <!-- Libros Recomendados -->
+        <div id="recommended-books" style="margin-top: 20px;">
+            <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
+            <div id="recommended-container" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+        </div>
+        
         <!-- Google Maps -->
         <div id="map-container" style="margin-top: 20px;">
             <h3>Ubicación de la Biblioteca</h3>
