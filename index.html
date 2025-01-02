@@ -447,122 +447,120 @@
             }
         }
 
-/* Estilos para el carrusel */
-.carousel-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.carousel-content {
-    display: flex;
-    transition: transform 0.3s ease;
-    gap: 10px; /* Espaciado entre las tarjetas */
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    padding: 10px 10px;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-button:hover {
-    background-color: rgba(200, 200, 200, 0.8);
-}
-
-/* Tarjetas del carrusel */
-.carousel-book-card {
-    flex: 0 0 auto; /* Las tarjetas no se estiran */
-    width: 100px; /* Ancho fijo */
-    height: 170px; /* Altura fija */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ocultar contenido que exceda el tamaño */
-}
-
-/* Imagen dentro de la tarjeta */
-.carousel-book-card img {
-    width: 100px; /* Mantener tamaño real */
-    height: 150px; /* Mantener tamaño real */
-    object-fit: cover; /* Asegurar que la imagen llene el espacio sin deformarse */
-    border-radius: 5px;
-}
-
-/* Título del libro */
-.carousel-book-card h4 {
-    font-size: 12px;
-    color: #333;
-    margin-top: 5px; /* Separación pequeña */
-}
-
-/* Responsividad */
-
-/* En pantallas grandes (PC), mostrar 4 libros */
-@media (min-width: 1024px) {
-    .carousel-wrapper {
-        width: 515px; /* 4 libros (120px * 4) + 3 gaps internos * 10px de gap + 5px gap para los externos */
-    }
-
-    .carousel-content {
-        gap: 10px; /* Espaciado adecuado entre los libros */
-    }
-
-    .carousel-book-card {
-        flex: 0 0 100px; /* 4 tarjetas con ancho fijo */
-    }
-}
-
-
-/* En tabletas, mostrar 2 libros */
-@media (max-width: 768px) {
-    .carousel-wrapper {
-        width: 385px; /* 3 libros (100px * 2) + espacio adicional */
-    }
-
-    .carousel-content {
-        gap: 10px; /* Espaciado adecuado entre los libros */
-    }
-
-    .carousel-book-card {
-        flex: 0 0 100px; /* 2 tarjetas con ancho fijo */
-    }
-}
-
-/* En dispositivos móviles, mostrar 1 libro */
-@media (max-width: 480px) {
-    .carousel-wrapper {
-        width: 255px; /* 2 libro (100px) + espacio adicional */
-    }
-
-    .carousel-content {
-        gap: 10px; /* Espaciado adecuado entre los libros */
-    }
-
-    .carousel-book-card {
-        flex: 0 0 100px; /* 1 tarjeta con ancho fijo */
-    }
-}
-
+        /* Estilos para el carrusel */
+        .carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
         
+        .carousel-content {
+            display: flex;
+            transition: transform 0.3s ease;
+            gap: 10px; /* Espaciado entre las tarjetas */
+        }
+        
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 10px 10px;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .carousel-button:hover {
+            background-color: rgba(200, 200, 200, 0.8);
+        }
+        
+        /* Tarjetas del carrusel */
+        .carousel-book-card {
+            flex: 0 0 auto; /* Las tarjetas no se estiran */
+            width: 100px; /* Ancho fijo */
+            height: 170px; /* Altura fija */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ocultar contenido que exceda el tamaño */
+        }
+        
+        /* Imagen dentro de la tarjeta */
+        .carousel-book-card img {
+            width: 100px; /* Mantener tamaño real */
+            height: 150px; /* Mantener tamaño real */
+            object-fit: cover; /* Asegurar que la imagen llene el espacio sin deformarse */
+            border-radius: 5px;
+        }
+        
+        /* Título del libro */
+        .carousel-book-card h4 {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px; /* Separación pequeña */
+        }
+        
+        /* Responsividad */
+        
+        /* En pantallas grandes (PC), mostrar 4 libros */
+        @media (min-width: 1024px) {
+            .carousel-wrapper {
+                width: 515px; /* 4 libros (120px * 4) + 3 gaps internos * 10px de gap + 5px gap para los externos */
+            }
+        
+            .carousel-content {
+                gap: 10px; /* Espaciado adecuado entre los libros */
+            }
+        
+            .carousel-book-card {
+                flex: 0 0 100px; /* 4 tarjetas con ancho fijo */
+            }
+        }
+        
+        
+        /* En tabletas, mostrar 2 libros */
+        @media (max-width: 768px) {
+            .carousel-wrapper {
+                width: 385px; /* 3 libros (100px * 2) + espacio adicional */
+            }
+        
+            .carousel-content {
+                gap: 10px; /* Espaciado adecuado entre los libros */
+            }
+        
+            .carousel-book-card {
+                flex: 0 0 100px; /* 2 tarjetas con ancho fijo */
+            }
+        }
+        
+        /* En dispositivos móviles, mostrar 1 libro */
+        @media (max-width: 480px) {
+            .carousel-wrapper {
+                width: 255px; /* 2 libro (100px) + espacio adicional */
+            }
+        
+            .carousel-content {
+                gap: 10px; /* Espaciado adecuado entre los libros */
+            }
+        
+            .carousel-book-card {
+                flex: 0 0 100px; /* 1 tarjeta con ancho fijo */
+            }
+        }
     </style>
     <script>
         // Abrir y cerrar el menu desplegable
@@ -732,91 +730,89 @@
             });
         }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const liturgicalTime = "Navidad"; // Tiempo litúrgico actual
-    const liturgicalTimeDisplay = document.getElementById('liturgical-time');
-    liturgicalTimeDisplay.textContent = liturgicalTime;
-
-    // Cargar libros recomendados
-    loadRecommendedBooks(liturgicalTime).then(() => {
-        setupCarousel();
-    });
-});
-
-function loadRecommendedBooks(liturgicalTime) {
-    return fetch('recommended-books.json')
-        .then(response => response.json())
-        .then(data => {
-            const carouselContainer = document.getElementById('carousel-container');
-            carouselContainer.innerHTML = ''; // Limpiar el contenedor
-
-            const books = data[liturgicalTime] || [];
-
-            books.forEach(book => {
-                const title = book[0];
-                const image = book[1];
-
-                // Crear tarjeta para el libro
-                const bookCard = document.createElement('div');
-                bookCard.classList.add('carousel-book-card');
-                bookCard.innerHTML = `
-                    <img src="${image}" alt="${title}">
-                    <h4>${title}</h4>
-                `;
-
-                carouselContainer.appendChild(bookCard);
+        document.addEventListener('DOMContentLoaded', () => {
+            const liturgicalTime = "Navidad"; // Tiempo litúrgico actual
+            const liturgicalTimeDisplay = document.getElementById('liturgical-time');
+            liturgicalTimeDisplay.textContent = liturgicalTime;
+        
+            // Cargar libros recomendados
+            loadRecommendedBooks(liturgicalTime).then(() => {
+                setupCarousel();
             });
-        })
-        .catch(error => console.error('Error al cargar los libros:', error));
-}
-
-function setupCarousel() {
-    const carouselContainer = document.getElementById('carousel-container');
-    const prevButton = document.getElementById('prev-button');
-    const nextButton = document.getElementById('next-button');
-    const bookCards = document.querySelectorAll('.carousel-book-card');
-
-    if (bookCards.length === 0) {
-        console.warn('No hay libros en el carrusel.');
-        return;
-    }
-
-    const cardWidth = bookCards[0].offsetWidth + 10; // Ancho de tarjeta + gap
-    let currentPosition = 0;
-
-    // Mover el carrusel a la posición actual
-    function updateCarousel() {
-        const translateX = -currentPosition * cardWidth;
-        carouselContainer.style.transform = `translateX(${translateX}px)`;
-        updateButtons();
-    }
-
-    // Actualizar estado de los botones
-    function updateButtons() {
-        prevButton.disabled = currentPosition === 0;
-        nextButton.disabled = currentPosition >= bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth);
-    }
-
-    // Eventos de los botones
-    prevButton.addEventListener('click', () => {
-        if (currentPosition > 0) {
-            currentPosition--;
+        });
+        
+        function loadRecommendedBooks(liturgicalTime) {
+            return fetch('recommended-books.json')
+                .then(response => response.json())
+                .then(data => {
+                    const carouselContainer = document.getElementById('carousel-container');
+                    carouselContainer.innerHTML = ''; // Limpiar el contenedor
+        
+                    const books = data[liturgicalTime] || [];
+        
+                    books.forEach(book => {
+                        const title = book[0];
+                        const image = book[1];
+        
+                        // Crear tarjeta para el libro
+                        const bookCard = document.createElement('div');
+                        bookCard.classList.add('carousel-book-card');
+                        bookCard.innerHTML = `
+                            <img src="${image}" alt="${title}">
+                            <h4>${title}</h4>
+                        `;
+        
+                        carouselContainer.appendChild(bookCard);
+                    });
+                })
+                .catch(error => console.error('Error al cargar los libros:', error));
+        }
+        
+        function setupCarousel() {
+            const carouselContainer = document.getElementById('carousel-container');
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const bookCards = document.querySelectorAll('.carousel-book-card');
+        
+            if (bookCards.length === 0) {
+                console.warn('No hay libros en el carrusel.');
+                return;
+            }
+        
+            const cardWidth = bookCards[0].offsetWidth + 10; // Ancho de tarjeta + gap
+            let currentPosition = 0;
+        
+            // Mover el carrusel a la posición actual
+            function updateCarousel() {
+                const translateX = -currentPosition * cardWidth;
+                carouselContainer.style.transform = `translateX(${translateX}px)`;
+                updateButtons();
+            }
+        
+            // Actualizar estado de los botones
+            function updateButtons() {
+                prevButton.disabled = currentPosition === 0;
+                nextButton.disabled = currentPosition >= bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth);
+            }
+        
+            // Eventos de los botones
+            prevButton.addEventListener('click', () => {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateCarousel();
+                }
+            });
+        
+            nextButton.addEventListener('click', () => {
+                if (currentPosition < bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth)) {
+                    currentPosition++;
+                    updateCarousel();
+                }
+            });
+        
+            // Inicializar carrusel
             updateCarousel();
         }
-    });
-
-    nextButton.addEventListener('click', () => {
-        if (currentPosition < bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth)) {
-            currentPosition++;
-            updateCarousel();
-        }
-    });
-
-    // Inicializar carrusel
-    updateCarousel();
-}
-
-
     </script>
 </head>
 <body>
@@ -872,6 +868,19 @@ function setupCarousel() {
             </div>
         </div>
 
+        <!-- Google Maps -->
+        <div id="map-container" style="margin-top: 20px;">
+            <h3>Ubicación de la Biblioteca</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.7504694090135!2d-68.3500841326862!3d-34.626809497555016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a700292d4063%3A0x3e8fbfae83a78acb!2sBiblioteca%20San%20Francisco%20Solano!5e0!3m2!1ses-419!2sar!4v1734790636235!5m2!1ses-419!2sar"
+                width="400"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>        
 
     </nav>
 
