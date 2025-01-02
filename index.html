@@ -701,16 +701,17 @@
             .catch(error => console.error('Error cargando los libros recomendados:', error));
     }
     
-    // Navegación del carrusel
     function setupCarouselNavigation() {
         const carousel = document.getElementById('carousel-container');
         const prevButton = document.getElementById('prev-button');
         const nextButton = document.getElementById('next-button');
     
+        // Mover hacia la izquierda
         prevButton.addEventListener('click', () => {
             carousel.scrollBy({ left: -200, behavior: 'smooth' });
         });
     
+        // Mover hacia la derecha
         nextButton.addEventListener('click', () => {
             carousel.scrollBy({ left: 200, behavior: 'smooth' });
         });
@@ -727,6 +728,7 @@
         // Configurar navegación del carrusel
         setupCarouselNavigation();
     });
+
     </script>
 </head>
 <body>
