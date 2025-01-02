@@ -447,15 +447,11 @@
             }
         }
 
-        #recommended-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
         /* Botones de navegación del carrusel */
-        #prev-button, #next-button {
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -463,14 +459,16 @@
             border: 1px solid #ccc;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
             text-align: center;
-            line-height: 40px; /* Alinea el texto verticalmente */
+            line-height: 40px;
             color: #333;
+            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
+            z-index: 10;
             transition: background-color 0.3s;
         }
         
-        #prev-button:hover, #next-button:hover {
+        .carousel-button:hover {
             background-color: rgba(200, 200, 200, 0.8); /* Fondo gris claro al pasar el mouse */
         }
         
@@ -478,15 +476,48 @@
         #carousel-container {
             display: flex;
             gap: 10px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            padding: 10px 0;
-            scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+            overflow: hidden; /* Evita que los libros fuera de la vista sean visibles */
         }
         
-        #carousel-container::-webkit-scrollbar {
-            display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Edge */
+        /* Tarjetas del carrusel */
+        .carousel-book-card {
+            flex: 0 0 calc(100% / 3 - 20px); /* Muestra 3 libros en PC */
+            max-width: calc(100% / 3 - 20px);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
+        
+        .carousel-book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .carousel-book-card h4 {
+            font-size: 14px;
+            color: #333;
+            margin: 10px 0 0;
+        }
+        
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .carousel-book-card {
+                flex: 0 0 calc(100% / 2 - 10px); /* Muestra 2 libros en tablet */
+                max-width: calc(100% / 2 - 10px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .carousel-book-card {
+                flex: 0 0 calc(100% - 10px); /* Muestra 1 libro en móviles */
+                max-width: calc(100% - 10px);
+            }
+        }
+
         
     </style>
     <script>
@@ -657,77 +688,79 @@
             });
         }
 
-    // Selecciona el tiempo litúrgico actual manualmente
-    const liturgicalTime = "Navidad"; // Cambiar según el tiempo litúrgico actual
-    
-    function loadRecommendedBooks() {
-        fetch('recommended-books.json')
-            .then(response => response.json())
-            .then(data => {
-                const carouselContainer = document.getElementById('carousel-container');
-                carouselContainer.innerHTML = ''; // Limpiar el contenedor
-    
-                // Obtener los libros del tiempo litúrgico seleccionado
-                const books = data[liturgicalTime] || [];
-    
-                if (books.length === 0) {
-                    carouselContainer.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
-                    return;
+        let currentPosition = 0;
+        
+        function loadRecommendedBooks() {
+            const liturgicalTime = "Adviento"; // Cambiar según el tiempo litúrgico actual
+            fetch('recommended-books.json')
+                .then(response => response.json())
+                .then(data => {
+                    const carouselContainer = document.getElementById('carousel-container');
+                    carouselContainer.innerHTML = ''; // Limpiar el contenedor
+        
+                    // Obtener los libros del tiempo litúrgico seleccionado
+                    const books = data[liturgicalTime] || [];
+        
+                    books.forEach(book => {
+                        const title = book[0];
+                        const image = book[1];
+        
+                        // Crear una tarjeta para cada libro
+                        const bookCard = document.createElement('div');
+                        bookCard.classList.add('carousel-book-card');
+        
+                        bookCard.innerHTML = `
+                            <img src="${image}" alt="${title}">
+                            <h4>${title}</h4>
+                        `;
+        
+                        carouselContainer.appendChild(bookCard);
+                    });
+        
+                    setupCarousel();
+                })
+                .catch(error => console.error('Error cargando los libros recomendados:', error));
+        }
+        
+        function setupCarousel() {
+            const carouselContainer = document.getElementById('carousel-container');
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const bookCards = document.querySelectorAll('.carousel-book-card');
+        
+            const visibleBooks = Math.floor(carouselContainer.offsetWidth / bookCards[0].offsetWidth);
+            const totalBooks = bookCards.length;
+            const maxPosition = totalBooks - visibleBooks;
+        
+            updateButtons();
+        
+            prevButton.addEventListener('click', () => {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateCarousel();
                 }
-    
-                books.forEach(book => {
-                    // book[0]: título, book[1]: URL de la portada
-                    const title = book[0];
-                    const image = book[1];
-    
-                    // Crear una tarjeta para cada libro
-                    const bookCard = document.createElement('div');
-                    bookCard.classList.add('book-card');
-                    bookCard.style.minWidth = "150px";
-                    bookCard.style.flexShrink = "0";
-                    bookCard.style.border = "1px solid #ccc";
-                    bookCard.style.borderRadius = "5px";
-                    bookCard.style.padding = "10px";
-                    bookCard.style.textAlign = "center";
-    
-                    bookCard.innerHTML = `
-                        <img src="${image}" alt="${title}" style="width:100%; height: auto; border-radius: 5px;">
-                        <h4 style="font-size: 14px; margin-top: 10px;">${title}</h4>
-                    `;
-    
-                    carouselContainer.appendChild(bookCard);
-                });
-            })
-            .catch(error => console.error('Error cargando los libros recomendados:', error));
-    }
-    
-    function setupCarouselNavigation() {
-        const carousel = document.getElementById('carousel-container');
-        const prevButton = document.getElementById('prev-button');
-        const nextButton = document.getElementById('next-button');
-    
-        // Mover hacia la izquierda
-        prevButton.addEventListener('click', () => {
-            carousel.scrollBy({ left: -200, behavior: 'smooth' });
-        });
-    
-        // Mover hacia la derecha
-        nextButton.addEventListener('click', () => {
-            carousel.scrollBy({ left: 200, behavior: 'smooth' });
-        });
-    }
-    
-    // Mostrar el tiempo litúrgico en el encabezado
-    document.addEventListener('DOMContentLoaded', () => {
-        const liturgicalTimeDisplay = document.getElementById('liturgical-time');
-        liturgicalTimeDisplay.textContent = liturgicalTime;
-    
-        // Cargar libros recomendados
-        loadRecommendedBooks();
-    
-        // Configurar navegación del carrusel
-        setupCarouselNavigation();
-    });
+            });
+        
+            nextButton.addEventListener('click', () => {
+                if (currentPosition < maxPosition) {
+                    currentPosition++;
+                    updateCarousel();
+                }
+            });
+        
+            function updateCarousel() {
+                const translateX = -currentPosition * bookCards[0].offsetWidth;
+                carouselContainer.style.transform = `translateX(${translateX}px)`;
+                updateButtons();
+            }
+        
+            function updateButtons() {
+                prevButton.disabled = currentPosition === 0;
+                nextButton.disabled = currentPosition >= maxPosition;
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadRecommendedBooks);
 
     </script>
 </head>
@@ -770,20 +803,20 @@
         <!-- Libros Recomendados -->
         <div id="recommended-books" style="margin-top: 20px;">
             <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
-            <div style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+            <div class="carousel-wrapper" style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
                 <!-- Botón de navegación izquierda -->
-                <button id="prev-button" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: white; border: none; font-size: 24px; cursor: pointer; z-index: 10;">◀</button>
+                <button id="prev-button" class="carousel-button" style="left: 10px;">◀</button>
         
                 <!-- Carrusel de libros -->
-                <div id="carousel-container" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 10px; padding: 5px;">
+                <div id="carousel-container" style="display: flex; transition: transform 0.3s ease;">
                     <!-- Los libros se agregarán dinámicamente aquí -->
                 </div>
         
                 <!-- Botón de navegación derecha -->
-                <button id="next-button" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: white; border: none; font-size: 24px; cursor: pointer; z-index: 10;">▶</button>
+                <button id="next-button" class="carousel-button" style="right: 10px;">▶</button>
             </div>
         </div>
-        
+      
         <!-- Google Maps -->
         <div id="map-container" style="margin-top: 20px;">
             <h3>Ubicación de la Biblioteca</h3>
