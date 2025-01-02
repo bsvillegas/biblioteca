@@ -487,7 +487,7 @@
 
 /* Tarjetas del carrusel */
 .carousel-book-card {
-    flex: 0 0 auto; /* Ajuste automático al contenido */
+    flex: 0 0 auto; /* No debe estirarse, ocupa espacio según el tamaño de la tarjeta */
     width: 100px; /* Ancho fijo */
     height: 150px; /* Altura fija */
     border: 1px solid #ddd;
@@ -514,8 +514,21 @@
     margin-top: 5px; /* Separación pequeña */
 }
 
-
 /* Responsividad */
+
+/* En pantallas grandes (PC), mostrar 4 libros */
+@media (min-width: 1024px) {
+    .carousel-book-card {
+        flex: 0 0 calc(25% - 10px); /* 4 tarjetas en PC */
+        max-width: calc(25% - 10px);
+    }
+
+    .carousel-content {
+        gap: 15px; /* Aumentar espacio entre los libros */
+    }
+}
+
+/* En tabletas, mostrar 2 libros */
 @media (max-width: 768px) {
     .carousel-book-card {
         flex: 0 0 calc(50% - 10px); /* 2 tarjetas en tablet */
@@ -523,6 +536,7 @@
     }
 }
 
+/* En dispositivos móviles, mostrar 1 libro */
 @media (max-width: 480px) {
     .carousel-book-card {
         flex: 0 0 calc(100% - 10px); /* 1 tarjeta en móvil */
@@ -530,12 +544,6 @@
     }
 }
 
-@media (min-width: 1024px) {
-    .carousel-book-card {
-        flex: 0 0 calc(25% - 10px); /* 4 tarjetas en PC */
-        max-width: calc(25% - 10px);
-    }
-}
 
 
 
