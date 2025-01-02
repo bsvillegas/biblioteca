@@ -472,24 +472,28 @@
             background-color: rgba(200, 200, 200, 0.8); /* Fondo gris claro al pasar el mouse */
         }
         
-        /* Contenedor del carrusel */
-        #carousel-container {
-            display: flex;
-            gap: 10px;
-            overflow: hidden; /* Evita que los libros fuera de la vista sean visibles */
-        }
+#carousel-container {
+    display: flex;
+    gap: 10px;
+    overflow: hidden; /* Oculta el contenido que está fuera del área visible */
+    will-change: transform;
+    padding: 10px 0;
+    scroll-behavior: smooth; /* Permite desplazamiento suave */
+}
+
         
         /* Tarjetas del carrusel */
-        .carousel-book-card {
-            flex: 0 0 calc(100% / 3 - 20px); /* Muestra 3 libros en PC */
-            max-width: calc(100% / 3 - 20px);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            background-color: #fff;
-            padding: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.carousel-book-card {
+    flex: 0 0 calc(100% / 3 - 20px); /* 3 tarjetas visibles en escritorio */
+    max-width: calc(100% / 3 - 20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
         
         .carousel-book-card img {
             width: 100%;
@@ -741,9 +745,13 @@ function setupCarousel() {
         return;
     }
 
-    const cardWidth = bookCards[0].offsetWidth + 10; // Ancho de una tarjeta + gap
+    // Ancho de una tarjeta, incluyendo el margen (gap)
+    const cardWidth = bookCards[0].offsetWidth + parseInt(window.getComputedStyle(carouselContainer).gap) || 0;
+    const visibleBooks = Math.floor(carouselContainer.offsetWidth / cardWidth);
+    const totalBooks = bookCards.length;
+    const maxPosition = Math.max(0, totalBooks - visibleBooks);
+
     let currentPosition = 0;
-    const maxPosition = Math.max(0, bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth));
 
     function updateCarousel() {
         const translateX = -currentPosition * cardWidth;
@@ -770,9 +778,10 @@ function setupCarousel() {
         }
     });
 
-    // Inicializar estado del carrusel
+    // Inicializar botones y posición
     updateCarousel();
 }
+
 
         
 
