@@ -486,7 +486,6 @@
 }
 
 /* Tarjetas del carrusel */
-/* Tarjetas del carrusel */
 .carousel-book-card {
     flex: 0 0 auto; /* Ajuste automático al contenido */
     width: 100px; /* Ancho fijo */
@@ -519,8 +518,8 @@
 /* Responsividad */
 @media (max-width: 768px) {
     .carousel-book-card {
-        flex: 0 0 calc(100% / 2 - 10px); /* 2 tarjetas en tablet */
-        max-width: calc(100% / 2 - 10px);
+        flex: 0 0 calc(50% - 10px); /* 2 tarjetas en tablet */
+        max-width: calc(50% - 10px);
     }
 }
 
@@ -530,6 +529,14 @@
         max-width: calc(100% - 10px);
     }
 }
+
+@media (min-width: 1024px) {
+    .carousel-book-card {
+        flex: 0 0 calc(25% - 10px); /* 4 tarjetas en PC */
+        max-width: calc(25% - 10px);
+    }
+}
+
 
 
         
