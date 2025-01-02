@@ -690,8 +690,7 @@
 
         let currentPosition = 0;
         
-        function loadRecommendedBooks() {
-            const liturgicalTime = "Navidad"; // Cambiar según el tiempo litúrgico actual
+        function loadRecommendedBooks(liturgicalTime) {
             fetch('recommended-books.json')
                 .then(response => response.json())
                 .then(data => {
@@ -700,6 +699,12 @@
         
                     // Obtener los libros del tiempo litúrgico seleccionado
                     const books = data[liturgicalTime] || [];
+        
+                    if (books.length === 0) {
+                        carouselContainer.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
+                        console.warn(`No se encontraron libros para el tiempo litúrgico: ${liturgicalTime}`);
+                        return;
+                    }
         
                     books.forEach(book => {
                         const title = book[0];
@@ -717,11 +722,13 @@
                         carouselContainer.appendChild(bookCard);
                     });
         
-                    setupCarousel();
+                    console.log(`Libros cargados para el tiempo litúrgico: ${liturgicalTime}`, books);
                 })
-                .catch(error => console.error('Error cargando los libros recomendados:', error));
+                .catch(error => {
+                    console.error('Error cargando los libros recomendados:', error);
+                });
         }
-        
+
         function setupCarousel() {
             const carouselContainer = document.getElementById('carousel-container');
             const prevButton = document.getElementById('prev-button');
@@ -730,9 +737,20 @@
         
             const visibleBooks = Math.floor(carouselContainer.offsetWidth / bookCards[0].offsetWidth);
             const totalBooks = bookCards.length;
-            const maxPosition = totalBooks - visibleBooks;
+            const maxPosition = Math.max(0, totalBooks - visibleBooks); // Evitar posiciones negativas
         
-            updateButtons();
+            let currentPosition = 0;
+        
+            function updateCarousel() {
+                const translateX = -currentPosition * bookCards[0].offsetWidth;
+                carouselContainer.style.transform = `translateX(${translateX}px)`;
+                updateButtons();
+            }
+        
+            function updateButtons() {
+                prevButton.disabled = currentPosition === 0;
+                nextButton.disabled = currentPosition >= maxPosition;
+            }
         
             prevButton.addEventListener('click', () => {
                 if (currentPosition > 0) {
@@ -748,19 +766,24 @@
                 }
             });
         
-            function updateCarousel() {
-                const translateX = -currentPosition * bookCards[0].offsetWidth;
-                carouselContainer.style.transform = `translateX(${translateX}px)`;
-                updateButtons();
-            }
-        
-            function updateButtons() {
-                prevButton.disabled = currentPosition === 0;
-                nextButton.disabled = currentPosition >= maxPosition;
-            }
+            // Inicializar botones y posición
+            updateCarousel();
         }
+
         
-        document.addEventListener('DOMContentLoaded', loadRecommendedBooks);
+        // Mostrar el tiempo litúrgico en el encabezado
+        document.addEventListener('DOMContentLoaded', () => {
+            const liturgicalTime = "Navidad"; // Cambiar aquí según el tiempo actual
+            const liturgicalTimeDisplay = document.getElementById('liturgical-time');
+            liturgicalTimeDisplay.textContent = liturgicalTime; // Reflejar el tiempo en el encabezado
+        
+            // Cargar libros recomendados
+            loadRecommendedBooks(liturgicalTime);
+        
+            // Configurar navegación del carrusel
+            setupCarousel();
+        });
+
 
     </script>
 </head>
