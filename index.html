@@ -692,21 +692,19 @@
             });
         }
 
-        // Mostrar el tiempo litúrgico en el encabezado
-        document.addEventListener('DOMContentLoaded', () => {
-            const liturgicalTime = "Navidad"; // Cambiar aquí según el tiempo actual
-            const liturgicalTimeDisplay = document.getElementById('liturgical-time');
-            liturgicalTimeDisplay.textContent = liturgicalTime; // Reflejar el tiempo en el encabezado
-        
-            // Cargar libros recomendados
-            loadRecommendedBooks(liturgicalTime);
-        
-            // Configurar navegación del carrusel
-            setupCarousel();
-        });
-        
+document.addEventListener('DOMContentLoaded', () => {
+    const liturgicalTime = "Navidad"; // Tiempo litúrgico actual
+    const liturgicalTimeDisplay = document.getElementById('liturgical-time');
+    liturgicalTimeDisplay.textContent = liturgicalTime;
+
+    // Cargar libros recomendados
+    loadRecommendedBooks(liturgicalTime).then(() => {
+        setupCarousel();
+    });
+});
+
 function loadRecommendedBooks(liturgicalTime) {
-    fetch('recommended-books.json')
+    return fetch('recommended-books.json')
         .then(response => response.json())
         .then(data => {
             const carouselContainer = document.getElementById('carousel-container');
@@ -718,20 +716,18 @@ function loadRecommendedBooks(liturgicalTime) {
                 const title = book[0];
                 const image = book[1];
 
+                // Crear tarjeta para el libro
                 const bookCard = document.createElement('div');
                 bookCard.classList.add('carousel-book-card');
                 bookCard.innerHTML = `
-                    <img src="${image}" alt="${title}" style="width: 100%; height: auto;">
+                    <img src="${image}" alt="${title}">
                     <h4>${title}</h4>
                 `;
 
                 carouselContainer.appendChild(bookCard);
             });
-
-            // Configurar el carrusel después de cargar los libros
-            setupCarousel();
         })
-        .catch(error => console.error('Error cargando los libros recomendados:', error));
+        .catch(error => console.error('Error al cargar los libros:', error));
 }
 
 function setupCarousel() {
@@ -741,29 +737,27 @@ function setupCarousel() {
     const bookCards = document.querySelectorAll('.carousel-book-card');
 
     if (bookCards.length === 0) {
-        console.warn("No hay libros en el carrusel.");
+        console.warn('No hay libros en el carrusel.');
         return;
     }
 
-    // Ancho de una tarjeta, incluyendo el margen (gap)
-    const cardWidth = bookCards[0].offsetWidth + parseInt(window.getComputedStyle(carouselContainer).gap) || 0;
-    const visibleBooks = Math.floor(carouselContainer.offsetWidth / cardWidth);
-    const totalBooks = bookCards.length;
-    const maxPosition = Math.max(0, totalBooks - visibleBooks);
-
+    const cardWidth = bookCards[0].offsetWidth + 10; // Ancho de tarjeta + gap
     let currentPosition = 0;
 
+    // Mover el carrusel a la posición actual
     function updateCarousel() {
         const translateX = -currentPosition * cardWidth;
         carouselContainer.style.transform = `translateX(${translateX}px)`;
         updateButtons();
     }
 
+    // Actualizar estado de los botones
     function updateButtons() {
         prevButton.disabled = currentPosition === 0;
-        nextButton.disabled = currentPosition >= maxPosition;
+        nextButton.disabled = currentPosition >= bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth);
     }
 
+    // Eventos de los botones
     prevButton.addEventListener('click', () => {
         if (currentPosition > 0) {
             currentPosition--;
@@ -772,15 +766,16 @@ function setupCarousel() {
     });
 
     nextButton.addEventListener('click', () => {
-        if (currentPosition < maxPosition) {
+        if (currentPosition < bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth)) {
             currentPosition++;
             updateCarousel();
         }
     });
 
-    // Inicializar botones y posición
+    // Inicializar carrusel
     updateCarousel();
 }
+
 
 
         
@@ -833,7 +828,7 @@ function setupCarousel() {
                 <button id="prev-button" class="carousel-button" style="left: 10px;">◀</button>
         
                 <!-- Carrusel de libros -->
-                <div id="carousel-container" style="display: flex; transition: transform 0.3s ease;">
+                <div id="carousel-container" class="carousel-content">
                     <!-- Los libros se agregarán dinámicamente aquí -->
                 </div>
         
@@ -841,7 +836,7 @@ function setupCarousel() {
                 <button id="next-button" class="carousel-button" style="right: 10px;">▶</button>
             </div>
         </div>
-      
+
 
     </nav>
 
