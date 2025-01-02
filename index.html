@@ -687,88 +687,7 @@
                 }
             });
         }
-        
-        function loadRecommendedBooks(liturgicalTime) {
-            fetch('recommended-books.json')
-                .then(response => response.json())
-                .then(data => {
-                    const carouselContainer = document.getElementById('carousel-container');
-                    carouselContainer.innerHTML = ''; // Limpiar el contenedor
-        
-                    // Obtener los libros del tiempo litúrgico seleccionado
-                    const books = data[liturgicalTime] || [];
-        
-                    if (books.length === 0) {
-                        carouselContainer.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
-                        console.warn(`No se encontraron libros para el tiempo litúrgico: ${liturgicalTime}`);
-                        return;
-                    }
-        
-                    books.forEach(book => {
-                        const title = book[0];
-                        const image = book[1];
-        
-                        // Crear una tarjeta para cada libro
-                        const bookCard = document.createElement('div');
-                        bookCard.classList.add('carousel-book-card');
-        
-                        bookCard.innerHTML = `
-                            <img src="${image}" alt="${title}">
-                            <h4>${title}</h4>
-                        `;
-        
-                        carouselContainer.appendChild(bookCard);
-                    });
-        
-                    console.log(`Libros cargados para el tiempo litúrgico: ${liturgicalTime}`, books);
-                })
-                .catch(error => {
-                    console.error('Error cargando los libros recomendados:', error);
-                });
-        }
 
-        function setupCarousel() {
-            const carouselContainer = document.getElementById('carousel-container');
-            const prevButton = document.getElementById('prev-button');
-            const nextButton = document.getElementById('next-button');
-            const bookCards = document.querySelectorAll('.carousel-book-card');
-        
-            const visibleBooks = Math.floor(carouselContainer.offsetWidth / bookCards[0].offsetWidth);
-            const totalBooks = bookCards.length;
-            const maxPosition = Math.max(0, totalBooks - visibleBooks); // Evitar posiciones negativas
-        
-            let currentPosition = 0;
-        
-            function updateCarousel() {
-                const translateX = -currentPosition * bookCards[0].offsetWidth;
-                carouselContainer.style.transform = `translateX(${translateX}px)`;
-                updateButtons();
-            }
-        
-            function updateButtons() {
-                prevButton.disabled = currentPosition === 0;
-                nextButton.disabled = currentPosition >= maxPosition;
-            }
-        
-            prevButton.addEventListener('click', () => {
-                if (currentPosition > 0) {
-                    currentPosition--;
-                    updateCarousel();
-                }
-            });
-        
-            nextButton.addEventListener('click', () => {
-                if (currentPosition < maxPosition) {
-                    currentPosition++;
-                    updateCarousel();
-                }
-            });
-        
-            // Inicializar botones y posición
-            updateCarousel();
-        }
-
-        
         // Mostrar el tiempo litúrgico en el encabezado
         document.addEventListener('DOMContentLoaded', () => {
             const liturgicalTime = "Navidad"; // Cambiar aquí según el tiempo actual
@@ -781,6 +700,82 @@
             // Configurar navegación del carrusel
             setupCarousel();
         });
+        
+function loadRecommendedBooks(liturgicalTime) {
+    fetch('recommended-books.json')
+        .then(response => response.json())
+        .then(data => {
+            const carouselContainer = document.getElementById('carousel-container');
+            carouselContainer.innerHTML = ''; // Limpiar el contenedor
+
+            const books = data[liturgicalTime] || [];
+
+            books.forEach(book => {
+                const title = book[0];
+                const image = book[1];
+
+                const bookCard = document.createElement('div');
+                bookCard.classList.add('carousel-book-card');
+                bookCard.innerHTML = `
+                    <img src="${image}" alt="${title}" style="width: 100%; height: auto;">
+                    <h4>${title}</h4>
+                `;
+
+                carouselContainer.appendChild(bookCard);
+            });
+
+            // Configurar el carrusel después de cargar los libros
+            setupCarousel();
+        })
+        .catch(error => console.error('Error cargando los libros recomendados:', error));
+}
+
+function setupCarousel() {
+    const carouselContainer = document.getElementById('carousel-container');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+    const bookCards = document.querySelectorAll('.carousel-book-card');
+
+    if (bookCards.length === 0) {
+        console.warn("No hay libros en el carrusel.");
+        return;
+    }
+
+    const cardWidth = bookCards[0].offsetWidth + 10; // Ancho de una tarjeta + gap
+    let currentPosition = 0;
+    const maxPosition = Math.max(0, bookCards.length - Math.floor(carouselContainer.offsetWidth / cardWidth));
+
+    function updateCarousel() {
+        const translateX = -currentPosition * cardWidth;
+        carouselContainer.style.transform = `translateX(${translateX}px)`;
+        updateButtons();
+    }
+
+    function updateButtons() {
+        prevButton.disabled = currentPosition === 0;
+        nextButton.disabled = currentPosition >= maxPosition;
+    }
+
+    prevButton.addEventListener('click', () => {
+        if (currentPosition > 0) {
+            currentPosition--;
+            updateCarousel();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentPosition < maxPosition) {
+            currentPosition++;
+            updateCarousel();
+        }
+    });
+
+    // Inicializar estado del carrusel
+    updateCarousel();
+}
+
+        
+
 
 
     </script>
