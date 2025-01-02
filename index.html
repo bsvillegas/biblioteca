@@ -486,28 +486,35 @@
 }
 
 /* Tarjetas del carrusel */
+/* Tarjetas del carrusel */
 .carousel-book-card {
-    flex: 0 0 calc(100% / 3 - 30px); /* Muestra 3 tarjetas en pantallas grandes */
-    max-width: calc(100% / 3 - 30px);
+    flex: 0 0 auto; /* Ajuste automático al contenido */
+    width: 100px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ocultar contenido que exceda el tamaño */
 }
 
+/* Imagen dentro de la tarjeta */
 .carousel-book-card img {
-    width: 100%;
-    height: auto;
+    width: 100px; /* Mantener tamaño real */
+    height: 150px; /* Mantener tamaño real */
+    object-fit: cover; /* Asegurar que la imagen llene el espacio sin deformarse */
     border-radius: 5px;
 }
 
+/* Título del libro */
 .carousel-book-card h4 {
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
-    margin: 10px 0 0;
+    margin-top: 5px; /* Separación pequeña */
 }
+
 
 /* Responsividad */
 @media (max-width: 768px) {
