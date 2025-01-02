@@ -454,6 +454,25 @@
             justify-content: center;
         }
 
+        /* Ajustar la apariencia del contenedor */
+        #carousel-container {
+            scrollbar-width: none; /* Para Firefox */
+        }
+        
+        #carousel-container::-webkit-scrollbar {
+            display: none; /* Para Chrome, Safari y Edge */
+        }
+        
+        /* Botones de navegación */
+        #prev-button, #next-button {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
         
     </style>
     <script>
@@ -631,33 +650,58 @@
         fetch('recommended-books.json')
             .then(response => response.json())
             .then(data => {
-                const container = document.getElementById('recommended-container');
-                container.innerHTML = ''; // Limpiar el contenedor
+                const carouselContainer = document.getElementById('carousel-container');
+                carouselContainer.innerHTML = ''; // Limpiar el contenedor
     
                 // Obtener los libros del tiempo litúrgico seleccionado
                 const books = data[liturgicalTime] || [];
     
                 if (books.length === 0) {
-                    container.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
+                    carouselContainer.innerHTML = `<p>No hay libros recomendados para este tiempo litúrgico.</p>`;
                     return;
                 }
     
                 books.forEach(book => {
+                    // book[0]: título, book[1]: URL de la portada
+                    const title = book[0];
+                    const image = book[1];
+    
                     // Crear una tarjeta para cada libro
                     const bookCard = document.createElement('div');
                     bookCard.classList.add('book-card');
+                    bookCard.style.minWidth = "150px";
+                    bookCard.style.flexShrink = "0";
+                    bookCard.style.border = "1px solid #ccc";
+                    bookCard.style.borderRadius = "5px";
+                    bookCard.style.padding = "10px";
+                    bookCard.style.textAlign = "center";
     
                     bookCard.innerHTML = `
-                        <img src="${book.image}" alt="${book.title}">
-                        <h4>${book.title}</h4>
+                        <img src="${image}" alt="${title}" style="width:100%; height: auto; border-radius: 5px;">
+                        <h4 style="font-size: 14px; margin-top: 10px;">${title}</h4>
                     `;
     
-                    container.appendChild(bookCard);
+                    carouselContainer.appendChild(bookCard);
                 });
             })
             .catch(error => console.error('Error cargando los libros recomendados:', error));
     }
-
+    
+    // Navegación del carrusel
+    function setupCarouselNavigation() {
+        const carousel = document.getElementById('carousel-container');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+    
+        prevButton.addEventListener('click', () => {
+            carousel.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+    
+        nextButton.addEventListener('click', () => {
+            carousel.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+    }
+    
     // Mostrar el tiempo litúrgico en el encabezado
     document.addEventListener('DOMContentLoaded', () => {
         const liturgicalTimeDisplay = document.getElementById('liturgical-time');
@@ -665,6 +709,9 @@
     
         // Cargar libros recomendados
         loadRecommendedBooks();
+    
+        // Configurar navegación del carrusel
+        setupCarouselNavigation();
     });
     </script>
 </head>
@@ -707,7 +754,18 @@
         <!-- Libros Recomendados -->
         <div id="recommended-books" style="margin-top: 20px;">
             <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
-            <div id="recommended-container" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            <div style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+                <!-- Botón de navegación izquierda -->
+                <button id="prev-button" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: none; border: none; font-size: 24px; cursor: pointer; z-index: 10;">◀</button>
+        
+                <!-- Carrusel de libros -->
+                <div id="carousel-container" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 10px;">
+                    <!-- Los libros se agregarán dinámicamente aquí -->
+                </div>
+        
+                <!-- Botón de navegación derecha -->
+                <button id="next-button" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: none; border: none; font-size: 24px; cursor: pointer; z-index: 10;">▶</button>
+            </div>
         </div>
         
         <!-- Google Maps -->
