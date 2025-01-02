@@ -447,44 +447,47 @@
             }
         }
 
-        /* Botones de navegación del carrusel */
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
-            border: 1px solid #ccc;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-            text-align: center;
-            line-height: 40px;
-            color: #333;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            z-index: 10;
-            transition: background-color 0.3s;
-        }
-        
-        .carousel-button:hover {
-            background-color: rgba(200, 200, 200, 0.8); /* Fondo gris claro al pasar el mouse */
-        }
-        
-#carousel-container {
-    display: flex;
-    gap: 10px;
-    overflow: hidden; /* Oculta el contenido que está fuera del área visible */
-    will-change: transform;
-    padding: 10px 0;
-    scroll-behavior: smooth; /* Permite desplazamiento suave */
+/* Estilos para el carrusel */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
-        
-        /* Tarjetas del carrusel */
+.carousel-content {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 10px; /* Espaciado entre las tarjetas */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+/* Tarjetas del carrusel */
 .carousel-book-card {
-    flex: 0 0 calc(100% / 3 - 20px); /* 3 tarjetas visibles en escritorio */
+    flex: 0 0 calc(100% / 3 - 20px); /* Muestra 3 tarjetas en pantallas grandes */
     max-width: calc(100% / 3 - 20px);
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -494,33 +497,33 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-        
-        .carousel-book-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        
-        .carousel-book-card h4 {
-            font-size: 14px;
-            color: #333;
-            margin: 10px 0 0;
-        }
-        
-        /* Responsividad */
-        @media (max-width: 768px) {
-            .carousel-book-card {
-                flex: 0 0 calc(100% / 2 - 10px); /* Muestra 2 libros en tablet */
-                max-width: calc(100% / 2 - 10px);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .carousel-book-card {
-                flex: 0 0 calc(100% - 10px); /* Muestra 1 libro en móviles */
-                max-width: calc(100% - 10px);
-            }
-        }
+.carousel-book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel-book-card h4 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carousel-book-card {
+        flex: 0 0 calc(100% / 2 - 10px); /* 2 tarjetas en tablet */
+        max-width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-book-card {
+        flex: 0 0 calc(100% - 10px); /* 1 tarjeta en móvil */
+        max-width: calc(100% - 10px);
+    }
+}
+
 
         
     </style>
