@@ -561,6 +561,16 @@
                 flex: 0 0 100px; /* 1 tarjeta con ancho fijo */
             }
         }
+
+        /* Estilos generales del contenedor principal */
+        #content-container {
+            display: flex;
+            flex-direction: column; /* Asegura que los elementos estén en una columna */
+            align-items: center; /* Centra los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos verticalmente si es necesario */
+            text-align: center;
+            padding: 20px; /* Espaciado alrededor */
+        }
     </style>
     <script>
         // Abrir y cerrar el menu desplegable
@@ -851,37 +861,39 @@
    <!--  <h2 class="category-title" id="global-title">Menú Principal</h2>   --> 
     <!-- Menú principal con botones para navegar -->
     <nav id="main-menu">   
-        <!-- Libros Recomendados -->
-        <div id="recommended-books" style="margin-top: 20px;">
-            <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
-            <div class="carousel-wrapper" style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
-                <!-- Botón de navegación izquierda -->
-                <button id="prev-button" class="carousel-button" style="left: 10px;">◀</button>
-        
-                <!-- Carrusel de libros -->
-                <div id="carousel-container" class="carousel-content">
-                    <!-- Los libros se agregarán dinámicamente aquí -->
+    <!-- Contenedor principal para el carrusel y el mapa -->
+        <div id="content-container">
+            <!-- Libros Recomendados -->
+            <div id="recommended-books" style="margin-top: 20px;">
+                <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
+                <div class="carousel-wrapper" style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
+                    <!-- Botón de navegación izquierda -->
+                    <button id="prev-button" class="carousel-button" style="left: 10px;">◀</button>
+            
+                    <!-- Carrusel de libros -->
+                    <div id="carousel-container" class="carousel-content">
+                        <!-- Los libros se agregarán dinámicamente aquí -->
+                    </div>
+            
+                    <!-- Botón de navegación derecha -->
+                    <button id="next-button" class="carousel-button" style="right: 10px;">▶</button>
                 </div>
-        
-                <!-- Botón de navegación derecha -->
-                <button id="next-button" class="carousel-button" style="right: 10px;">▶</button>
             </div>
+    
+            <!-- Google Maps -->
+            <div id="map-container" style="margin-top: 20px;">
+                <h3>Ubicación de la Biblioteca</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.7504694090135!2d-68.3500841326862!3d-34.626809497555016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a700292d4063%3A0x3e8fbfae83a78acb!2sBiblioteca%20San%20Francisco%20Solano!5e0!3m2!1ses-419!2sar!4v1734790636235!5m2!1ses-419!2sar"
+                    width="400"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>     
         </div>
-
-        <!-- Google Maps -->
-        <div id="map-container" style="margin-top: 20px;">
-            <h3>Ubicación de la Biblioteca</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.7504694090135!2d-68.3500841326862!3d-34.626809497555016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a700292d4063%3A0x3e8fbfae83a78acb!2sBiblioteca%20San%20Francisco%20Solano!5e0!3m2!1ses-419!2sar!4v1734790636235!5m2!1ses-419!2sar"
-                width="400"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>        
-
     </nav>
 
     <!-- Sección de Categorías -->
