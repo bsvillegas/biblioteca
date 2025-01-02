@@ -454,24 +454,38 @@
             justify-content: center;
         }
 
-        /* Ajustar la apariencia del contenedor */
+        /* Botones de navegación del carrusel */
+        #prev-button, #next-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+            text-align: center;
+            line-height: 40px; /* Alinea el texto verticalmente */
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        #prev-button:hover, #next-button:hover {
+            background-color: rgba(200, 200, 200, 0.8); /* Fondo gris claro al pasar el mouse */
+        }
+        
+        /* Contenedor del carrusel */
         #carousel-container {
-            scrollbar-width: none; /* Para Firefox */
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 10px 0;
+            scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
         }
         
         #carousel-container::-webkit-scrollbar {
-            display: none; /* Para Chrome, Safari y Edge */
-        }
-        
-        /* Botones de navegación */
-        #prev-button, #next-button {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
+            display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Edge */
         }
         
     </style>
@@ -756,15 +770,15 @@
             <h3>Libros Recomendados para el Tiempo de <span id="liturgical-time"></span></h3>
             <div style="position: relative; overflow: hidden; border: 1px solid #ccc; border-radius: 5px; padding: 10px;">
                 <!-- Botón de navegación izquierda -->
-                <button id="prev-button" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: none; border: none; font-size: 24px; cursor: pointer; z-index: 10;">◀</button>
+                <button id="prev-button" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: white; border: none; font-size: 24px; cursor: pointer; z-index: 10;">◀</button>
         
                 <!-- Carrusel de libros -->
-                <div id="carousel-container" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 10px;">
+                <div id="carousel-container" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 10px; padding: 5px;">
                     <!-- Los libros se agregarán dinámicamente aquí -->
                 </div>
         
                 <!-- Botón de navegación derecha -->
-                <button id="next-button" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: none; border: none; font-size: 24px; cursor: pointer; z-index: 10;">▶</button>
+                <button id="next-button" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: white; border: none; font-size: 24px; cursor: pointer; z-index: 10;">▶</button>
             </div>
         </div>
         
