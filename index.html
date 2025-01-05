@@ -664,8 +664,8 @@
                         <div class="book-details">
                             <div class="book-title">${title}</div>
                             <div class="book-author">${author}</div>
-                            <div class="status-box ${status === 'available' ? 'status-available' : 'status-unavailable'}">
-                                ${status === 'available' ? 'Disponible' : 'No Disponible'}
+                            <div class="status-box ${status === 'disponible' ? 'status-available' : 'status-unavailable'}">
+                                ${status === 'disponible' ? 'Disponible' : 'No Disponible'}
                             </div>
                         </div>
                     `;
@@ -735,7 +735,7 @@
         
             books.forEach(book => {
                 const isAvailable = book.querySelector('.status-box').classList.contains('status-available');
-                if ((status === 'available' && isAvailable) || (status === 'unavailable' && !isAvailable)) {
+                if ((status === 'disponible' && isAvailable) || (status === 'nodisponible' && !isAvailable)) {
                     book.style.display = 'flex';
                 } else {
                     book.style.display = 'none';
@@ -951,8 +951,8 @@
     <div id="book-list" style="display: none;"> 
         <input type="text" id="search-input" placeholder="Buscar libro por título o autor..." oninput="searchBooks()">
         <div class="filter-buttons">
-            <button class="filter-btn" onclick="filterByAvailability('available')">Solo Disponibles</button>
-            <button class="filter-btn" onclick="filterByAvailability('unavailable')">Solo No Disponibles</button>
+            <button class="filter-btn" onclick="filterByAvailability('disponible')">Solo Disponibles</button>
+            <button class="filter-btn" onclick="filterByAvailability('nodisponible')">Solo No Disponibles</button>
         </div>
         
         <!-- Contenedor de los libros -->
