@@ -5,13 +5,93 @@
         "image": "https://igrejadoscapuchinhos.org.br/wp-content/uploads/329928_3321553c17274240bb89ca12ba836037_mv2.jpg"
     },
     {
-        "name": "Categoría B",
-        "description": "Libros de historia y biografías.",
+        "name": "Reflexiones",
+        "description": "Descripción",
         "image": "https://via.placeholder.com/100x100"
     },
     {
-        "name": "Categoría C",
-        "description": "Libros de arte y cultura.",
+        "name": "Sacramentos",
+        "description": "Descripción",
         "image": "https://via.placeholder.com/100x100"
-    }
+    },
+    {
+        "name": "Apologética",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },
+    {
+        "name": "Formación",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },
+    {
+        "name": "Meditación y Espiritualidad",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },
+    {
+        "name": "Doctrina",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },  
+    {
+        "name": "Vida de Santos y Biografías",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },  
+    {
+        "name": "Colecciones Castellani (Gratis Date)",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },    
+    {
+        "name": "Formación",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },   
+    {
+        "name": "Historia",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },   
+    {
+        "name": "Novela",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },       
+    {
+        "name": "Teatro",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },    
+    {
+        "name": "Filosofía",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },    
+    {
+        "name": "Moral y Virtudes",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },        
+    {
+        "name": "Catequesis, Fe y Doctrina",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },       
+    {
+        "name": "Teología Sto. Tomás",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },       
+    {
+        "name": "Sermones",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    },     
+    {
+        "name": "Sobre la Santísima Virgen",
+        "description": "Descripción",
+        "image": "https://via.placeholder.com/100x100"
+    }      
 ]
