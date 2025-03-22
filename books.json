@@ -719,9 +719,7 @@
       "",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ]
-  ],
-  "": [
+    ],
     [
       "Carta de un director",
       "P. Francisco Palau",
@@ -731,20 +729,8 @@
     [
       "La Iglesia de Dios",
       "P. Francisco Palau",
-      "",
+      "disponible",
       "https://i.ibb.co/7fJvnXg/Cam-Scanner-22-03-2025-10-22.jpg"
-    ],
-    [
-      "",
-      "",
-      "",
-      ""
-    ],
-    [
-      1340,
-      "",
-      "",
-      ""
     ]
   ],
   "reflexiones": [
@@ -7901,6 +7887,20 @@
       "Secretariado Argentino del Apostolado de la Oracion",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ]
+  ],
+  "": [
+    [
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      1340,
+      "",
+      "",
+      ""
     ]
   ]
 }
