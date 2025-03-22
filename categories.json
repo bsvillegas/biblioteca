@@ -30,11 +30,6 @@
         "image": "https://via.placeholder.com/100x100"
     },
     {
-        "name": "Doctrina",
-        "description": "Descripción",
-        "image": "https://via.placeholder.com/100x100"
-    },  
-    {
         "name": "Vida de Santos y Biografías",
         "description": "Descripción",
         "image": "https://via.placeholder.com/100x100"
@@ -45,11 +40,6 @@
         "image": "https://via.placeholder.com/100x100"
     },    
     {
-        "name": "Formación",
-        "description": "Descripción",
-        "image": "https://via.placeholder.com/100x100"
-    },   
-    {
         "name": "Historia",
         "description": "Descripción",
         "image": "https://via.placeholder.com/100x100"
@@ -58,12 +48,7 @@
         "name": "Novela",
         "description": "Descripción",
         "image": "https://via.placeholder.com/100x100"
-    },       
-    {
-        "name": "Teatro",
-        "description": "Descripción",
-        "image": "https://via.placeholder.com/100x100"
-    },    
+    },         
     {
         "name": "Filosofía",
         "description": "Descripción",
