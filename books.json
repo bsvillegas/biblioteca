@@ -5237,26 +5237,12 @@
       "ANDREA RICCARDI",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ]
-  ],
-  "": [
+    ],
     [
       "Patrología ",
       "Dr. O. Bardenhewer",
       "disponible",
       "https://i.ibb.co/Txf1HFx6/patrologia.png"
-    ],
-    [
-      "",
-      "",
-      "",
-      ""
-    ],
-    [
-      1340,
-      "",
-      "",
-      ""
     ]
   ],
   "novela": [
@@ -7973,6 +7959,20 @@
       "Secretariado Argentino del Apostolado de la Oracion",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ]
+  ],
+  "": [
+    [
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      1340,
+      "",
+      "",
+      ""
     ]
   ]
 }
