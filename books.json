@@ -891,12 +891,6 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Encuentros De Iniciación Bíblica ",
-      "-",
-      "disponible",
-      "https://i.ibb.co/1tHz6smV/encuentros.png"
-    ],
-    [
       "Meditaciones Al Sagrado Corazón De Jesús",
       "-",
       "disponible",
@@ -2947,6 +2941,12 @@
       "https://santafaz.opac.com.ar/pgmedia/M622_T.jpg"
     ],
     [
+      "Charbel Makhluf",
+      "Fray Contardo Miglioranza",
+      "disponible",
+      ""
+    ],
+    [
       "Santa Rosa De Viterbo ",
       "Fray Contardo Miglioranza",
       "disponible",
@@ -3002,7 +3002,7 @@
     ],
     [
       "Vida Popular: San Antonio De Padua",
-      "",
+      "Fray Contardo Miglioranza",
       "disponible",
       "https://i.ibb.co/XXchrQmJ/padua2.png"
     ],
@@ -3355,6 +3355,12 @@
       "https://i.ibb.co/zh4mT1CK/san-carlos.png"
     ],
     [
+      "San Carlos Borromeo",
+      "Fray Contardo Miglioranza",
+      "disponible",
+      ""
+    ],
+    [
       "San Leopoldo Mandic",
       "Fray Contardo Miglioranza",
       "disponible",
@@ -3377,6 +3383,18 @@
       "Fray Contardo Miglioranza",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Buenaventura De Potenza",
+      "Fray Contardo Miglioranza",
+      "disponible",
+      ""
+    ],
+    [
+      "Buenaventura De Potenza",
+      "Fray Contardo Miglioranza",
+      "disponible",
+      ""
     ],
     [
       "Santa Maria Magdalena De Pazzi",
@@ -3409,7 +3427,7 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "San Cayetano Thiene",
+      "San Cayetano Thiene: el santo de la providencia",
       "Fray Contardo Miglioranza",
       "disponible",
       "https://i.ibb.co/qMYLMhLM/san-cayetano.png"
@@ -3439,7 +3457,7 @@
       "https://i.ibb.co/6RHxWtkZ/cupertino.png"
     ],
     [
-      "Amore Imposibles: Vida De Santa Margarita De Cortona",
+      "Amores Imposibles: Vida De Santa Margarita De Cortona",
       "Fray Contardo Miglioranza",
       "disponible",
       "https://i.ibb.co/nh7ZSSS/amoresi-mposibles.png"
@@ -4859,12 +4877,6 @@
       "https://images.cdn3.buscalibre.com/fit-in/360x360/47/90/47905339bddb858168236557dd6a4e74.jpg"
     ],
     [
-      "Jesucristo, Salvador Del Mundo",
-      "Comité Central Del Gran Jubileo",
-      "disponible",
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk00b6WluIaxTmAEH6DAEWNunLdBcLaD5XTGh_wt8_jGQhoFjNx66pC4LIln2Wp1PSpi0ztA-HwraqLXyevei3h1vQehyphenhyphen_DNWlwoqIX3tfA-dJP1mDEPdinLKY_Mev7HH9YfbVnFtlXUz7/s1600/Jesucristo%252Csalvador+del+mundo-Comit%25C3%25A9+central+del+gran+jubileo.jpg"
-    ],
-    [
       "Cristo Hombre",
       "R. P. Juan Rosanas",
       "disponible",
@@ -4941,12 +4953,6 @@
       "P. Alfredo Saenz ",
       "disponible",
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgkEgjzA7dnUB6X_jgVkJN72zT11cD_cHlGPpahXVM59qqf24s5hTkjZVMDfIU5s77xsXgN-CNwYhmd8yhclzX3LX5KNfZkfx_YKUUySFDIntGYzyOMdCdeUvkc_jMptIBzzuyvSxzmEQ/s1600/AlfredoSenzArquetiposCristianos%5B4%5D.jpg"
-    ],
-    [
-      "La Palabra De Cristo",
-      "Mons. Angel Herrera Oria",
-      "disponible",
-      "https://i.ibb.co/vxBrt33y/imagen-2025-03-31-134932759.png"
     ],
     [
       "Pio XII Y Las Ciencias Medicas",
@@ -5073,6 +5079,12 @@
       "Revista Nazaret",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Diccionario escolar básico",
+      "Victor García Hoz",
+      "disponible",
+      ""
     ],
     [
       "El Escándalo De La Cruz",
@@ -5585,6 +5597,12 @@
       "Domingo F. Sarmiento",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La cronología de Jesús",
+      "P. Fr. José Llamas, O. S. A.",
+      "disponible",
+      ""
     ]
   ],
   "novela": [
@@ -7789,7 +7807,7 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ]
   ],
-  "sermones": [
+  "homilias": [
     [
       "Sermones Escogidos I",
       "San Juan María Vianney (Cura De Ars)",
@@ -7915,6 +7933,12 @@
       "Romano Guardini",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Palabra De Cristo",
+      "Mons. Angel Herrera Oria",
+      "disponible",
+      "https://i.ibb.co/vxBrt33y/imagen-2025-03-31-134932759.png"
     ]
   ],
   "sobrelasantisimavirgen": [
@@ -8497,13 +8521,251 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ]
   ],
-  "": [
+  "sagradaescritura": [
     [
+      "La Biblia palabra de Dios",
+      "Pierre Grelot",
+      "disponible",
+      ""
+    ],
+    [
+      "Introducción especial al Nuevo Testamento",
+      "John E. Steinmueller",
+      "disponible",
+      ""
+    ],
+    [
+      "El Evangelio Explicado",
+      "Dr. D. Isidro Gomá y Tomás",
+      "disponible",
+      ""
+    ],
+    [
+      "Historia Bíblica",
+      "Ignacio Schuster - Juan B. Holzammer",
+      "disponible",
+      ""
+    ],
+    [
+      "Historia Bíblica II",
+      "Ignacio Schuster - Juan B. Holzammer",
+      "disponible",
+      ""
+    ],
+    [
+      "Introducción especial al Antiguo Testamento",
+      "John E. Steinmueller",
+      "disponible",
+      ""
+    ]
+  ],
+  "magisteriodelaiglesia": [
+    [
+      "Líneas pastorales para la Nueva Evangelización",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Líneas pastorales para la Nueva Evangelización",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Guía para la preparación del Expediente Matrimonial ",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "El Consejo Parroquial de Asuntos Económicos en la Renovación Pastoral",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "El Consejo Parroquial de Asuntos Económicos en la Renovación Pastoral",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "La mediana edad y la unificación espiritual en la vida del presbítero",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Directorio para la preparación del Expediente Matrimonial ",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Creo en la vida, dono la vida",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Directorio de Pastoral Familiar",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Felices los que creen",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Felices los que creen",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Felices los que creen",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Jesucristo, señor de la historia",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "El desafío de educar en el amor",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Instrucción general al Misal Romano ",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Iglesia y democracia en la Argentina",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Encuentros de iniciación bíblica",
       "",
+      "disponible",
+      ""
+    ],
+    [
+      "La Parroquia, misionera y solidaria",
+      "Pedro Osandón",
+      "disponible",
+      ""
+    ],
+    [
+      "Jesucristo, Salvador Del Mundo",
+      "Comité Central Del Gran Jubileo",
+      "disponible",
+      ""
+    ],
+    [
+      "El Espíritu en la vida de la familia",
+      "Comisión Episcopal de Pastoral Familiar Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Llenos del Espíritu Santo, anunciaban la palabra",
+      "Departamento de Pastoral Bíblica. Comisión Episcopal de Catequesis y Pastoral Bíblica Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Como Pablo, animados por la Palabra, formemos comunidades ",
+      "Departamento de Pastoral Bíblica. Comisión Episcopal de Catequesis y Pastoral Bíblica Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Vida y Salud. Jornada por la vida",
+      "Comisión Episcopal de Pastoral de la Salud",
+      "disponible",
+      ""
+    ],
+    [
+      "Frente a una Nueva Era",
+      "Comisión Episcopal de Fe y Cultura",
+      "disponible",
+      ""
+    ],
+    [
+      "Descubre un mundo necesitado. Día nacional del enfermo",
+      "Comisión Episcopal de Pastoral de la Salud",
+      "disponible",
+      ""
+    ],
+    [
+      "Renovación de la parroquia. Subsidio para la aplicación de las Líneas Pastorales de la Nueva Evangelización",
+      "Comisión Episcopal de Ministerios",
+      "disponible",
+      ""
+    ],
+    [
+      "Encuentro con Jesucristo vivo, camino para la conversión, la comunión y la solidaridad en América",
+      "Sínodo de los Obispos. Asamblea especial para América",
+      "disponible",
+      ""
+    ],
+    [
+      "De Ecclesia. Constitución dogmática del Concilio Vaticano II sobre la Iglesia",
       "",
       "",
       ""
     ],
+    [
+      "Carta Encíclica Lumen Fidei",
+      "Papa Francisco",
+      "disponible",
+      ""
+    ],
+    [
+      "Mientras se aproxima el tercer milenio",
+      "Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Concilio Vaticano II. Constituciones. Decretos. Declaraciones",
+      "",
+      "disponible",
+      ""
+    ],
+    [
+      "Concilio Vaticano II. Constitución «Gaudium et spes»",
+      "M. Capelo, Mons. J. M. Cirarda, Mons. R. González Moralejo, J. M. Guix, A. Martín-Artajo, L. Pereña, F. Rodríguez, C. Sánchez Aizcorbe S. I., C. Santamaría, J. M. Setién, R. Sigmond O. P., M. Zalba S. I.",
+      "disponible",
+      ""
+    ],
+    [
+      "Matrimonios nulos",
+      "José Bonet Alcón",
+      "disponible",
+      ""
+    ],
+    [
+      "Breve compendio para el ministerio sacerdotal",
+      "",
+      "disponible",
+      ""
+    ]
+  ],
+  "": [
     [
       "",
       "",
