@@ -229,12 +229,6 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "La Vida Espiritual",
-      "Servais Pinckaers",
-      "disponible",
-      "https://pictures.abebooks.com/isbn/9788470504082-es.jpg"
-    ],
-    [
       "Práctica De Amor A Jesucristo",
       "San Alfonso María De Ligorio",
       "disponible",
@@ -911,10 +905,28 @@
       "https://i.ibb.co/9HbJCVLm/Cam-Scanner-22-03-2025-11-40.jpg"
     ],
     [
+      "La práctica del confesor",
+      "San Alfonso",
+      "disponible",
+      ""
+    ],
+    [
+      "Ars Artium. Vademécum",
+      "Prof. Carlos V. Scandroglio",
+      "disponible",
+      ""
+    ],
+    [
       "La Gracia De Dios",
       "Antonio Royo Marín",
       "disponible",
       "https://i.ibb.co/NnNxc7sv/la-gracia.png"
+    ],
+    [
+      "Revestíos de entrañas de misericordia. Manual de preparación para el ministerio de la penitencia",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible",
+      ""
     ],
     [
       "Prodigios Eucaristicos",
@@ -1008,7 +1020,7 @@
     ],
     [
       "Revestios De Entrañas De Misericordia",
-      "Padre Miguel Ángel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://http2.mlstatic.com/D_NQ_NP_2X_924656-MLA76433297374_052024-F.webp"
     ],
@@ -1157,10 +1169,632 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ]
   ],
+  "teologia": [
+    [
+      "La Vida Espiritual",
+      "Servais Pinckaers",
+      "disponible",
+      "https://pictures.abebooks.com/isbn/9788470504082-es.jpg"
+    ],
+    [
+      "Cuadernos de espiritualidad y teología",
+      "",
+      "disponible",
+      ""
+    ],
+    [
+      "Misterios De La Vida De Cristo ",
+      "Padre F. Suárez S. I.",
+      "disponible",
+      "https://i.ibb.co/sJCtS95m/imagen-2025-03-31-134333779.png"
+    ],
+    [
+      "El Credo Comentado",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Apetito Del Bien:",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Catena Aurea I",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Catena Aurea III",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Catena Aurea III",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Catena Aurea IV",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Catena Aurea V",
+      "Santo Tomás De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Teología fundamental. Tomo I",
+      "Albert Lang",
+      "disponible",
+      ""
+    ],
+    [
+      "Teología fundamental. Tomo II",
+      "Albert Lang",
+      "disponible",
+      ""
+    ]
+  ],
+  "formacion": [
+    [
+      "Cristo = Hombre",
+      "R. P. Juan Rosanas, S. I.",
+      "disponible",
+      "https://i.ibb.co/jZwGYnF3/imagen-2025-03-31-134444575.png"
+    ],
+    [
+      "Las Verdades Robadas",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible",
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/a7/b4/a7b4df358a7d42ea4588ead4f5a480a8.jpg"
+    ],
+    [
+      "El Teólogo Responde (Volumen II)",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Teólogo Responde (Volumen III)",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Iota Unum: Estudio Sobre La Transformaciones De La Iglesia Católica Del Siglo XX",
+      "Romano Amerio",
+      "disponible",
+      "https://i.ibb.co/W4HhFqBW/imagen-2025-03-31-130941014.png"
+    ],
+    [
+      "La Iglesia Y El Liberalismo - Magisterio De Los Papas",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Comunión En La Mano",
+      "Mons. Juan Rodolfo Laise",
+      "disponible",
+      "https://http2.mlstatic.com/D_NQ_NP_624566-MLA70823312907_082023-O.webp"
+    ],
+    [
+      "Los Fraudes Espiritistas Y Los Fenómenos Metapsiquicos",
+      "Carlos María De Heredia S. J.",
+      "disponible",
+      "https://i.ibb.co/S4z4f3rt/imagen-2025-03-31-131303301.png"
+    ],
+    [
+      "Defensa Del Amor Y De La Vida",
+      "Maria Ester Perea De Martinez",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Mujer Hoy Despues De Pekín",
+      "Arcagni ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Derecho, Moral Y Vida",
+      "Carlos Jose Mosso",
+      "disponible",
+      "https://i.ibb.co/1t8VHtdK/imagen-2025-03-31-131500295.png"
+    ],
+    [
+      "Educacion Sexual, Aborto Y Demografia",
+      "Fundacion Nueva Cristiandad",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Manipulación Genética Y Reproducción Asistida En El Ser Humano",
+      "Alejandro Daniel Bolzán",
+      "disponible",
+      "https://i.ibb.co/FbDRhmq6/imagen-2025-03-31-131623414.png"
+    ],
+    [
+      "Divorcio",
+      "Hector Petrocelli",
+      "disponible",
+      "https://i.ibb.co/s9KRNBQB/imagen-2025-03-31-131818846.png"
+    ],
+    [
+      "Laicismo ?De Qué Laicismo Me Están Hablando?",
+      "Dr. Jorge Piñero Marqués",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Escatología Y Apologética",
+      "Daniel Iglesias Grézes",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Masonería ",
+      "Massimo Introvigne",
+      "disponible",
+      "https://www.cesnur.org/LIBRI%20CESNUR/es_masoneria.gif"
+    ],
+    [
+      "Jesuitas Descarriados",
+      "Thomas Baylor",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Derecho A La Vida",
+      "Alfredo Saenz",
+      "disponible",
+      "https://i.ibb.co/5JHR4Ww/imagen-2025-03-31-132028703.png"
+    ],
+    [
+      "El Pan Vivo",
+      "Antonio Caponnetto",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Un Privilegio De Los Ordenados",
+      "Michael Davies",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Patria Potestad Y La Doctrina Social De La Iglesia",
+      "Carmelo E. Palumbo",
+      "disponible",
+      "https://i.ibb.co/SXHtVF7Z/imagen-2025-03-31-132149899.png"
+    ],
+    [
+      "Errores Modernos",
+      "Benjamin Martin Sanchez ",
+      "disponible",
+      "https://i.ibb.co/pjGRSXFs/imagen-2025-03-31-132226255.png"
+    ],
+    [
+      "Indice De Los Errores Modernos Más Difundidos",
+      "José L. Torres",
+      "disponible",
+      "https://i.ibb.co/9HZXKxWF/imagen-2025-03-31-132347889.png"
+    ],
+    [
+      "Doctrina De Acción Contrarrevolucionaria",
+      "Cnel. P. Chateau-Jobert",
+      "disponible",
+      "https://i.ibb.co/nqddV5B8/imagen-2025-03-31-132438686.png"
+    ],
+    [
+      "El Cielo Nos Avisa: Muy Próximos Días De Tinieblas",
+      "Un Sacerdote Católico…",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Derecho A La Vida",
+      "Fermin R. Merchante",
+      "disponible",
+      "https://i.ibb.co/Dgg4Q5X9/imagen-2025-03-31-132541876.png"
+    ],
+    [
+      "Bolchevismo",
+      "Waldemar Gurian",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Las Principales Tesis Marxistas",
+      "F. Arnaudo",
+      "disponible",
+      "https://pictures.abebooks.com/inventory/7233214203.jpg"
+    ],
+    [
+      "¿Hacia Un Cristianismo Marxista?",
+      "Episcopado Colombiano",
+      "disponible",
+      "https://i.ibb.co/9MW9BRh/imagen-2025-03-31-132936159.png"
+    ],
+    [
+      "Antonio Gramsci Y La Revolución Cultural",
+      "P. Alfredo Saénz",
+      "disponible",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yhOvUQqMC_8KQeMN1LBpCP8fjBp76nV_9w&s"
+    ],
+    [
+      "El Suicidio De Occidente",
+      "Solzhenitsyn",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "De Todo Un Poco",
+      "Martin O. Rutti",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Prensa Y Catedra ",
+      "Monseñor Tihamer Toth",
+      "disponible",
+      "https://i.ibb.co/1G416SmV/imagen-2025-03-31-133155747.png"
+    ],
+    [
+      "Por Una Familia Más Feliz",
+      "P. Alfredo Saenz ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Un Nuevo Comienzo",
+      "Franz Hengsbach",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Vademecum De La Musica Sagrada",
+      "Enrique Lombardi",
+      "disponible",
+      "https://i.ibb.co/kgSrzHCm/imagen-2025-03-31-133312615.png"
+    ],
+    [
+      "Manual De La Sagrada Escritura",
+      "Benjamin Martin Sanchez",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Jornada De La Cabeza Al Corazon Y Mas Alla ",
+      "Fr. Stephen Valenta",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Una Experiencia Concreta Del Crecimiento Espiritual",
+      "",
+      "disponible",
+      "https://i.ibb.co/6RXHgsgz/imagen-2025-03-31-133506227.png"
+    ],
+    [
+      "Control Cerebral Y Emocional",
+      "Narciso Irala",
+      "disponible",
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/ae/47/ae47a77ba8a98e983692b1aaff81aaf0.jpg"
+    ],
+    [
+      "La Imagen De Cristo En Los Distritos Joanicos",
+      "Romano Guardini",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Tierra Santa Tierra De Jesús",
+      "Santiago López",
+      "disponible",
+      "https://i.ibb.co/sv0wkw6q/imagen-2025-03-31-133723183.png"
+    ],
+    [
+      "Matrimonio E Intercomunicación ",
+      "Alfledo H. Altamira ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Cristo En El Hogar",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Religion Demostrada ",
+      "P. A. Hillaire",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Iglesia Y Democracia En La Argentina",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      "https://i.ibb.co/5hYX9dz0/imagen-2025-03-31-133957086.png"
+    ],
+    [
+      "Universitas",
+      "Revista Del Instituto Tomás Moro",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Comunismo Ateo ",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Misiones Populares",
+      "B. Martín Sanchez",
+      "disponible",
+      "https://lh5.googleusercontent.com/proxy/nprYxJ0TDqiL1Nvkv7HKOEDULp6PL6X8S1iHTO_vesNxoPlD43fU9X_tf1UjlvGM4d8YjVEeTCf50ZWdrJ2yGWDI"
+    ],
+    [
+      "Misiones Populares",
+      "B. Martín Sanchez",
+      "disponible",
+      "https://lh5.googleusercontent.com/proxy/nprYxJ0TDqiL1Nvkv7HKOEDULp6PL6X8S1iHTO_vesNxoPlD43fU9X_tf1UjlvGM4d8YjVEeTCf50ZWdrJ2yGWDI"
+    ],
+    [
+      "El Regreso Del Hijo Pródigo",
+      "Henri J. M. Nouwen",
+      "disponible",
+      "https://www.ppc-editorial.com/sites/default/files/externals/8d2bc99dce11c9165de821688c886576.jpg"
+    ],
+    [
+      "Nazaret ",
+      "M.F.C",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Teología Moral Para Seglares II: Los Sacramentos",
+      "P. Royo Marín ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Todo El Evangelio En Toda La Vida",
+      "A. T. De Poncheville",
+      "disponible",
+      "https://images.cdn3.buscalibre.com/fit-in/360x360/47/90/47905339bddb858168236557dd6a4e74.jpg"
+    ],
+    [
+      "El Caso Auténtico ",
+      "Diego De Jesús ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Dios, Mi Padre",
+      "P. Jose Kentenich ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "¿Rock O Cristianismo? ",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Disfrutar Y Honrar La Vida",
+      "Sandra Gilli",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Mañana Del Mundo Es El Amor",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Los Sacerdotes",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Los Operarios De La Viña",
+      "Giovani Papini",
+      "disponible",
+      "https://i.ibb.co/8D2TFn5c/imagen-2025-03-31-134739492.png"
+    ],
+    [
+      "Carta De Un Director ",
+      "Francisco Palau Quer",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Legislacion",
+      "Francisco Palau Quer",
+      "disponible",
+      "https://i.ibb.co/yn0BGKP1/Cam-Scanner-22-03-2025-10-08.jpg"
+    ],
+    [
+      "Francisco, La Fe Y La Nueva Evangelizacion",
+      "Eduardo Maria Taussing",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La Ciencia De Dios",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible",
+      "https://images.cdn1.buscalibre.com/fit-in/360x360/64/81/6481ffd7d978621f775717feae3972ad.jpg"
+    ],
+    [
+      "Arquetipos Cristianos",
+      "P. Alfredo Saenz ",
+      "disponible",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgkEgjzA7dnUB6X_jgVkJN72zT11cD_cHlGPpahXVM59qqf24s5hTkjZVMDfIU5s77xsXgN-CNwYhmd8yhclzX3LX5KNfZkfx_YKUUySFDIntGYzyOMdCdeUvkc_jMptIBzzuyvSxzmEQ/s1600/AlfredoSenzArquetiposCristianos%5B4%5D.jpg"
+    ],
+    [
+      "Pio XII Y Las Ciencias Medicas",
+      "Lopez M. Obiglio Pierini Ray",
+      "disponible",
+      "https://http2.mlstatic.com/D_NQ_NP_651575-MLA76537672024_052024-O.webp"
+    ],
+    [
+      "Con Las Cuerdas Del Corazon ",
+      "P. Ricardo Coll Monico. A.I.C",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "In Persona Christi ",
+      "P. Alfredo Saenz ",
+      "disponible",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEYsXVij7O1ploJEsw6Ew0LZf3T8IXcmQ-JRUYy4ljf8em8W5NLF2P90RjBjQr02-a0tMAptTjfz2uFT4CmKcqceR42nrXaN-O9o8GYQyOKqM8n7AQ4mGNWSf_1qtIdbpmasl9wCOLpNPa/s1600/In+Persona+Christi+-+P.+Alfredo+Sáenz.jpg"
+    ],
+    [
+      "Tratado Del Reino De Los Amadores De Dios ",
+      "Juan Ruysbroeck",
+      "disponible",
+      "https://i.ibb.co/s9Zk558b/imagen-2025-03-31-135140279.png"
+    ],
+    [
+      "La Iglesia De Dios",
+      "Fray Francisco Palau Quer",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Tengo Un Amigo Cuyano Llamado Jesús",
+      "Jorge Julio Ammar",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Ante La Mirada De Jesús ",
+      "Isabel Rodriguez Carrillo",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Dios Es Más Grande Que El Pecado",
+      "Fernado Boasso",
+      "disponible",
+      "https://i.ibb.co/sddpLXDB/imagen-2025-03-31-135313741.png"
+    ],
+    [
+      "La Aventura De Acercarse A Dios ",
+      "Miguel Angel Carceles ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Los Santos Y La Necesidad De Oracion ",
+      "Andres Codesal Martín ",
+      "disponible",
+      "https://i.ibb.co/yn6Qhyrm/imagen-2025-03-31-140001243.png"
+    ],
+    [
+      "¿Existe Dios?",
+      "Benjamin Martin Sanchez",
+      "disponible",
+      "https://lh4.googleusercontent.com/proxy/QO0sDVUYDvMOVXpDGELiNXU0eb0MnXQJ79raSQ4IXIfDEkQzlt_MxDWz62J7W0no3zPLxD34KyBfLwah-shvXDwD"
+    ],
+    [
+      "Cristo Nuestro Hermano",
+      "Karl Adam ",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Para Dar Sentido A Tu Vida",
+      "Benjamin Martin Sanchez",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "El Católico En El Siglo",
+      "Sac. Juan Bosco",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "¿Quien Es Jesucristo?",
+      "Angelo Vigano",
+      "disponible",
+      "https://http2.mlstatic.com/D_NQ_NP_703831-MLA26483865435_122017-O.webp"
+    ],
+    [
+      "Alegrate En La Tribulaciones ",
+      "Benjamin Martin Sanchez ",
+      "disponible",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSjS6t1N12Dd3i_IO6p55UP5jpYNOaz0W2A&s"
+    ],
+    [
+      "El Diablo A Juicio ",
+      "José Luis De Urrutía",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Para Ti  ¿Quien Es Jesucristo?",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Misionando Lo Rural",
+      "A.C.A Equipo De Formacion ",
+      "disponible",
+      "https://i.ibb.co/XrKtYZ61/imagen-2025-03-31-135614223.png"
+    ],
+    [
+      "El Silabario Del Cristianismo",
+      "Mosn. Francisco Ongiati",
+      "disponible",
+      "https://i.ibb.co/Jwk5r1Cf/imagen-2025-03-31-135730612.png"
+    ],
+    [
+      "Padres E Hijos ",
+      "Revista Nazaret",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Diccionario escolar básico",
+      "Victor García Hoz",
+      "disponible",
+      ""
+    ],
+    [
+      "El Escándalo De La Cruz",
+      "",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Diccionario de la lengua española",
+      "",
+      "disponible",
+      ""
+    ]
+  ],
   "apologetica": [
     [
-      "La Luz Que Brilla En Las Tinieblas",
-      "R. P. José Luis Torres",
+      "La luz brilla en las tinieblas",
+      "R. P. José Luis Torres-Pardo C. R.",
       "disponible",
       "https://images.cdn1.buscalibre.com/fit-in/360x360/34/3d/343d438a396f805be0f606973f2a5f61.jpg"
     ],
@@ -1454,7 +2088,7 @@
     ],
     [
       "El Cielo, El Infierno Y El Purgatorio",
-      "Juan Pablo II",
+      "San Juan Pablo II",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
@@ -2911,12 +3545,6 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "San Juan Pablo II Y Maximiliano Kolbe",
-      "Fray Contardo Miglioranza",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
       "San Cono: Patrono De La Juventud",
       "Fray Contardo Miglioranza",
       "disponible",
@@ -4181,6 +4809,12 @@
       "P. Marino Purroy",
       "disn",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "San Juan Pablo II y San Maximiliano Kolbe",
+      "Recopilados y traducidos por Fray Contardo Miglioranza",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ]
   ],
   "coleccionescastellani(gratisdate)": [
@@ -4545,554 +5179,6 @@
       "https://http2.mlstatic.com/D_NQ_NP_891462-MLA54643294557_032023-O.webp"
     ]
   ],
-  "formacion": [
-    [
-      "Las Verdades Robadas",
-      "P. Miguell Angel Fuentes",
-      "disponible",
-      "https://images.cdn1.buscalibre.com/fit-in/360x360/a7/b4/a7b4df358a7d42ea4588ead4f5a480a8.jpg"
-    ],
-    [
-      "El Teólogo Responde (Volumen II)",
-      "P. Miguell Angel Fuentes",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Teólogo Responde (Volumen III)",
-      "P. Miguell Angel Fuentes",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Iota Unum: Estudio Sobre La Transformaciones De La Iglesia Católica Del Siglo XX",
-      "Romano Amerio",
-      "disponible",
-      "https://i.ibb.co/W4HhFqBW/imagen-2025-03-31-130941014.png"
-    ],
-    [
-      "La Iglesia Y El Liberalismo - Magisterio De Los Papas",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Comunión En La Mano",
-      "Mons. Juan Rodolfo Laise",
-      "disponible",
-      "https://http2.mlstatic.com/D_NQ_NP_624566-MLA70823312907_082023-O.webp"
-    ],
-    [
-      "Los Fraudes Espiritistas Y Los Fenómenos Metapsiquicos",
-      "Carlos María De Heredia S. J.",
-      "disponible",
-      "https://i.ibb.co/S4z4f3rt/imagen-2025-03-31-131303301.png"
-    ],
-    [
-      "Defensa Del Amor Y De La Vida",
-      "Maria Ester Perea De Martinez",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "La Mujer Hoy Despues De Pekín",
-      "Arcagni ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Derecho, Moral Y Vida",
-      "Carlos Jose Mosso",
-      "disponible",
-      "https://i.ibb.co/1t8VHtdK/imagen-2025-03-31-131500295.png"
-    ],
-    [
-      "Educacion Sexual, Aborto Y Demografia",
-      "Fundacion Nueva Cristiandad",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Manipulación Genética Y Reproducción Asistida En El Ser Humano",
-      "Alejandro Daniel Bolzán",
-      "disponible",
-      "https://i.ibb.co/FbDRhmq6/imagen-2025-03-31-131623414.png"
-    ],
-    [
-      "Divorcio",
-      "Hector Petrocelli",
-      "disponible",
-      "https://i.ibb.co/s9KRNBQB/imagen-2025-03-31-131818846.png"
-    ],
-    [
-      "Laicismo ?De Qué Laicismo Me Están Hablando?",
-      "Dr. Jorge Piñero Marqués",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Escatología Y Apologética",
-      "Daniel Iglesias Grézes",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Masonería ",
-      "Massimo Introvigne",
-      "disponible",
-      "https://www.cesnur.org/LIBRI%20CESNUR/es_masoneria.gif"
-    ],
-    [
-      "Jesuitas Descarriados",
-      "Thomas Baylor",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Derecho A La Vida",
-      "Alfredo Saenz",
-      "disponible",
-      "https://i.ibb.co/5JHR4Ww/imagen-2025-03-31-132028703.png"
-    ],
-    [
-      "El Pan Vivo",
-      "Antonio Caponnetto",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Un Privilegio De Los Ordenados",
-      "Michael Davies",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "La Patria Potestad Y La Doctrina Social De La Iglesia",
-      "Carmelo E. Palumbo",
-      "disponible",
-      "https://i.ibb.co/SXHtVF7Z/imagen-2025-03-31-132149899.png"
-    ],
-    [
-      "Errores Modernos",
-      "Benjamin Martin Sanchez ",
-      "disponible",
-      "https://i.ibb.co/pjGRSXFs/imagen-2025-03-31-132226255.png"
-    ],
-    [
-      "Indice De Los Errores Modernos Más Difundidos",
-      "José L. Torres",
-      "disponible",
-      "https://i.ibb.co/9HZXKxWF/imagen-2025-03-31-132347889.png"
-    ],
-    [
-      "Doctrina De Acción Contrarrevolucionaria",
-      "Cnel. P. Chateau-Jobert",
-      "disponible",
-      "https://i.ibb.co/nqddV5B8/imagen-2025-03-31-132438686.png"
-    ],
-    [
-      "El Cielo Nos Avisa: Muy Próximos Días De Tinieblas",
-      "Un Sacerdote Católico…",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Derecho A La Vida",
-      "Fermin R. Merchante",
-      "disponible",
-      "https://i.ibb.co/Dgg4Q5X9/imagen-2025-03-31-132541876.png"
-    ],
-    [
-      "Bolchevismo",
-      "Waldemar Gurian",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Las Principales Tesis Marxistas",
-      "F. Arnaudo",
-      "disponible",
-      "https://pictures.abebooks.com/inventory/7233214203.jpg"
-    ],
-    [
-      "¿Hacia Un Cristianismo Marxista?",
-      "Episcopado Colombiano",
-      "disponible",
-      "https://i.ibb.co/9MW9BRh/imagen-2025-03-31-132936159.png"
-    ],
-    [
-      "Antonio Gramsci Y La Revolución Cultural",
-      "P. Alfredo Saénz",
-      "disponible",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yhOvUQqMC_8KQeMN1LBpCP8fjBp76nV_9w&s"
-    ],
-    [
-      "El Suicidio De Occidente",
-      "Solzhenitsyn",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "De Todo Un Poco",
-      "Martin O. Rutti",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Prensa Y Catedra ",
-      "Monseñor Tihamer Toth",
-      "disponible",
-      "https://i.ibb.co/1G416SmV/imagen-2025-03-31-133155747.png"
-    ],
-    [
-      "Por Una Familia Más Feliz",
-      "P. Alfredo Saenz ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Un Nuevo Comienzo",
-      "Franz Hengsbach",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Vademecum De La Musica Sagrada",
-      "Enrique Lombardi",
-      "disponible",
-      "https://i.ibb.co/kgSrzHCm/imagen-2025-03-31-133312615.png"
-    ],
-    [
-      "Manual De La Sagrada Escritura",
-      "Benjamin Martin Sanchez",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "La Jornada De La Cabeza Al Corazon Y Mas Alla ",
-      "Fr. Stephen Valenta",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Una Experiencia Concreta Del Crecimiento Espiritual",
-      "",
-      "disponible",
-      "https://i.ibb.co/6RXHgsgz/imagen-2025-03-31-133506227.png"
-    ],
-    [
-      "Control Cerebral Y Emocional",
-      "Narciso Irala",
-      "disponible",
-      "https://images.cdn3.buscalibre.com/fit-in/360x360/ae/47/ae47a77ba8a98e983692b1aaff81aaf0.jpg"
-    ],
-    [
-      "La Imagen De Cristo En Los Distritos Joanicos",
-      "Romano Guardini",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Tierra Santa Tierra De Jesús",
-      "Santiago López",
-      "disponible",
-      "https://i.ibb.co/sv0wkw6q/imagen-2025-03-31-133723183.png"
-    ],
-    [
-      "Matrimonio E Intercomunicación ",
-      "Alfledo H. Altamira ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Cristo En El Hogar",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "La Religion Demostrada ",
-      "P. A. Hillaire",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Iglesia Y Democracia En La Argentina",
-      "Conferencia Episcopal Argentina",
-      "disponible",
-      "https://i.ibb.co/5hYX9dz0/imagen-2025-03-31-133957086.png"
-    ],
-    [
-      "Universitas",
-      "Revista Del Instituto Tomás Moro",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Comunismo Ateo ",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Misiones Populares",
-      "B. Martín Sanchez",
-      "disponible",
-      "https://lh5.googleusercontent.com/proxy/nprYxJ0TDqiL1Nvkv7HKOEDULp6PL6X8S1iHTO_vesNxoPlD43fU9X_tf1UjlvGM4d8YjVEeTCf50ZWdrJ2yGWDI"
-    ],
-    [
-      "Misiones Populares",
-      "B. Martín Sanchez",
-      "disponible",
-      "https://lh5.googleusercontent.com/proxy/nprYxJ0TDqiL1Nvkv7HKOEDULp6PL6X8S1iHTO_vesNxoPlD43fU9X_tf1UjlvGM4d8YjVEeTCf50ZWdrJ2yGWDI"
-    ],
-    [
-      "El Regreso Del Hijo Pródigo",
-      "Henri J. M. Nouwen",
-      "disponible",
-      "https://www.ppc-editorial.com/sites/default/files/externals/8d2bc99dce11c9165de821688c886576.jpg"
-    ],
-    [
-      "Nazaret ",
-      "M.F.C",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Teología Moral Para Seglares II: Los Sacramentos",
-      "P. Royo Marín ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Misterios De La Vida De Cristo ",
-      "P. Suarez",
-      "disponible",
-      "https://i.ibb.co/sJCtS95m/imagen-2025-03-31-134333779.png"
-    ],
-    [
-      "Todo El Evangelio En Toda La Vida",
-      "A. T. De Poncheville",
-      "disponible",
-      "https://images.cdn3.buscalibre.com/fit-in/360x360/47/90/47905339bddb858168236557dd6a4e74.jpg"
-    ],
-    [
-      "Cristo Hombre",
-      "R. P. Juan Rosanas",
-      "disponible",
-      "https://i.ibb.co/jZwGYnF3/imagen-2025-03-31-134444575.png"
-    ],
-    [
-      "El Caso Auténtico ",
-      "Diego De Jesús ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Dios, Mi Padre",
-      "P. Jose Kentenich ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "¿Rock O Cristianismo? ",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Disfrutar Y Honrar La Vida",
-      "Sandra Gilli",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Mañana Del Mundo Es El Amor",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Los Sacerdotes",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Los Operarios De La Viña",
-      "Giovani Papini",
-      "disponible",
-      "https://i.ibb.co/8D2TFn5c/imagen-2025-03-31-134739492.png"
-    ],
-    [
-      "Carta De Un Director ",
-      "Francisco Palau Quer",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Legislacion",
-      "Francisco Palau Quer",
-      "disponible",
-      "https://i.ibb.co/yn0BGKP1/Cam-Scanner-22-03-2025-10-08.jpg"
-    ],
-    [
-      "Francisco, La Fe Y La Nueva Evangelizacion",
-      "Eduardo Maria Taussing",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "La Ciencia De Dios",
-      "P. Miguel Angel Fuentes ",
-      "disponible",
-      "https://images.cdn1.buscalibre.com/fit-in/360x360/64/81/6481ffd7d978621f775717feae3972ad.jpg"
-    ],
-    [
-      "Arquetipos Cristianos",
-      "P. Alfredo Saenz ",
-      "disponible",
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgkEgjzA7dnUB6X_jgVkJN72zT11cD_cHlGPpahXVM59qqf24s5hTkjZVMDfIU5s77xsXgN-CNwYhmd8yhclzX3LX5KNfZkfx_YKUUySFDIntGYzyOMdCdeUvkc_jMptIBzzuyvSxzmEQ/s1600/AlfredoSenzArquetiposCristianos%5B4%5D.jpg"
-    ],
-    [
-      "Pio XII Y Las Ciencias Medicas",
-      "Lopez M. Obiglio Pierini Ray",
-      "disponible",
-      "https://http2.mlstatic.com/D_NQ_NP_651575-MLA76537672024_052024-O.webp"
-    ],
-    [
-      "Con Las Cuerdas Del Corazon ",
-      "P. Ricardo Coll Monico. A.I.C",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "In Persona Christi ",
-      "P. Alfredo Saenz ",
-      "disponible",
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEYsXVij7O1ploJEsw6Ew0LZf3T8IXcmQ-JRUYy4ljf8em8W5NLF2P90RjBjQr02-a0tMAptTjfz2uFT4CmKcqceR42nrXaN-O9o8GYQyOKqM8n7AQ4mGNWSf_1qtIdbpmasl9wCOLpNPa/s1600/In+Persona+Christi+-+P.+Alfredo+Sáenz.jpg"
-    ],
-    [
-      "Tratado Del Reino De Los Amadores De Dios ",
-      "Juan Ruysbroeck",
-      "disponible",
-      "https://i.ibb.co/s9Zk558b/imagen-2025-03-31-135140279.png"
-    ],
-    [
-      "La Iglesia De Dios",
-      "Fray Francisco Palau Quer",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Tengo Un Amigo Cuyano Llamado Jesús",
-      "Jorge Julio Ammar",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Ante La Mirada De Jesús ",
-      "Isabel Rodriguez Carrillo",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Dios Es Más Grande Que El Pecado",
-      "Fernado Boasso",
-      "disponible",
-      "https://i.ibb.co/sddpLXDB/imagen-2025-03-31-135313741.png"
-    ],
-    [
-      "La Aventura De Acercarse A Dios ",
-      "Miguel Angel Carceles ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Los Santos Y La Necesidad De Oracion ",
-      "Andres Codesal Martín ",
-      "disponible",
-      "https://i.ibb.co/yn6Qhyrm/imagen-2025-03-31-140001243.png"
-    ],
-    [
-      "¿Existe Dios?",
-      "Benjamin Martin Sanchez",
-      "disponible",
-      "https://lh4.googleusercontent.com/proxy/QO0sDVUYDvMOVXpDGELiNXU0eb0MnXQJ79raSQ4IXIfDEkQzlt_MxDWz62J7W0no3zPLxD34KyBfLwah-shvXDwD"
-    ],
-    [
-      "Cristo Nuestro Hermano",
-      "Karl Adam ",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Para Dar Sentido A Tu Vida",
-      "Benjamin Martin Sanchez",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Católico En El Siglo",
-      "Sac. Juan Bosco",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "¿Quien Es Jesucristo?",
-      "Angelo Vigano",
-      "disponible",
-      "https://http2.mlstatic.com/D_NQ_NP_703831-MLA26483865435_122017-O.webp"
-    ],
-    [
-      "Alegrate En La Tribulaciones ",
-      "Benjamin Martin Sanchez ",
-      "disponible",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSjS6t1N12Dd3i_IO6p55UP5jpYNOaz0W2A&s"
-    ],
-    [
-      "El Diablo A Juicio ",
-      "José Luis De Urrutía",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Para Ti  ¿Quien Es Jesucristo?",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Misionando Lo Rural",
-      "A.C.A Equipo De Formacion ",
-      "disponible",
-      "https://i.ibb.co/XrKtYZ61/imagen-2025-03-31-135614223.png"
-    ],
-    [
-      "El Silabario Del Cristianismo",
-      "Mosn. Francisco Ongiati",
-      "disponible",
-      "https://i.ibb.co/Jwk5r1Cf/imagen-2025-03-31-135730612.png"
-    ],
-    [
-      "Padres E Hijos ",
-      "Revista Nazaret",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Diccionario escolar básico",
-      "Victor García Hoz",
-      "disponible",
-      ""
-    ],
-    [
-      "El Escándalo De La Cruz",
-      "",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ]
-  ],
   "historia": [
     [
       "La Nave Y Las Tempestades: La Sinagoga Y La Iglesia Primitiva",
@@ -5186,7 +5272,7 @@
     ],
     [
       "I.N.R.I Jesus Nazareno, Rey De Los Judios",
-      "P. Miguel Angel Fuentes ",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://pictures.abebooks.com/isbn/9781933871059-es.jpg"
     ],
@@ -6176,7 +6262,7 @@
     ],
     [
       "Los Hizo Varón Y Mujer - Novios Y Esposos Ante El Matrimonio Y La Sexualidad",
-      "Miguel Angel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
@@ -6488,19 +6574,19 @@
     ],
     [
       "Cuando La Sexualidad Duele Y Humilla",
-      "P. Miguel Angel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
       "Las Ideas Subterraneas Y La Educación",
-      "P. Miguel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
       "Las Ideas Subterraneas Y La Educación",
-      "P. Miguel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
@@ -6584,25 +6670,25 @@
     ],
     [
       "Las Adicciones: Una Vision Antropologica",
-      "P. Miguel Angel Fuentes ",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
       "Miró La Pequeñez De Su Esclava. Para Una Educación De La Humildad",
-      "P. Miguel Angel Fuentes ",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
       "Cegó Sus Ojos: El Juicio Propio",
-      "P. Miguel Angel Fuentes ",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
       "Duc In Altum! Esencia Y Educación De La Magnanimidad",
-      "P. Miguel Angel Fuentes ",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
@@ -7254,7 +7340,7 @@
     ],
     [
       "Rezar Con La Sagrada Escritura",
-      "P. Miguel Angel Fuentes",
+      "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
@@ -7757,62 +7843,18 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ]
   ],
-  "teologiasto.tomas": [
-    [
-      "Comentario A Las Dos Epistolas De San Pablo A Los Tesalonicenses",
-      "Santo Tomas De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Credo Comentado",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "El Apetito Del Bien:",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Catena Aurea I",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Catena Aurea III",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Catena Aurea III",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Catena Aurea IV",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ],
-    [
-      "Catena Aurea V",
-      "Santo Tomás De Aquino",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
-    ]
-  ],
   "homilias": [
     [
       "Sermones Escogidos I",
       "San Juan María Vianney (Cura De Ars)",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "San José",
+      "",
+      "disponible",
+      ""
     ],
     [
       "Sermones Escogidos I",
@@ -8529,9 +8571,27 @@
       ""
     ],
     [
+      "Comentario A Las Dos Epistolas De San Pablo A Los Tesalonicenses",
+      "Santo Tomas De Aquino",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
       "Introducción especial al Nuevo Testamento",
       "John E. Steinmueller",
       "disponible",
+      ""
+    ],
+    [
+      "Novum Testamentum",
+      "",
+      "disponible",
+      ""
+    ],
+    [
+      "Los Santos Evangelios",
+      "Traducción de los textos originales por el R. P. Felipe de Fuenterrabia, Capuchino",
+      "",
       ""
     ],
     [
@@ -8549,6 +8609,12 @@
     [
       "Historia Bíblica II",
       "Ignacio Schuster - Juan B. Holzammer",
+      "disponible",
+      ""
+    ],
+    [
+      "Discípulos y apóstoles de Jesús. La relación entre los discípulos y los Doce segpun Marcos",
+      "",
       "disponible",
       ""
     ],
@@ -8598,6 +8664,12 @@
     ],
     [
       "Directorio para la preparación del Expediente Matrimonial ",
+      "Conferencia Episcopal Argentina",
+      "disponible",
+      ""
+    ],
+    [
+      "Creo en la vida, dono la vida",
       "Conferencia Episcopal Argentina",
       "disponible",
       ""
@@ -8729,14 +8801,20 @@
       ""
     ],
     [
-      "Carta Encíclica Lumen Fidei",
+      "Lumen Fidei",
       "Papa Francisco",
       "disponible",
       ""
     ],
     [
       "Mientras se aproxima el tercer milenio",
-      "Juan Pablo II",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Mientras se aproxima el tercer milenio",
+      "San Juan Pablo II",
       "disponible",
       ""
     ],
@@ -8763,13 +8841,313 @@
       "",
       "disponible",
       ""
+    ],
+    [
+      "Carta del Papa a los niños en el año de la familia",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Carta del Papa Juan Pablo II a las mujeres",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Carta a los obispos de la Iglesia católica sobre la colaboración del hombre y la mujer en la Iglesia y el mundo",
+      "Joshep Card. Ratzinger, Angelo Amato, SBD",
+      "disponible ",
+      ""
+    ],
+    [
+      "Carta apostólica Mane nobiscum Domine",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes para el Jueves Santo de 1999",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Rosarium Virginis Mariae",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Rosarium Virginis Mariae",
+      "San Juan Pablo II",
+      "disponible ",
+      ""
+    ],
+    [
+      "Encarnationis Mysterium ",
+      "San Juan Pablo II",
+      "",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes con ocasión del Jueves Santo de 2004",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Novo Millennio Ineunte",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes con ocasión del Jueves Santo de 1995",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Ecclesia de Eucharistia",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Veritatis Splendor",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes para el Jueves Santo de 1998",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes con ocasión del Jueves Santo de 1996 en el año jubilar de su ordenación sacerdotal",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta a las familias",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Exhortación apostólica pstsinodal Pastores Dabo Vobis de S. S. Juan Pablo II al episcopado al clero y a los fieles sobre la formación de los sacerdotes en la situación actual",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Exhortación apostólica pstsinodal Pastores Dabo Vobis de S. S. Juan Pablo II al episcopado al clero y a los fieles sobre la formación de los sacerdotes en la situación actual",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Christifideles Laici",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Christifideles Laici",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Juan Pablo II en los Estados Unidos y en la ONU",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta a todos los obispos de la Iglesia sobre el misterio y el culto de la Eucaristía",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta a todos los obispos de la Iglesia sobre el misterio y el culto de la Eucaristía",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Redemptoris Mater",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Reconciliatio et paenitentia",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Juan Pablo II en Irlanda",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "La paz, don de Dios confiado a los hombres ",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Magnum Baptismi Donum ",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Magnum Baptismi Donum ",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Redemptor Homins",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Caminando con el Papa. De sus discursos a los jóvenes en los viajes internacionales",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Caminando con el Papa. De sus discursos a los jóvenes en los viajes internacionales",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "En sintonía con el Papa. Fichas de reflexión de Juan Pablo II sobre el sacerdocio y vida apostólica",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Evangelium Vitae",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Ecclesia in Ameria",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Cata apostólica en el XXV aniversario de la constitución sobre la Sagrada Liturgia (Sacrosanctum Concilium)",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta encíclica Veritatis Splendor",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Fides et Ratio",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Pastores Gregis",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Ecclesia in Europa",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Ut unum sint",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta del Santo Padre Juan Pablo II a los sacerdotes con ocasión del Jueves Santo de 1990",
+      "San Juan Pablo II",
+      "disponible",
+      ""
+    ],
+    [
+      "Deus caritas est",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Deus caritas est",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Deus caritas est",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Deus caritas est",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Deus caritas est",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Verbum Domini",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Caritas in veritate",
+      "Benedicto XVI",
+      "disponible",
+      ""
+    ],
+    [
+      "Carta del sumo  pontífice Benedicto XVI para la convocación de un año sacerdotal con ocasión del 150 aniversario del Dies Natalis del Santo Cura de Ars",
+      "Benedicto XVI",
+      "disponible",
+      ""
     ]
   ],
   "": [
     [
-      "",
-      "",
-      "",
+      "La ciencia de Dios. Manual de dirección espiritual",
+      "R. P. Dr. Miguel Ángel Fuentes",
+      "disponible ",
       ""
     ]
   ]
