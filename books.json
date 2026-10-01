@@ -361,12 +361,6 @@
       "https://i.ibb.co/cPRKsLL/el-gran-medio.jpg"
     ],
     [
-      "Florecillas De San Francisco Solano",
-      "Cayetano Bruno",
-      "disponible",
-      "https://profesoradodonbosco.opac.ar/pgmedia/029960_T.jpg"
-    ],
-    [
       "Perlas De Juan XXIII",
       "Papa Juan XXIII",
       "disponible",
@@ -859,6 +853,26 @@
       "https://pictures.abebooks.com/inventory/21004443439.jpg"
     ]
   ],
+  "vidasdesantosybiografias": [
+    [
+      "Florecillas De San Francisco Solano",
+      "Cayetano Bruno",
+      "disponible",
+      "https://profesoradodonbosco.opac.ar/pgmedia/029960_T.jpg"
+    ],
+    [
+      "Diario De La Cárcel ",
+      "Cardenal Stefan Wyszynski",
+      "disponible",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPiGdUmvEeDSqCcqiKz8AI2M-WsTWrJDLgQ&s"
+    ],
+    [
+      "Ven, sé mi luz. Las cartas privadas de la santa de Calcuta",
+      "Madre Teresa",
+      "Disponible",
+      ""
+    ]
+  ],
   "reflexiones": [
     [
       "Jesús Está Vivo",
@@ -889,12 +903,6 @@
       "Próspero Baudot",
       "disponible",
       "https://images.cdn2.buscalibre.com/fit-in/360x360/82/98/8298cdde21fe09f21959e68f1f5af044.jpg"
-    ],
-    [
-      "El Corazón De Jesús Al Mundo",
-      "Padre Lorenzo Sales",
-      "disponible",
-      "https://www.consolatabetrone-monasterosacrocuore.it/wp/wp-content/uploads/2024/01/54-EL-CORAZON-DE-JESUS-AL-MUNDO_web-694x1024.jpg"
     ],
     [
       "Meditaciones Al Sagrado Corazón De Jesús",
@@ -947,6 +955,12 @@
       "https://i.ibb.co/7JhRYqfL/siervos.png"
     ],
     [
+      "El Corazón De Jesús Al Mundo",
+      "Padre Lorenzo Sales",
+      "disponible",
+      "https://www.consolatabetrone-monasterosacrocuore.it/wp/wp-content/uploads/2024/01/54-EL-CORAZON-DE-JESUS-AL-MUNDO_web-694x1024.jpg"
+    ],
+    [
       "Meditaciones II",
       "Chiara Lubich",
       "disponible",
@@ -959,10 +973,40 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
+      "Ejercicios espirituales. Libro Peregrino Ruso",
+      "",
+      "disponible",
+      ""
+    ],
+    [
+      "Guía espiritual (Libro II, segunda parte)",
+      "Miguel de Molinos",
+      "disponible",
+      ""
+    ],
+    [
+      "A Traves De Los Ojos De Jesús (Volumen 1)",
+      "C. Alan Ames",
+      "disponible",
+      "https://www.aumentamife.com/assets/images/Libro%20Atravez%20de%20los%20Ojos%20de%20Jesus%20Vol%202%20Alan%20Ames.jpg"
+    ],
+    [
       "A Traves De Los Ojos De Jesús (Volumen 2)",
       "C. Alan Ames",
       "disponible",
       "https://www.aumentamife.com/assets/images/Libro%20Atravez%20de%20los%20Ojos%20de%20Jesus%20Vol%202%20Alan%20Ames.jpg"
+    ],
+    [
+      "Ejercicios espirituales de retiro",
+      "Sor María de Jesús Agreda",
+      "disponible",
+      ""
+    ],
+    [
+      "Glorias y virtudes de San José",
+      "R. P. Huguet",
+      "disponible",
+      ""
     ],
     [
       "Celebración del Domingo de Ramos (Pasión de Jesús)",
@@ -1937,13 +1981,19 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "La Gran Cruzada De La Miseriordia",
+      "La gran cruzada de la misericordia",
       "Catalina",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "La Gran Cruzada De La Salvacion",
+      "La gran cruzada de la salvación",
+      "Catalina",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "La gran cruzada del amor",
       "Catalina",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
@@ -1991,12 +2041,6 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Eucaristía",
-      "Monseñor Tihamer Toth",
-      "disponible",
-      "https://i.ibb.co/JFkqrvqC/eucaristia.png"
-    ],
-    [
       "Espiritualidad De Los Seglares",
       "Antonio Royo Martin",
       "disponible",
@@ -2013,6 +2057,18 @@
       "Karol Wojtyla",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Tesoro de milagros y oraciones de la Cruz de Caravaca",
+      "",
+      "disponible",
+      ""
+    ],
+    [
+      "Liturgia de las horas ",
+      "",
+      "disponible",
+      ""
     ],
     [
       "La Jornada De La Cabeza Al Corazon Y Mas Alla ",
@@ -2341,6 +2397,12 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
+      "Eucaristía",
+      "Monseñor Tihamer Toth",
+      "disponible",
+      "https://i.ibb.co/JFkqrvqC/eucaristia.png"
+    ],
+    [
       "Un Nuevo Comienzo. Pláticas sobre la oración y la Eucaristía.",
       "Franz Hengsbach",
       "disponible",
@@ -2451,12 +2513,6 @@
     [
       "El presbítero, maestro de la Palabra, ministro de los sacramentos y guía de la comunidad ante el tercer milenio",
       "Congregación para el Clero",
-      "disponible",
-      ""
-    ],
-    [
-      1,
-      "me encontré con una chica vestida toda de rojo y otra vestida de toda azul",
       "disponible",
       ""
     ],
@@ -3047,7 +3103,7 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "La Cristiandad Y su ccosmovisión ",
+      "La Cristiandad y su cosmovisión ",
       "Padre Alfredo Saenz",
       "disponible",
       "https://http2.mlstatic.com/D_NQ_NP_905101-MLA71501221018_092023-O.webp"
@@ -4257,12 +4313,6 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Diario De La Cárcel ",
-      "Cardenal Stefan Wyszynski",
-      "disponible",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPiGdUmvEeDSqCcqiKz8AI2M-WsTWrJDLgQ&s"
-    ],
-    [
       "Declaración Sobre La Doctrina Católica Acerca De La Iglesia Para Defenderla De Algunos Errores Actuales",
       "Sagrada Congregación Para La Doctrina De La Fe",
       "disponible",
@@ -4437,6 +4487,18 @@
     [
       "La Biblia palabra de Dios",
       "Pierre Grelot",
+      "disponible",
+      ""
+    ],
+    [
+      "El misterio del mal, del dolor y de la muerte. Comentarios y ensayos de Monseñor Juan Straubinger sobre el Libro de Job",
+      "Monseñor Juan Straubinger",
+      "disponible",
+      ""
+    ],
+    [
+      "El misterio del mal, del dolor y de la muerte. Comentarios y ensayos de Monseñor Juan Straubinger sobre el Libro de Job",
+      "Monseñor Juan Straubinger",
       "disponible",
       ""
     ],
@@ -4655,6 +4717,18 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
+      "Los cuatro temperamentos",
+      "Conrado Hock",
+      "disponible",
+      ""
+    ],
+    [
+      "Los cuatro temperamentos",
+      "Conrado Hock",
+      "disponible",
+      ""
+    ],
+    [
       "Las verdades robadas",
       "R. P. Dr. Miguel Ángel Fuentes",
       "disponible",
@@ -4663,6 +4737,12 @@
     [
       "Las verdades robadas",
       "R. P. Dr. Miguel Ángel Fuentes",
+      "Disponible",
+      ""
+    ],
+    [
+      "Infidelidades en la Iglesia",
+      "José María Iraburu",
       "Disponible",
       ""
     ],
@@ -6029,18 +6109,6 @@
       ""
     ],
     [
-      2,
-      "mi abuela me dijo que se cayó un árbol en la Coronel Suarez",
-      "",
-      ""
-    ],
-    [
-      3,
-      "un autor de su apellido (solo Alonso)",
-      "",
-      ""
-    ],
-    [
       "Presentación general de la Liturgia de las Horas",
       "Arzobispado de Buenos Aires",
       "disponible ",
@@ -6913,13 +6981,13 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "San Francisco De Asís ",
+      "San Francisco De Asís. Escritos. Biografías. Documentos de la época",
       "Jose Antonio Guerra",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Padre Pio El Apostol Del Confesionario ",
+      "Padre Pío. El apóstol del confesionario",
       "Gennaro Preziuso",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
@@ -7497,8 +7565,20 @@
     [
       "Teresa De Los Andes - Fecundidad De La Vida Contemplativa",
       "P. Marino Purroy",
-      "disn",
+      "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Perfiles Eucarísticos de Santa María Micael del Santísimo Sacramento",
+      "P. Antonino Castellamare Capuchino",
+      "disponible",
+      ""
+    ],
+    [
+      "Regresando a casa. Cristianos convertidos a la fe católica",
+      "P. Ángel Peña O.A.R",
+      "disponible",
+      ""
     ],
     [
       "El Pendón Y La Aureola ",
@@ -7511,6 +7591,18 @@
     [
       "Celebración del Domingo de Ramos (Pasión del Señor). Ciclos A-B-C",
       "",
+      "disponible",
+      ""
+    ],
+    [
+      "El drama litúrgico",
+      "Augusto del Río",
+      "disponible",
+      ""
+    ],
+    [
+      "El drama litúrgico",
+      "Augusto del Río",
       "disponible",
       ""
     ],
@@ -9149,6 +9241,32 @@
       ""
     ]
   ],
+  "literatura": [
+    [
+      "La Christiada ",
+      "Fray Diego de Ojeda, O. P. ",
+      "disponible",
+      ""
+    ],
+    [
+      "Incienzo quemado",
+      "M. Raymond",
+      "disponible",
+      ""
+    ],
+    [
+      "Leyendo A Nuestros Clásicos",
+      "Varios",
+      "disponible",
+      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Recuentos para Demián. (Los cuentos que contaba mi analista)",
+      "Jorge Bucay",
+      "disponible",
+      ""
+    ]
+  ],
   "novela": [
     [
       "Fabiola",
@@ -9179,6 +9297,12 @@
       "Hugo Wast",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Una estrella en la ventana",
+      "Hugo Wast",
+      "disponible",
+      ""
     ],
     [
       "El Señor De Los Anillos",
@@ -9437,18 +9561,10 @@
       "Taylor Caldwell",
       "disponible",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmZUbwA3fe-XlthhhyHXFwclBMQSoZeo_Dyg&s"
-    ]
-  ],
-  "literatura": [
-    [
-      "Leyendo A Nuestros Clásicos",
-      "Varios",
-      "disponible",
-      "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Recuentos para Demián. (Los cuentos que contaba mi analista)",
-      "Jorge Bucay",
+      "Novia de vacaciones",
+      "Hugo Wast",
       "disponible",
       ""
     ]
@@ -9791,13 +9907,13 @@
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Mistica Ciudad De Dios - Vida De La Virgen María",
+      "Mistica Ciudad De Dios. Vida De La Virgen María. Libro II",
       "Sor María De Jesus De Agreda",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
     ],
     [
-      "Mistica Ciudad De Dios - Vida De La Virgen María",
+      "Mistica Ciudad De Dios. Vida de María",
       "Sor María De Jesus De Agreda",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
@@ -10361,6 +10477,12 @@
       "Secretariado Argentino Del Apostolado De La Oracion",
       "disponible",
       "https://i.ibb.co/N1NvPf8/imagennodisponible.png"
+    ],
+    [
+      "Espiritualidad de un hermano cartujo",
+      "",
+      "disponible",
+      ""
     ]
   ],
   "sanmanuelgonzalez": [
@@ -10368,14 +10490,6 @@
       "Manual de la unión eucarística reparadora",
       "San Manuel González ",
       "disponible",
-      ""
-    ]
-  ],
-  "vidasdesantosybiografias": [
-    [
-      "Ven, sé mi luz. Las cartas privadas de la santa de Calcuta",
-      "Madre Teresa",
-      "Disponible",
       ""
     ]
   ]
